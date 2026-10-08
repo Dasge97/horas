@@ -4,6 +4,8 @@
 # apunta en registro.log y, si la bóveda de codehive está desbloqueada, avisa por ntfy.
 
 $ErrorActionPreference = 'Stop'
+# Python escribe en UTF-8; sin esto PowerShell lo lee en la página de códigos de Windows y rompe los acentos.
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $aqui = Split-Path -Parent $MyInvocation.MyCommand.Path
 $registro = Join-Path $aqui 'registro.log'
 Set-Location $aqui

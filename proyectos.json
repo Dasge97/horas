@@ -8,10 +8,10 @@
   },
   "trabajo": {
     "_comentario": "Repos de GitHub que son del trabajo. Salen en el ranking con la etiqueta de trabajo, no como proyectos propios.",
-    "repos": ["prindia-cloud", "prindia-home", "prindio", "ceomind"]
+    "repos": ["prindia-cloud", "prindia-home", "prindio", "ceomind", "bookadoo", "apunts-vault"]
   },
   "ignorar": [
-    "DAW2_Daniel_SG", "Dasge97", "RESEARCHIA", "apunts-vault", "auth2api", "bookadoo", "cloud-isa", "cloud-test",
+    "DAW2_Daniel_SG", "Dasge97", "RESEARCHIA", "auth2api", "cloud-isa", "cloud-test",
     "dedaniel.com", "git-achievements", "home", "ntfy", "os-demo", "os-notes", "os-utils", "qa",
     "MesaParaTres", "auto-order", "central-de-comunicaciones", "one-piece-matchup-lab",
     "CLIENTES-DimitriAntonov", "GRUPAPUNTS-oficina-virtual-app-web", "KPIs-apunts", "decaok", "decaok-transporte-app-movil"
