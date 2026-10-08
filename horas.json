@@ -1,0 +1,618 @@
+{
+ "actualizado": "2026-10-08T22:40:18+00:00",
+ "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
+ "total_horas": 421.3,
+ "total_dias": 123,
+ "proyectos": {
+  "pocket-terminal": {
+   "nombre": "Pocket Terminal",
+   "horas": 9.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 9.2,
+   "dias": 2,
+   "commits": 31,
+   "desde": "2026-09-05",
+   "hasta": "2026-09-06"
+  },
+  "studio": {
+   "nombre": "Studio",
+   "horas": 23.4,
+   "horas_sesiones": 13.4,
+   "horas_commits": 10.0,
+   "dias": 6,
+   "commits": 66,
+   "desde": "2026-09-04",
+   "hasta": "2026-09-21"
+  },
+  "autocaller": {
+   "nombre": "Autocaller",
+   "horas": 2.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.0,
+   "dias": 2,
+   "commits": 5,
+   "desde": "2026-09-02",
+   "hasta": "2026-09-07"
+  },
+  "centralita-ia": {
+   "nombre": "Centralita IA",
+   "horas": 10.6,
+   "horas_sesiones": 2.6,
+   "horas_commits": 7.9,
+   "dias": 3,
+   "commits": 33,
+   "desde": "2026-09-17",
+   "hasta": "2026-09-19"
+  },
+  "centralia": {
+   "nombre": "Centralia",
+   "horas": 5.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.9,
+   "dias": 3,
+   "commits": 7,
+   "desde": "2026-08-09",
+   "hasta": "2026-08-25"
+  },
+  "odrys": {
+   "nombre": "Odrys",
+   "horas": 13.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 13.0,
+   "dias": 8,
+   "commits": 26,
+   "desde": "2026-04-05",
+   "hasta": "2026-06-15"
+  },
+  "la-cornisa": {
+   "nombre": "La Cornisa",
+   "horas": 34.9,
+   "horas_sesiones": 8.9,
+   "horas_commits": 26.0,
+   "dias": 11,
+   "commits": 111,
+   "desde": "2026-08-03",
+   "hasta": "2026-09-23"
+  },
+  "assistyoou": {
+   "nombre": "assistyoou",
+   "horas": 1.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.0,
+   "dias": 1,
+   "commits": 5,
+   "desde": "2026-07-09",
+   "hasta": "2026-07-09"
+  },
+  "ai-hub": {
+   "nombre": "AI Hub",
+   "horas": 5.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.0,
+   "dias": 3,
+   "commits": 16,
+   "desde": "2026-07-17",
+   "hasta": "2026-08-23"
+  },
+  "tu-debate-diario": {
+   "nombre": "Tu Debate Diario",
+   "horas": 16.8,
+   "horas_sesiones": 3.8,
+   "horas_commits": 13.0,
+   "dias": 9,
+   "commits": 68,
+   "desde": "2026-03-09",
+   "hasta": "2026-09-21"
+  },
+  "code-hive-factory": {
+   "nombre": "Code Hive Factory",
+   "horas": 19.2,
+   "horas_sesiones": 13.3,
+   "horas_commits": 5.9,
+   "dias": 5,
+   "commits": 49,
+   "desde": "2026-09-06",
+   "hasta": "2026-09-10"
+  },
+  "meridian": {
+   "nombre": "Meridian",
+   "horas": 13.7,
+   "horas_sesiones": 11.9,
+   "horas_commits": 1.8,
+   "dias": 4,
+   "commits": 32,
+   "desde": "2026-09-11",
+   "hasta": "2026-09-16"
+  },
+  "card-pop": {
+   "nombre": "card-pop",
+   "horas": 17.1,
+   "horas_sesiones": 17.1,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 113,
+   "desde": "2026-10-02",
+   "hasta": "2026-10-07"
+  },
+  "eryndale": {
+   "nombre": "Eryndale",
+   "horas": 1.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.1,
+   "dias": 1,
+   "commits": 4,
+   "desde": "2026-08-31",
+   "hasta": "2026-08-31"
+  },
+  "universo-fantasy": {
+   "nombre": "Universo Fantasy",
+   "horas": 5.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.6,
+   "dias": 3,
+   "commits": 15,
+   "desde": "2026-01-24",
+   "hasta": "2026-01-26"
+  },
+  "motherline": {
+   "nombre": "MOTHERLINE",
+   "horas": 0.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.0,
+   "dias": 0,
+   "commits": 0,
+   "desde": null,
+   "hasta": null
+  },
+  "true-duel": {
+   "nombre": "True Duel",
+   "horas": 2.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.6,
+   "dias": 3,
+   "commits": 8,
+   "desde": "2026-05-04",
+   "hasta": "2026-05-06"
+  },
+  "morvan": {
+   "nombre": "Morvan",
+   "horas": 18.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 18.0,
+   "dias": 4,
+   "commits": 55,
+   "desde": "2026-08-05",
+   "hasta": "2026-08-21"
+  },
+  "expedicion": {
+   "nombre": "Expedición medieval",
+   "horas": 7.6,
+   "horas_sesiones": 7.6,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 1,
+   "desde": "2026-09-26",
+   "hasta": "2026-09-29"
+  },
+  "Comentarista Fantasy": {
+   "nombre": "Comentarista Fantasy",
+   "horas": 8.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 8.2,
+   "dias": 2,
+   "commits": 26,
+   "desde": "2026-09-05",
+   "hasta": "2026-09-06"
+  },
+  "MenuGenerator": {
+   "nombre": "MenuGenerator",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-08-31",
+   "hasta": "2026-08-31"
+  },
+  "Reservas para peluquerías": {
+   "nombre": "Reservas para peluquerías",
+   "horas": 25.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 25.0,
+   "dias": 8,
+   "commits": 79,
+   "desde": "2026-08-24",
+   "hasta": "2026-09-09"
+  },
+  "entroya": {
+   "nombre": "entroya",
+   "horas": 5.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.9,
+   "dias": 2,
+   "commits": 11,
+   "desde": "2026-05-11",
+   "hasta": "2026-05-20"
+  },
+  "CamelTube": {
+   "nombre": "CamelTube",
+   "horas": 28.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 28.3,
+   "dias": 2,
+   "commits": 63,
+   "desde": "2026-07-27",
+   "hasta": "2026-07-28"
+  },
+  "POD": {
+   "nombre": "POD",
+   "horas": 9.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 9.9,
+   "dias": 1,
+   "commits": 18,
+   "desde": "2026-05-30",
+   "hasta": "2026-05-30"
+  },
+  "pr-reviewer": {
+   "nombre": "pr-reviewer",
+   "horas": 0.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.7,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-04-28",
+   "hasta": "2026-04-28"
+  },
+  "RAG Knowledge Pipeline": {
+   "nombre": "RAG Knowledge Pipeline",
+   "horas": 1.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.5,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-04-22",
+   "hasta": "2026-04-22"
+  },
+  "FactorAI": {
+   "nombre": "FactorAI",
+   "horas": 2.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.3,
+   "dias": 2,
+   "commits": 3,
+   "desde": "2026-03-10",
+   "hasta": "2026-03-11"
+  },
+  "Oye Pepe": {
+   "nombre": "Oye Pepe",
+   "horas": 0.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.7,
+   "dias": 1,
+   "commits": 3,
+   "desde": "2026-04-12",
+   "hasta": "2026-04-12"
+  },
+  "Agente de Marketing": {
+   "nombre": "Agente de Marketing",
+   "horas": 24.4,
+   "horas_sesiones": 0.0,
+   "horas_commits": 24.4,
+   "dias": 6,
+   "commits": 96,
+   "desde": "2026-07-15",
+   "hasta": "2026-09-15"
+  },
+  "Instagram Content Creator": {
+   "nombre": "Instagram Content Creator",
+   "horas": 11.9,
+   "horas_sesiones": 5.7,
+   "horas_commits": 6.2,
+   "dias": 7,
+   "commits": 38,
+   "desde": "2026-08-06",
+   "hasta": "2026-09-01"
+  },
+  "moodle-rag": {
+   "nombre": "moodle-rag",
+   "horas": 4.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 4.8,
+   "dias": 2,
+   "commits": 13,
+   "desde": "2026-05-22",
+   "hasta": "2026-05-23"
+  },
+  "Ducker": {
+   "nombre": "Ducker",
+   "horas": 2.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.8,
+   "dias": 2,
+   "commits": 7,
+   "desde": "2026-06-01",
+   "hasta": "2026-06-02"
+  },
+  "RestaurantOS": {
+   "nombre": "RestaurantOS",
+   "horas": 13.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 13.6,
+   "dias": 5,
+   "commits": 63,
+   "desde": "2026-07-01",
+   "hasta": "2026-07-05"
+  },
+  "YaViene": {
+   "nombre": "YaViene",
+   "horas": 0.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.7,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-05-25",
+   "hasta": "2026-05-25"
+  },
+  "GreyMarket": {
+   "nombre": "GreyMarket",
+   "horas": 15.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 15.2,
+   "dias": 6,
+   "commits": 65,
+   "desde": "2026-06-07",
+   "hasta": "2026-08-12"
+  },
+  "От всичко по нещо": {
+   "nombre": "От всичко по нещо",
+   "horas": 3.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 3.0,
+   "dias": 3,
+   "commits": 6,
+   "desde": "2026-05-19",
+   "hasta": "2026-07-05"
+  },
+  "SkillDrop": {
+   "nombre": "SkillDrop",
+   "horas": 5.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.3,
+   "dias": 2,
+   "commits": 12,
+   "desde": "2026-06-03",
+   "hasta": "2026-06-15"
+  },
+  "CodeHive": {
+   "nombre": "CodeHive",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-04-01",
+   "hasta": "2026-04-01"
+  },
+  "ADN Ideológico": {
+   "nombre": "ADN Ideológico",
+   "horas": 1.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.0,
+   "dias": 2,
+   "commits": 6,
+   "desde": "2026-03-05",
+   "hasta": "2026-03-06"
+  },
+  "myReporter": {
+   "nombre": "myReporter",
+   "horas": 5.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.3,
+   "dias": 4,
+   "commits": 24,
+   "desde": "2026-01-27",
+   "hasta": "2026-06-07"
+  },
+  "AkahigeShop": {
+   "nombre": "AkahigeShop",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-02-01",
+   "hasta": "2026-02-01"
+  },
+  "ERP construido por IA": {
+   "nombre": "ERP construido por IA",
+   "horas": 6.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 6.5,
+   "dias": 3,
+   "commits": 15,
+   "desde": "2026-04-02",
+   "hasta": "2026-04-04"
+  },
+  "Curso de ingeniería del software": {
+   "nombre": "Curso de ingeniería del software",
+   "horas": 2.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.8,
+   "dias": 2,
+   "commits": 6,
+   "desde": "2026-07-11",
+   "hasta": "2026-07-13"
+  },
+  "Los primeros": {
+   "nombre": "Los primeros",
+   "horas": 5.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.6,
+   "dias": 6,
+   "commits": 19,
+   "desde": "2025-11-30",
+   "hasta": "2026-01-16"
+  },
+  "Logística y Tarifas": {
+   "nombre": "Logística y Tarifas",
+   "horas": 1.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.6,
+   "dias": 2,
+   "commits": 11,
+   "desde": "2026-04-07",
+   "hasta": "2026-04-08"
+  },
+  "Ministudio": {
+   "nombre": "Ministudio",
+   "horas": 7.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 7.0,
+   "dias": 3,
+   "commits": 45,
+   "desde": "2026-09-14",
+   "hasta": "2026-09-21"
+  },
+  "claude-monitoring-rainmeter": {
+   "nombre": "claude-monitoring-rainmeter",
+   "horas": 2.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.1,
+   "dias": 1,
+   "commits": 9,
+   "desde": "2026-09-19",
+   "hasta": "2026-09-19"
+  },
+  "extractor": {
+   "nombre": "extractor",
+   "horas": 1.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.3,
+   "dias": 1,
+   "commits": 17,
+   "desde": "2025-11-08",
+   "hasta": "2025-11-08"
+  },
+  "semi-auto-ctrlv": {
+   "nombre": "semi-auto-ctrlv",
+   "horas": 1.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.1,
+   "dias": 1,
+   "commits": 9,
+   "desde": "2025-11-08",
+   "hasta": "2025-11-08"
+  },
+  "mail-tester": {
+   "nombre": "mail-tester",
+   "horas": 2.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.5,
+   "dias": 1,
+   "commits": 7,
+   "desde": "2026-09-02",
+   "hasta": "2026-09-02"
+  },
+  "easy-mail": {
+   "nombre": "easy-mail",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 11,
+   "desde": "2026-09-04",
+   "hasta": "2026-09-04"
+  },
+  "myAutonomo": {
+   "nombre": "myAutonomo",
+   "horas": 4.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 4.9,
+   "dias": 2,
+   "commits": 16,
+   "desde": "2026-02-01",
+   "hasta": "2026-02-02"
+  },
+  "ia-local": {
+   "nombre": "ia-local",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-04-29",
+   "hasta": "2026-04-29"
+  },
+  "pdf2audio": {
+   "nombre": "pdf2audio",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-07-23",
+   "hasta": "2026-07-23"
+  },
+  "LOCALIA": {
+   "nombre": "LOCALIA",
+   "horas": 1.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.0,
+   "dias": 1,
+   "commits": 3,
+   "desde": "2026-07-13",
+   "hasta": "2026-07-13"
+  },
+  "n8n": {
+   "nombre": "n8n",
+   "horas": 1.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.8,
+   "dias": 1,
+   "commits": 4,
+   "desde": "2026-03-14",
+   "hasta": "2026-03-14"
+  },
+  "atomic-phase-workflow": {
+   "nombre": "atomic-phase-workflow",
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-06-20",
+   "hasta": "2026-06-20"
+  },
+  "Plantillas de arranque": {
+   "nombre": "Plantillas de arranque",
+   "horas": 2.4,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.4,
+   "dias": 4,
+   "commits": 11,
+   "desde": "2025-12-11",
+   "hasta": "2026-04-01"
+  },
+  "daniunico-web": {
+   "nombre": "daniunico.com",
+   "horas": 0.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.0,
+   "dias": 0,
+   "commits": 0,
+   "desde": null,
+   "hasta": null
+  },
+  "horas": {
+   "nombre": "horas",
+   "horas": 0.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.0,
+   "dias": 0,
+   "commits": 0,
+   "desde": null,
+   "hasta": null
+  }
+ }
+}
