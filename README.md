@@ -33,6 +33,8 @@ Dos máquinas, el mismo `calcular.py`:
 | `calcular.py` | Lee las dos fuentes y escribe `horas.json`. |
 | `horas.json` | El resultado publicado. |
 | `sesiones.json` | La fuente 1 resumida por proyecto: horas y días con sesión. Lo escribe el PC y lo lee el servidor. |
+| `bitbucket.json` | Horas propias en los repos del trabajo. Lo escribe el PC y lo lee el servidor. |
+| `repos.json` | Lista de repositorios de GitHub. Lo escribe el PC y lo lee el servidor. |
 | `publicar.sh` | Servidor. Trae el repositorio, calcula, hace commit y push. Si falla, lo apunta en `registro.log` y avisa al móvil. |
 | `publicar.ps1` | PC. Lo mismo, y además sube `sesiones.json`. |
 | `pendientes.json` | Local, no se publica. Repositorios y carpetas con horas que aún no están asignados a ningún proyecto. Solo se calcula en el PC, porque hace falta `gh` para listar los repositorios. |
@@ -68,7 +70,7 @@ La clave de cada proyecto es el `slug` de la ficha o del juego en la web, o el n
 
 ## Repositorios del trabajo (Bitbucket)
 
-Los repos de la sección `bitbucket` de `proyectos.json` tienen commits de varias personas, así que solo se cuentan los de los correos de `autores`. Se leen siempre de copias desnudas por SSH, también en el PC. Para que el servidor pueda clonarlos, su clave pública (`~/.ssh/id_ed25519.pub` en codehive) tiene que estar añadida a la cuenta de Bitbucket. Salen en el ranking con la etiqueta "Trabajo · solo mis commits" y no entran en `horas.json`.
+Los repos de la sección `bitbucket` de `proyectos.json` tienen commits de varias personas, así que solo se cuentan los de los correos de `autores`. Los calcula el PC, que tiene acceso a Bitbucket por SSH, a partir de copias desnudas en `espejos/`, y guarda el resumen en `bitbucket.json`. El servidor lee ese fichero y no necesita acceso a Bitbucket. Salen en el ranking con la etiqueta "Trabajo · solo mis commits" y no entran en `horas.json`.
 
 ## Cuando entra un proyecto nuevo
 

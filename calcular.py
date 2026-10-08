@@ -267,10 +267,22 @@ def main():
         m = medir(s, [])
         dias_ranking |= m.pop('_dias')
         entradas.append({'nombre': c, 'tipo': 'carpeta', 'en_web': False, 'privado': True, 'repos': [], **m})
-    # Repos del trabajo en Bitbucket: solo los commits propios
-    for r in config.get('bitbucket', {}).get('repos', []):
-        m = medir(SIN_SESIONES, instantes_commits_bitbucket(config, r))
-        dias_ranking |= m.pop('_dias')
+    # Repos del trabajo en Bitbucket: solo los commits propios. Los calcula el PC,
+    # que tiene acceso a Bitbucket, y los guarda en bitbucket.json; el servidor
+    # lee ese fichero.
+    ruta_bb = os.path.join(AQUI, 'bitbucket.json')
+    if HAY_GH:
+        trabajo = {}
+        for r in config.get('bitbucket', {}).get('repos', []):
+            m = medir(SIN_SESIONES, instantes_commits_bitbucket(config, r))
+            trabajo[r] = {**m, '_dias': sorted(d.isoformat() for d in m['_dias'])}
+        escribir('bitbucket.json', {'actualizado': ahora, 'repos': {r: {k: v for k, v in m.items() if k != '_dias'} | {'dias_lista': m['_dias']} for r, m in trabajo.items()}})
+    else:
+        guardado = json.load(open(ruta_bb, encoding='utf-8')) if os.path.exists(ruta_bb) else {'repos': {}}
+        trabajo = {r: {**m, '_dias': m.get('dias_lista', [])} for r, m in guardado['repos'].items()}
+    for r, m in trabajo.items():
+        dias_ranking |= {datetime.fromisoformat(d).date() for d in m.pop('_dias')}
+        m.pop('dias_lista', None)
         if m['horas'] > 0:
             entradas.append({'nombre': r, 'tipo': 'trabajo', 'en_web': False, 'privado': True, 'repos': [f'bitbucket:{r}'], **m})
             print(f"{r[:34]:34} {m['horas']:7.1f} h  {m['dias']:4d} días  (Bitbucket, solo commits propios)")

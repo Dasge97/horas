@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-08T23:33:37+00:00",
+ "actualizado": "2026-10-08T23:40:19+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1064.6,
+ "total_horas": 1064.8,
  "total_dias": 195,
  "entradas": [
   {
@@ -991,6 +991,22 @@
    "hasta": "2026-04-22"
   },
   {
+   "nombre": "horas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "horas"
+   ],
+   "horas": 1.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.5,
+   "dias": 1,
+   "commits": 14,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-08"
+  },
+  {
    "nombre": "git-achievements",
    "tipo": "repo",
    "en_web": false,
@@ -1081,22 +1097,6 @@
    "commits": 17,
    "desde": "2025-11-08",
    "hasta": "2025-11-08"
-  },
-  {
-   "nombre": "horas",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "horas"
-   ],
-   "horas": 1.3,
-   "horas_sesiones": 0.0,
-   "horas_commits": 1.3,
-   "dias": 1,
-   "commits": 12,
-   "desde": "2026-10-08",
-   "hasta": "2026-10-08"
   },
   {
    "nombre": "Eryndale",

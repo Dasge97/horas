@@ -31,8 +31,8 @@ try {
     $ultima = (($salida | Select-String '^(Web|Ranking):') | ForEach-Object { $_.Line }) -join ' '
     Anotar $ultima
 
-    & git add horas.json ranking.json sesiones.json repos.json
-    $cambios = & git status --porcelain horas.json ranking.json sesiones.json repos.json
+    & git add horas.json ranking.json sesiones.json repos.json bitbucket.json
+    $cambios = & git status --porcelain horas.json ranking.json sesiones.json repos.json bitbucket.json
     if (-not $cambios) { Anotar 'Sin cambios, no se publica'; exit 0 }
 
     & git commit -q -m "Horas al $(Get-Date -Format 'yyyy-MM-dd')" | Out-Null
