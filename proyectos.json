@@ -1,5 +1,11 @@
 {
   "_comentario": "Cada entrada es un proyecto de daniunico.com. 'clave' es el slug (fichas y juegos) o el nombre (otros sistemas y herramientas) tal como está en contenido.js. 'repos' son nombres de repositorios de github.com/Dasge97. 'carpetas' son nombres de carpeta de registros de Claude Code en ~/.claude/projects, sin el prefijo c--AreaDeTrabajo-. 'ignorar' son repos y carpetas que no van a la web y no deben aparecer en pendientes.json.",
+  "bitbucket": {
+    "_comentario": "Repos del trabajo en Bitbucket. Tienen commits de más personas, así que solo cuentan los de estos autores. Se leen siempre de copias desnudas por SSH (git@bitbucket.org:<espacio>/<repo>.git).",
+    "espacio": "apuntsinformatica",
+    "autores": ["daniels@grupapunts.es", "dasge97@gmail.com"],
+    "repos": ["new-studio", "partes-app-web", "oficina-virtual-app-web"]
+  },
   "ignorar": [
     "DAW2_Daniel_SG", "Dasge97", "RESEARCHIA", "apunts-vault", "auth2api", "bookadoo", "cloud-isa", "cloud-test",
     "dedaniel.com", "git-achievements", "home", "ntfy", "os-demo", "os-notes", "os-utils", "qa",

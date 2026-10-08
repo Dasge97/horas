@@ -111,9 +111,10 @@ def instantes_commits_gh(repo):
     return [t for t in (fecha(l.strip()) for l in salida.splitlines() if l.strip() and not l.startswith('{')) if t]
 
 
-def instantes_commits_espejo(repo):
-    ruta = os.path.join(ESPEJOS, repo + '.git')
-    url = f'git@github.com:{USUARIO}/{repo}.git'
+def instantes_commits_espejo(repo, url=None, autores=None):
+    """Fechas de los commits de una copia desnuda. Con `autores`, solo los de esos correos."""
+    ruta = os.path.join(ESPEJOS, repo.replace('/', '__') + '.git')
+    url = url or f'git@github.com:{USUARIO}/{repo}.git'
     if not os.path.isdir(ruta):
         os.makedirs(ESPEJOS, exist_ok=True)
         r = subprocess.run(['git', 'clone', '--quiet', '--bare', '--filter=blob:none', url, ruta],
@@ -124,9 +125,25 @@ def instantes_commits_espejo(repo):
     else:
         subprocess.run(['git', '--git-dir', ruta, 'fetch', '--quiet', '--all', '--prune'],
                        capture_output=True, text=True, timeout=600)
-    salida = subprocess.run(['git', '--git-dir', ruta, 'log', '--all', '--format=%aI'],
+    salida = subprocess.run(['git', '--git-dir', ruta, 'log', '--all', '--format=%aI%x09%ae'],
                             capture_output=True, text=True, timeout=120).stdout
-    return [t for t in (fecha(l.strip()) for l in salida.splitlines() if l.strip()) if t]
+    instantes = []
+    for linea in salida.splitlines():
+        if '\t' not in linea:
+            continue
+        cuando, correo = linea.split('\t', 1)
+        if autores and correo.strip().lower() not in autores:
+            continue
+        t = fecha(cuando.strip())
+        if t:
+            instantes.append(t)
+    return instantes
+
+
+def instantes_commits_bitbucket(config, repo):
+    bb = config['bitbucket']
+    autores = {a.lower() for a in bb['autores']}
+    return instantes_commits_espejo(f"bitbucket/{repo}", url=f"git@bitbucket.org:{bb['espacio']}/{repo}.git", autores=autores)
 
 
 _cache_commits = {}
@@ -250,6 +267,13 @@ def main():
         m = medir(s, [])
         dias_ranking |= m.pop('_dias')
         entradas.append({'nombre': c, 'tipo': 'carpeta', 'en_web': False, 'privado': True, 'repos': [], **m})
+    # Repos del trabajo en Bitbucket: solo los commits propios
+    for r in config.get('bitbucket', {}).get('repos', []):
+        m = medir(SIN_SESIONES, instantes_commits_bitbucket(config, r))
+        dias_ranking |= m.pop('_dias')
+        if m['horas'] > 0:
+            entradas.append({'nombre': r, 'tipo': 'trabajo', 'en_web': False, 'privado': True, 'repos': [f'bitbucket:{r}'], **m})
+            print(f"{r[:34]:34} {m['horas']:7.1f} h  {m['dias']:4d} días  (Bitbucket, solo commits propios)")
     entradas.sort(key=lambda e: -e['horas'])
     escribir('ranking.json', {
         'actualizado': ahora, 'metodo': metodo,
