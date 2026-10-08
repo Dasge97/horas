@@ -255,6 +255,7 @@ def main():
                              'privado': any(repos.get(r, False) for r in p['repos']) if repos else False,
                              'repos': p['repos'], **{k: v[k] for k in ('horas', 'horas_sesiones', 'horas_commits', 'dias', 'commits', 'desde', 'hasta')}})
     dias_ranking = set(todos_los_dias)
+    de_trabajo = set(config.get('trabajo', {}).get('repos', []))
     if repos:
         for r in sorted(repos):
             if r in usados:
@@ -262,7 +263,8 @@ def main():
             m = medir(SIN_SESIONES, instantes_commits(r))
             dias_ranking |= m.pop('_dias')
             if m['horas'] > 0:
-                entradas.append({'nombre': r, 'tipo': 'repo', 'en_web': False, 'privado': repos[r], 'repos': [r], **m})
+                entradas.append({'nombre': r, 'tipo': 'trabajo' if r in de_trabajo else 'repo', 'en_web': False,
+                                 'privado': repos[r], 'repos': [r], **m})
     for c, s in sesiones_carpetas.items():
         m = medir(s, [])
         dias_ranking |= m.pop('_dias')
@@ -299,7 +301,7 @@ def main():
     if repos:
         ignorar = set(config.get('ignorar', []))
         pendientes = {
-            'repos': {e['nombre']: e['horas'] for e in entradas if e['tipo'] == 'repo' and e['nombre'] not in ignorar},
+            'repos': {e['nombre']: e['horas'] for e in entradas if e['tipo'] == 'repo' and e['nombre'] not in ignorar and e['nombre'] not in de_trabajo},
             'carpetas': {e['nombre']: e['horas'] for e in entradas if e['tipo'] == 'carpeta' and e['nombre'] not in ignorar},
         }
         escribir('pendientes.json', pendientes)

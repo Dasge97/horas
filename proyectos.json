@@ -6,6 +6,10 @@
     "autores": ["daniels@grupapunts.es", "dasge97@gmail.com"],
     "repos": ["new-studio", "partes-app-web", "oficina-virtual-app-web"]
   },
+  "trabajo": {
+    "_comentario": "Repos de GitHub que son del trabajo. Salen en el ranking con la etiqueta de trabajo, no como proyectos propios.",
+    "repos": ["prindia-cloud", "prindia-home", "prindio", "ceomind"]
+  },
   "ignorar": [
     "DAW2_Daniel_SG", "Dasge97", "RESEARCHIA", "apunts-vault", "auth2api", "bookadoo", "cloud-isa", "cloud-test",
     "dedaniel.com", "git-achievements", "home", "ntfy", "os-demo", "os-notes", "os-utils", "qa",

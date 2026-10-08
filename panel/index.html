@@ -76,7 +76,7 @@
   </div>
 
   <script>
-    const TIPO = { proyecto: 'Proyecto', repo: 'Repositorio', carpeta: 'Carpeta de sesiones', trabajo: 'Trabajo · solo mis commits' };
+    const TIPO = { proyecto: 'Proyecto', repo: 'Repositorio', carpeta: 'Carpeta de sesiones', trabajo: 'Trabajo' };
     let datos = null, filtro = 'todos', texto = '';
 
     function fmt(h) { return h >= 10 ? Math.round(h).toString() : h.toFixed(1).replace('.', ','); }
@@ -97,7 +97,7 @@
             <span class="fila__nombre">${e.nombre}
               ${e.en_web ? '<span class="etiqueta etiqueta--web">en la web</span>' : ''}
               ${e.privado ? '<span class="etiqueta etiqueta--privado">privado</span>' : ''}
-              ${e.tipo !== 'proyecto' ? `<span class="etiqueta">${TIPO[e.tipo]}</span>` : ''}
+              ${e.tipo !== 'proyecto' ? `<span class="etiqueta">${TIPO[e.tipo]}${e.repos && e.repos[0] && e.repos[0].startsWith('bitbucket:') ? ' · solo mis commits' : ''}</span>` : ''}
             </span>
             <span class="fila__meta">${e.dias} ${e.dias === 1 ? 'día' : 'días'} · ${e.commits} commits · ${fecha(e.desde)} → ${fecha(e.hasta)}${e.horas_sesiones ? ` · ${fmt(e.horas_sesiones)} h de sesiones` : ''}${e.repos && e.repos.length > 1 ? ` · ${e.repos.join(', ')}` : ''}</span>
           </span>

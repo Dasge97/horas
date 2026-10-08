@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-10-08T23:40:19+00:00",
+ "actualizado": "2026-10-08T23:44:05+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
  "total_horas": 1064.8,
  "total_dias": 195,
  "entradas": [
   {
    "nombre": "prindia-cloud",
-   "tipo": "repo",
+   "tipo": "trabajo",
    "en_web": false,
    "privado": true,
    "repos": [
@@ -22,7 +22,7 @@
   },
   {
    "nombre": "prindia-home",
-   "tipo": "repo",
+   "tipo": "trabajo",
    "en_web": false,
    "privado": true,
    "repos": [
@@ -54,7 +54,7 @@
   },
   {
    "nombre": "prindio",
-   "tipo": "repo",
+   "tipo": "trabajo",
    "en_web": false,
    "privado": true,
    "repos": [
@@ -70,7 +70,7 @@
   },
   {
    "nombre": "ceomind",
-   "tipo": "repo",
+   "tipo": "trabajo",
    "en_web": false,
    "privado": true,
    "repos": [
@@ -1002,7 +1002,7 @@
    "horas_sesiones": 0.0,
    "horas_commits": 1.5,
    "dias": 1,
-   "commits": 14,
+   "commits": 15,
    "desde": "2026-10-08",
    "hasta": "2026-10-08"
   },
