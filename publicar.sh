@@ -23,9 +23,9 @@ fallo() { anotar "ERROR: $1"; avisar "$1"; exit 1; }
 anotar "Inicio"
 git pull -q --rebase origin main || fallo "git pull falló"
 salida=$(python3 -I calcular.py 2>&1) || fallo "calcular.py falló: $(printf '%s' "$salida" | tail -3)"
-anotar "$(printf '%s' "$salida" | grep '^Total:' | tail -1)"
+anotar "$(printf '%s' "$salida" | grep -E '^(Web|Ranking):' | tr '\n' ' ')"
 
-git add horas.json
+git add horas.json ranking.json
 if git diff --cached --quiet; then anotar "Sin cambios, no se publica"; exit 0; fi
 git commit -q -m "Horas al $(date '+%Y-%m-%d')" || fallo "git commit falló"
 git push -q origin main || fallo "git push falló"

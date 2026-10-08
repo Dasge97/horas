@@ -28,11 +28,11 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'git pull falló' }
     $salida = & python -I (Join-Path $aqui 'calcular.py') 2>&1
     if ($LASTEXITCODE -ne 0) { throw "calcular.py terminó con código $LASTEXITCODE`n$salida" }
-    $ultima = ($salida | Select-String '^Total:' | Select-Object -Last 1).Line
+    $ultima = (($salida | Select-String '^(Web|Ranking):') | ForEach-Object { $_.Line }) -join ' '
     Anotar $ultima
 
-    & git add horas.json sesiones.json
-    $cambios = & git status --porcelain horas.json sesiones.json
+    & git add horas.json ranking.json sesiones.json repos.json
+    $cambios = & git status --porcelain horas.json ranking.json sesiones.json repos.json
     if (-not $cambios) { Anotar 'Sin cambios, no se publica'; exit 0 }
 
     & git commit -q -m "Horas al $(Get-Date -Format 'yyyy-MM-dd')" | Out-Null
