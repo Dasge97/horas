@@ -4,30 +4,41 @@ Dos fuentes:
   1. Los registros de sesiones de Claude Code (~/.claude/projects/*/*.jsonl). Cada
      mensaje lleva su hora. Se suma el tiempo entre mensajes y se descartan los
      huecos de más de 30 minutos. Es tiempo real de trabajo.
-  2. Los commits de cada repositorio en GitHub, leídos con `gh`. Se agrupan los
-     commits con menos de 2 horas entre ellos y se suma media hora por bloque.
-     Es una estimación, y se queda corta en repos con pocos commits grandes.
+  2. Los commits de cada repositorio. Se agrupan los commits con menos de 2 horas
+     entre ellos y se suma media hora por bloque. Es una estimación, y se queda
+     corta en repos con pocos commits grandes.
 
 Para no contar dos veces lo mismo, los bloques de commits que caen en un día con
 sesiones de Claude Code para ese proyecto se descartan: ese día ya está medido
 por la fuente 1.
 
-Los repos y carpetas que no estén en proyectos.json (ni en su lista "ignorar")
-se escriben en pendientes.json, un fichero local que no se publica, con sus
-horas, para ver qué falta por asignar. horas.json solo lleva los proyectos de la web.
+Corre en dos máquinas distintas con el mismo código:
+  - En el PC están los registros de Claude Code. Aquí se calcula la fuente 1 y se
+    escribe sesiones.json, que se sube al repositorio.
+  - En el servidor no hay registros: la fuente 1 se lee de sesiones.json. Los
+    commits se leen de copias desnudas de cada repo en espejos/, que se crean y
+    actualizan con la clave SSH del servidor. Si hay `gh` instalado, se usa la API
+    de GitHub en su lugar.
 
-Uso: python -I calcular.py [ruta de salida]   (por defecto, horas.json junto al script)
+Los repos y carpetas que no estén en proyectos.json (ni en su lista "ignorar")
+se escriben en pendientes.json, local y sin publicar, para ver qué falta por
+asignar. Solo se calcula donde hay `gh`, porque hace falta la lista de repos.
+
+Uso: python3 -I calcular.py
 """
-import glob, json, os, re, subprocess, sys
+import glob, json, os, re, shutil, subprocess, sys
 from datetime import datetime, timedelta, timezone
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 REGISTROS = os.path.expanduser('~/.claude/projects')
+ESPEJOS = os.path.join(AQUI, 'espejos')
 USUARIO = 'Dasge97'
 PREFIJO_CARPETA = 'c--AreaDeTrabajo-'
 HUECO_SESION = timedelta(minutes=30)
 HUECO_COMMITS = timedelta(hours=2)
 ARRANQUE_COMMITS = timedelta(minutes=30)
+HAY_GH = shutil.which('gh') is not None
+HAY_REGISTROS = os.path.isdir(REGISTROS)
 
 
 def fecha(texto):
@@ -53,8 +64,9 @@ def bloques(instantes, hueco):
     return resultado
 
 
+# --- Fuente 1: sesiones de Claude Code ---
+
 def carpetas_registradas():
-    """Nombre corto de cada carpeta de registros de Claude Code dentro de AreaDeTrabajo."""
     nombres = {}
     for ruta in glob.glob(os.path.join(REGISTROS, '*')):
         base = os.path.basename(ruta)
@@ -76,7 +88,14 @@ def instantes_sesiones(ruta_carpeta):
     return instantes
 
 
-def instantes_commits(repo):
+def resumen_sesiones(instantes):
+    horas = sum(((fin - ini) for ini, fin in bloques(instantes, HUECO_SESION)), timedelta(0))
+    return {'horas': round(horas.total_seconds() / 3600, 2), 'dias': sorted({t.date().isoformat() for t in instantes})}
+
+
+# --- Fuente 2: commits ---
+
+def instantes_commits_gh(repo):
     salida = subprocess.run(
         ['gh', 'api', f'repos/{USUARIO}/{repo}/commits?per_page=100', '--paginate', '--jq', '.[].commit.author.date'],
         capture_output=True, text=True, timeout=300,
@@ -84,20 +103,53 @@ def instantes_commits(repo):
     return [t for t in (fecha(l.strip()) for l in salida.splitlines() if l.strip() and not l.startswith('{')) if t]
 
 
+def instantes_commits_espejo(repo):
+    ruta = os.path.join(ESPEJOS, repo + '.git')
+    url = f'git@github.com:{USUARIO}/{repo}.git'
+    if not os.path.isdir(ruta):
+        os.makedirs(ESPEJOS, exist_ok=True)
+        r = subprocess.run(['git', 'clone', '--quiet', '--bare', '--filter=blob:none', url, ruta],
+                           capture_output=True, text=True, timeout=600)
+        if r.returncode != 0:
+            print(f'  aviso: no se pudo clonar {repo}: {r.stderr.strip()[:120]}', file=sys.stderr)
+            return []
+    else:
+        subprocess.run(['git', '--git-dir', ruta, 'fetch', '--quiet', '--all', '--prune'],
+                       capture_output=True, text=True, timeout=600)
+    salida = subprocess.run(['git', '--git-dir', ruta, 'log', '--all', '--format=%aI'],
+                            capture_output=True, text=True, timeout=120).stdout
+    return [t for t in (fecha(l.strip()) for l in salida.splitlines() if l.strip()) if t]
+
+
+def instantes_commits(repo):
+    return instantes_commits_gh(repo) if HAY_GH else instantes_commits_espejo(repo)
+
+
+def repos_existentes():
+    """Lista de repos propios (sin forks). Solo con gh; sin gh se confía en proyectos.json."""
+    if not HAY_GH:
+        return None
+    datos = json.loads(subprocess.run(['gh', 'repo', 'list', USUARIO, '--limit', '300', '--json', 'name,isFork'],
+                                      capture_output=True, text=True, timeout=120).stdout)
+    return {r['name'] for r in datos if not r['isFork']}
+
+
+# --- Combinación ---
+
 def medir(sesiones, commits):
-    """Combina las dos fuentes. Devuelve un diccionario listo para el JSON."""
-    t_sesiones = sum(((fin - ini) for ini, fin in bloques(sesiones, HUECO_SESION)), timedelta(0))
-    dias_sesiones = {t.date() for t in sesiones}
+    """`sesiones` es el resumen {'horas', 'dias'}; `commits` la lista de instantes."""
+    dias_sesiones = {datetime.fromisoformat(d).date() for d in sesiones['dias']}
     t_commits = timedelta(0)
     for ini, fin in bloques(commits, HUECO_COMMITS):
         if ini.date() in dias_sesiones or fin.date() in dias_sesiones:
             continue
         t_commits += (fin - ini) + ARRANQUE_COMMITS
     dias = dias_sesiones | {t.date() for t in commits}
+    horas_commits = t_commits.total_seconds() / 3600
     return {
-        'horas': round((t_sesiones + t_commits).total_seconds() / 3600, 1),
-        'horas_sesiones': round(t_sesiones.total_seconds() / 3600, 1),
-        'horas_commits': round(t_commits.total_seconds() / 3600, 1),
+        'horas': round(sesiones['horas'] + horas_commits, 1),
+        'horas_sesiones': round(sesiones['horas'], 1),
+        'horas_commits': round(horas_commits, 1),
         'dias': len(dias),
         'commits': len(commits),
         'desde': min(dias).isoformat() if dias else None,
@@ -108,41 +160,41 @@ def medir(sesiones, commits):
 
 def main():
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
-    salida = sys.argv[1] if len(sys.argv) > 1 else os.path.join(AQUI, 'horas.json')
     config = json.load(open(os.path.join(AQUI, 'proyectos.json'), encoding='utf-8'))
-    carpetas = carpetas_registradas()
-    repos_github = {r['name'] for r in json.loads(subprocess.run(
-        ['gh', 'repo', 'list', USUARIO, '--limit', '300', '--json', 'name,isFork'],
-        capture_output=True, text=True, timeout=120).stdout) if not r['isFork']}
+    ruta_sesiones = os.path.join(AQUI, 'sesiones.json')
+    print(f"Fuentes: sesiones {'de los registros locales' if HAY_REGISTROS else 'de sesiones.json'}, "
+          f"commits {'por la API de GitHub (gh)' if HAY_GH else 'de las copias en espejos/'}")
 
-    proyectos = {}
-    usados_repos, usadas_carpetas = set(), set()
-    todos_los_dias = set()
+    # Fuente 1
+    if HAY_REGISTROS:
+        carpetas = carpetas_registradas()
+        sesiones = {}
+        for p in config['proyectos']:
+            instantes = []
+            for c in p['carpetas']:
+                if c in carpetas:
+                    instantes += instantes_sesiones(carpetas[c])
+            sesiones[p['clave']] = resumen_sesiones(instantes)
+        with open(ruta_sesiones, 'w', encoding='utf-8') as fh:
+            json.dump({'actualizado': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'proyectos': sesiones},
+                      fh, ensure_ascii=False, indent=1)
+    else:
+        carpetas = {}
+        sesiones = json.load(open(ruta_sesiones, encoding='utf-8'))['proyectos'] if os.path.exists(ruta_sesiones) else {}
+
+    # Fuente 2 y combinación
+    repos = repos_existentes()
+    proyectos, usados, todos_los_dias = {}, set(), set()
     for p in config['proyectos']:
-        sesiones = []
-        for c in p['carpetas']:
-            if c in carpetas:
-                sesiones += instantes_sesiones(carpetas[c])
-                usadas_carpetas.add(c)
         commits = []
         for r in p['repos']:
-            if r in repos_github:
+            if repos is None or r in repos:
                 commits += instantes_commits(r)
-                usados_repos.add(r)
-        medida = medir(sesiones, commits)
+                usados.add(r)
+        medida = medir(sesiones.get(p['clave'], {'horas': 0, 'dias': []}), commits)
         todos_los_dias |= medida.pop('_dias')
         proyectos[p['clave']] = {'nombre': p['nombre'], **medida}
         print(f"{p['nombre'][:34]:34} {medida['horas']:7.1f} h  {medida['dias']:4d} días")
-
-    ignorar = set(config.get('ignorar', []))
-    pendientes = {'repos': {}, 'carpetas': {}}
-    for r in sorted(repos_github - usados_repos - ignorar):
-        m = medir([], instantes_commits(r)); m.pop('_dias')
-        pendientes['repos'][r] = m['horas']
-    for c in sorted(set(carpetas) - usadas_carpetas - ignorar):
-        m = medir(instantes_sesiones(carpetas[c]), []); m.pop('_dias')
-        if m['horas'] > 0:
-            pendientes['carpetas'][c] = m['horas']
 
     documento = {
         'actualizado': datetime.now(timezone.utc).isoformat(timespec='seconds'),
@@ -151,12 +203,25 @@ def main():
         'total_dias': len(todos_los_dias),
         'proyectos': proyectos,
     }
-    with open(salida, 'w', encoding='utf-8') as fh:
+    with open(os.path.join(AQUI, 'horas.json'), 'w', encoding='utf-8') as fh:
         json.dump(documento, fh, ensure_ascii=False, indent=1)
-    with open(os.path.join(AQUI, 'pendientes.json'), 'w', encoding='utf-8') as fh:
-        json.dump(pendientes, fh, ensure_ascii=False, indent=1)
-    print(f"\nTotal: {documento['total_horas']} h en {documento['total_dias']} días · escrito en {salida}")
-    print(f"Sin asignar: {len(pendientes['repos'])} repos y {len(pendientes['carpetas'])} carpetas, en pendientes.json")
+    print(f"\nTotal: {documento['total_horas']} h en {documento['total_dias']} días · escrito en horas.json")
+
+    # Pendientes de asignar, solo donde se puede listar todo
+    if repos is not None:
+        ignorar = set(config.get('ignorar', []))
+        pendientes = {'repos': {}, 'carpetas': {}}
+        for r in sorted(repos - usados - ignorar):
+            m = medir({'horas': 0, 'dias': []}, instantes_commits(r))
+            pendientes['repos'][r] = m['horas']
+        usadas_carpetas = {c for p in config['proyectos'] for c in p['carpetas']}
+        for c in sorted(set(carpetas) - usadas_carpetas - ignorar):
+            m = resumen_sesiones(instantes_sesiones(carpetas[c]))
+            if m['horas'] > 0:
+                pendientes['carpetas'][c] = round(m['horas'], 1)
+        with open(os.path.join(AQUI, 'pendientes.json'), 'w', encoding='utf-8') as fh:
+            json.dump(pendientes, fh, ensure_ascii=False, indent=1)
+        print(f"Sin asignar: {len(pendientes['repos'])} repos y {len(pendientes['carpetas'])} carpetas, en pendientes.json")
 
 
 if __name__ == '__main__':

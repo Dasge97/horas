@@ -1,0 +1,284 @@
+{
+ "actualizado": "2026-10-08T22:53:05+00:00",
+ "proyectos": {
+  "pocket-terminal": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "studio": {
+   "horas": 13.43,
+   "dias": [
+    "2026-09-04",
+    "2026-09-10"
+   ]
+  },
+  "autocaller": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "centralita-ia": {
+   "horas": 2.63,
+   "dias": [
+    "2026-09-19"
+   ]
+  },
+  "centralia": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "odrys": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "la-cornisa": {
+   "horas": 8.89,
+   "dias": [
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-23"
+   ]
+  },
+  "assistyoou": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "ai-hub": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "tu-debate-diario": {
+   "horas": 3.8,
+   "dias": [
+    "2026-09-21"
+   ]
+  },
+  "code-hive-factory": {
+   "horas": 13.32,
+   "dias": [
+    "2026-09-06",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-10"
+   ]
+  },
+  "meridian": {
+   "horas": 11.94,
+   "dias": [
+    "2026-09-11",
+    "2026-09-15",
+    "2026-09-16"
+   ]
+  },
+  "card-pop": {
+   "horas": 17.14,
+   "dias": [
+    "2026-10-02",
+    "2026-10-03",
+    "2026-10-06",
+    "2026-10-07"
+   ]
+  },
+  "eryndale": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "universo-fantasy": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "motherline": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "true-duel": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "morvan": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "expedicion": {
+   "horas": 7.61,
+   "dias": [
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29"
+   ]
+  },
+  "Comentarista Fantasy": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "MenuGenerator": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Reservas para peluquerías": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "entroya": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "CamelTube": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "POD": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "pr-reviewer": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "RAG Knowledge Pipeline": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "FactorAI": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Oye Pepe": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Agente de Marketing": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Instagram Content Creator": {
+   "horas": 5.68,
+   "dias": [
+    "2026-08-29",
+    "2026-08-30",
+    "2026-08-31",
+    "2026-09-01"
+   ]
+  },
+  "moodle-rag": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Ducker": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "RestaurantOS": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "YaViene": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "GreyMarket": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "От всичко по нещо": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "SkillDrop": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "CodeHive": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "ADN Ideológico": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "myReporter": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "AkahigeShop": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "ERP construido por IA": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Curso de ingeniería del software": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Los primeros": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Logística y Tarifas": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Ministudio": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "claude-monitoring-rainmeter": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "extractor": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "semi-auto-ctrlv": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "mail-tester": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "easy-mail": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "myAutonomo": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "ia-local": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "pdf2audio": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "LOCALIA": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "n8n": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "atomic-phase-workflow": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "Plantillas de arranque": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "daniunico-web": {
+   "horas": 0.0,
+   "dias": []
+  },
+  "horas": {
+   "horas": 0.0,
+   "dias": []
+  }
+ }
+}
