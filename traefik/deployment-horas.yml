@@ -1,0 +1,22 @@
+# Router de Traefik para el panel de horas.
+#
+# Copiar a /home/codehive/infrastructure/traefik/dynamic/deployment-horas.yml
+# Traefik recarga el fichero solo, no hace falta reiniciarlo.
+#
+# El puerto 4147 tiene que coincidir con el de docker-compose.yml.
+
+http:
+  routers:
+    deploy-horas:
+      rule: Host(`horas.code-hive.space`)
+      entryPoints:
+        - websecure
+      tls:
+        certResolver: letsencrypt
+      service: deploy-horas
+
+  services:
+    deploy-horas:
+      loadBalancer:
+        servers:
+          - url: http://127.0.0.1:4147

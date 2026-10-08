@@ -1,4 +1,4 @@
-"""Calcula las horas dedicadas a cada proyecto de daniunico.com y escribe horas.json.
+"""Calcula las horas dedicadas a cada proyecto y escribe horas.json y ranking.json.
 
 Dos fuentes:
   1. Los registros de sesiones de Claude Code (~/.claude/projects/*/*.jsonl). Cada
@@ -13,16 +13,19 @@ sesiones de Claude Code para ese proyecto se descartan: ese día ya está medido
 por la fuente 1.
 
 Corre en dos máquinas distintas con el mismo código:
-  - En el PC están los registros de Claude Code. Aquí se calcula la fuente 1 y se
-    escribe sesiones.json, que se sube al repositorio.
-  - En el servidor no hay registros: la fuente 1 se lee de sesiones.json. Los
-    commits se leen de copias desnudas de cada repo en espejos/, que se crean y
-    actualizan con la clave SSH del servidor. Si hay `gh` instalado, se usa la API
-    de GitHub en su lugar.
+  - En el PC están los registros de Claude Code y `gh`. Aquí se calcula la fuente 1
+    y se escriben sesiones.json (horas por proyecto y por carpeta) y repos.json
+    (la lista de repositorios), que se suben al repositorio.
+  - En el servidor no hay registros ni `gh`: la fuente 1 se lee de sesiones.json y
+    la lista de repos de repos.json. Los commits se leen de copias desnudas de
+    cada repo en espejos/, que se crean y actualizan con la clave SSH del servidor.
 
-Los repos y carpetas que no estén en proyectos.json (ni en su lista "ignorar")
-se escriben en pendientes.json, local y sin publicar, para ver qué falta por
-asignar. Solo se calcula donde hay `gh`, porque hace falta la lista de repos.
+Salidas:
+  - horas.json: solo los proyectos de daniunico.com. Lo lee la web.
+  - ranking.json: todo, incluidos los repos privados y los que no están en la web.
+    Lo lee el panel de horas.code-hive.space.
+  - pendientes.json: local, no se publica. Repos y carpetas con horas que no están
+    asignados a ningún proyecto de la web ni en la lista "ignorar".
 
 Uso: python3 -I calcular.py
 """
@@ -42,6 +45,8 @@ HAY_GH = shutil.which('gh') is not None
 # tiene ~/.claude/projects, pero con sus propias carpetas, y no debe pisar sesiones.json.
 HAY_REGISTROS = os.path.isdir(REGISTROS) and any(
     os.path.basename(r).lower().startswith(PREFIJO_CARPETA.lower()) for r in glob.glob(os.path.join(REGISTROS, '*')))
+
+SIN_SESIONES = {'horas': 0, 'dias': []}
 
 
 def fecha(texto):
@@ -124,17 +129,28 @@ def instantes_commits_espejo(repo):
     return [t for t in (fecha(l.strip()) for l in salida.splitlines() if l.strip()) if t]
 
 
+_cache_commits = {}
+
 def instantes_commits(repo):
-    return instantes_commits_gh(repo) if HAY_GH else instantes_commits_espejo(repo)
+    if repo not in _cache_commits:
+        _cache_commits[repo] = instantes_commits_gh(repo) if HAY_GH else instantes_commits_espejo(repo)
+    return _cache_commits[repo]
 
 
-def repos_existentes():
-    """Lista de repos propios (sin forks). Solo con gh; sin gh se confía en proyectos.json."""
-    if not HAY_GH:
-        return None
-    datos = json.loads(subprocess.run(['gh', 'repo', 'list', USUARIO, '--limit', '300', '--json', 'name,isFork'],
-                                      capture_output=True, text=True, timeout=120).stdout)
-    return {r['name'] for r in datos if not r['isFork']}
+def lista_repos():
+    """{nombre: privado} de los repos propios, sin forks. Con gh se consulta y se guarda en repos.json; sin gh se lee."""
+    ruta = os.path.join(AQUI, 'repos.json')
+    if HAY_GH:
+        datos = json.loads(subprocess.run(['gh', 'repo', 'list', USUARIO, '--limit', '300', '--json', 'name,isPrivate,isFork'],
+                                          capture_output=True, text=True, timeout=120).stdout)
+        repos = {r['name']: r['isPrivate'] for r in sorted(datos, key=lambda r: r['name']) if not r['isFork']}
+        with open(ruta, 'w', encoding='utf-8') as fh:
+            json.dump(repos, fh, ensure_ascii=False, indent=1)
+        return repos
+    if os.path.exists(ruta):
+        return json.load(open(ruta, encoding='utf-8'))
+    print('aviso: no hay gh ni repos.json; solo se miden los repos de proyectos.json', file=sys.stderr)
+    return None
 
 
 # --- Combinación ---
@@ -161,32 +177,35 @@ def medir(sesiones, commits):
     }
 
 
+def escribir(nombre, documento):
+    with open(os.path.join(AQUI, nombre), 'w', encoding='utf-8') as fh:
+        json.dump(documento, fh, ensure_ascii=False, indent=1)
+
+
 def main():
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
     config = json.load(open(os.path.join(AQUI, 'proyectos.json'), encoding='utf-8'))
-    ruta_sesiones = os.path.join(AQUI, 'sesiones.json')
+    ahora = datetime.now(timezone.utc).isoformat(timespec='seconds')
     print(f"Fuentes: sesiones {'de los registros locales' if HAY_REGISTROS else 'de sesiones.json'}, "
           f"commits {'por la API de GitHub (gh)' if HAY_GH else 'de las copias en espejos/'}")
 
-    # Fuente 1
+    # Fuente 1: por proyecto de la web y por carpeta sin asignar
+    carpetas_de_proyectos = {c for p in config['proyectos'] for c in p['carpetas']}
     if HAY_REGISTROS:
         carpetas = carpetas_registradas()
-        sesiones = {}
-        for p in config['proyectos']:
-            instantes = []
-            for c in p['carpetas']:
-                if c in carpetas:
-                    instantes += instantes_sesiones(carpetas[c])
-            sesiones[p['clave']] = resumen_sesiones(instantes)
-        with open(ruta_sesiones, 'w', encoding='utf-8') as fh:
-            json.dump({'actualizado': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'proyectos': sesiones},
-                      fh, ensure_ascii=False, indent=1)
+        sesiones = {p['clave']: resumen_sesiones(sum((instantes_sesiones(carpetas[c]) for c in p['carpetas'] if c in carpetas), []))
+                    for p in config['proyectos']}
+        sesiones_carpetas = {c: resumen_sesiones(instantes_sesiones(carpetas[c])) for c in sorted(set(carpetas) - carpetas_de_proyectos)}
+        sesiones_carpetas = {c: s for c, s in sesiones_carpetas.items() if s['horas'] > 0}
+        escribir('sesiones.json', {'actualizado': ahora, 'proyectos': sesiones, 'carpetas': sesiones_carpetas})
     else:
-        carpetas = {}
-        sesiones = json.load(open(ruta_sesiones, encoding='utf-8'))['proyectos'] if os.path.exists(ruta_sesiones) else {}
+        ruta = os.path.join(AQUI, 'sesiones.json')
+        guardado = json.load(open(ruta, encoding='utf-8')) if os.path.exists(ruta) else {}
+        sesiones = guardado.get('proyectos', {})
+        sesiones_carpetas = guardado.get('carpetas', {})
 
-    # Fuente 2 y combinación
-    repos = repos_existentes()
+    # Fuente 2 y combinación, proyectos de la web
+    repos = lista_repos()
     proyectos, usados, todos_los_dias = {}, set(), set()
     for p in config['proyectos']:
         commits = []
@@ -194,36 +213,60 @@ def main():
             if repos is None or r in repos:
                 commits += instantes_commits(r)
                 usados.add(r)
-        medida = medir(sesiones.get(p['clave'], {'horas': 0, 'dias': []}), commits)
+        medida = medir(sesiones.get(p['clave'], SIN_SESIONES), commits)
         todos_los_dias |= medida.pop('_dias')
         proyectos[p['clave']] = {'nombre': p['nombre'], **medida}
         print(f"{p['nombre'][:34]:34} {medida['horas']:7.1f} h  {medida['dias']:4d} días")
 
-    documento = {
-        'actualizado': datetime.now(timezone.utc).isoformat(timespec='seconds'),
-        'metodo': 'Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.',
+    metodo = ('Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits '
+              '(huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.')
+    escribir('horas.json', {
+        'actualizado': ahora, 'metodo': metodo,
         'total_horas': round(sum(v['horas'] for v in proyectos.values()), 1),
         'total_dias': len(todos_los_dias),
         'proyectos': proyectos,
-    }
-    with open(os.path.join(AQUI, 'horas.json'), 'w', encoding='utf-8') as fh:
-        json.dump(documento, fh, ensure_ascii=False, indent=1)
-    print(f"\nTotal: {documento['total_horas']} h en {documento['total_dias']} días · escrito en horas.json")
+    })
+    print(f"\nWeb: {round(sum(v['horas'] for v in proyectos.values()), 1)} h en {len(todos_los_dias)} días · escrito en horas.json")
 
-    # Pendientes de asignar, solo donde se puede listar todo
-    if repos is not None:
-        ignorar = set(config.get('ignorar', []))
-        pendientes = {'repos': {}, 'carpetas': {}}
-        for r in sorted(repos - usados - ignorar):
-            m = medir({'horas': 0, 'dias': []}, instantes_commits(r))
-            pendientes['repos'][r] = m['horas']
-        usadas_carpetas = {c for p in config['proyectos'] for c in p['carpetas']}
-        for c in sorted(set(carpetas) - usadas_carpetas - ignorar):
-            m = resumen_sesiones(instantes_sesiones(carpetas[c]))
+    # Ranking: todo lo que tiene horas, esté o no en la web
+    claves_repos = {r: p['clave'] for p in config['proyectos'] for r in p['repos']}
+    entradas = []
+    for p in config['proyectos']:
+        v = proyectos[p['clave']]
+        if v['horas'] > 0:
+            entradas.append({'nombre': p['nombre'], 'tipo': 'proyecto', 'en_web': True,
+                             'privado': any(repos.get(r, False) for r in p['repos']) if repos else False,
+                             'repos': p['repos'], **{k: v[k] for k in ('horas', 'horas_sesiones', 'horas_commits', 'dias', 'commits', 'desde', 'hasta')}})
+    dias_ranking = set(todos_los_dias)
+    if repos:
+        for r in sorted(repos):
+            if r in usados:
+                continue
+            m = medir(SIN_SESIONES, instantes_commits(r))
+            dias_ranking |= m.pop('_dias')
             if m['horas'] > 0:
-                pendientes['carpetas'][c] = round(m['horas'], 1)
-        with open(os.path.join(AQUI, 'pendientes.json'), 'w', encoding='utf-8') as fh:
-            json.dump(pendientes, fh, ensure_ascii=False, indent=1)
+                entradas.append({'nombre': r, 'tipo': 'repo', 'en_web': False, 'privado': repos[r], 'repos': [r], **m})
+    for c, s in sesiones_carpetas.items():
+        m = medir(s, [])
+        dias_ranking |= m.pop('_dias')
+        entradas.append({'nombre': c, 'tipo': 'carpeta', 'en_web': False, 'privado': True, 'repos': [], **m})
+    entradas.sort(key=lambda e: -e['horas'])
+    escribir('ranking.json', {
+        'actualizado': ahora, 'metodo': metodo,
+        'total_horas': round(sum(e['horas'] for e in entradas), 1),
+        'total_dias': len(dias_ranking),
+        'entradas': entradas,
+    })
+    print(f"Ranking: {round(sum(e['horas'] for e in entradas), 1)} h en {len(dias_ranking)} días, {len(entradas)} entradas · escrito en ranking.json")
+
+    # Pendientes de asignar
+    if repos:
+        ignorar = set(config.get('ignorar', []))
+        pendientes = {
+            'repos': {e['nombre']: e['horas'] for e in entradas if e['tipo'] == 'repo' and e['nombre'] not in ignorar},
+            'carpetas': {e['nombre']: e['horas'] for e in entradas if e['tipo'] == 'carpeta' and e['nombre'] not in ignorar},
+        }
+        escribir('pendientes.json', pendientes)
         print(f"Sin asignar: {len(pendientes['repos'])} repos y {len(pendientes['carpetas'])} carpetas, en pendientes.json")
 
 

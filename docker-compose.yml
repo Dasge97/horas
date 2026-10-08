@@ -1,0 +1,30 @@
+# Panel público de horas (horas.code-hive.space). Un nginx que sirve panel/ y
+# ranking.json directamente desde la carpeta del repositorio, montada de solo
+# lectura. Cada noche publicar.sh hace git pull y el panel cambia sin reconstruir.
+#
+# Se levanta desde la propia carpeta del repositorio en el servidor:
+#   docker compose -p deployment_horas up -d
+#
+# El puerto 4147 tiene que coincidir con el del fichero de Traefik
+# (traefik/deployment-horas.yml). Si no coinciden, el dominio da 502.
+
+services:
+  web:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    mem_limit: 32m
+    ports:
+      - "127.0.0.1:4147:8080"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - .:/datos:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/ranking.json"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

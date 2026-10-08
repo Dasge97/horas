@@ -1,0 +1,1437 @@
+{
+ "actualizado": "2026-10-08T23:18:26+00:00",
+ "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
+ "total_horas": 984.9,
+ "total_dias": 176,
+ "entradas": [
+  {
+   "nombre": "prindia-cloud",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "prindia-cloud"
+   ],
+   "horas": 151.3,
+   "horas_sesiones": 0,
+   "horas_commits": 151.3,
+   "dias": 35,
+   "commits": 424,
+   "desde": "2026-07-29",
+   "hasta": "2026-10-07"
+  },
+  {
+   "nombre": "prindia-home",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "prindia-home"
+   ],
+   "horas": 131.6,
+   "horas_sesiones": 0,
+   "horas_commits": 131.6,
+   "dias": 37,
+   "commits": 344,
+   "desde": "2026-07-28",
+   "hasta": "2026-10-07"
+  },
+  {
+   "nombre": "prindio",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "prindio"
+   ],
+   "horas": 64.6,
+   "horas_sesiones": 0,
+   "horas_commits": 64.6,
+   "dias": 17,
+   "commits": 163,
+   "desde": "2026-06-18",
+   "hasta": "2026-07-29"
+  },
+  {
+   "nombre": "ceomind",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "ceomind"
+   ],
+   "horas": 61.9,
+   "horas_sesiones": 0,
+   "horas_commits": 61.9,
+   "dias": 17,
+   "commits": 121,
+   "desde": "2026-05-25",
+   "hasta": "2026-07-03"
+  },
+  {
+   "nombre": "dedaniel.com",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "dedaniel.com"
+   ],
+   "horas": 51.0,
+   "horas_sesiones": 0,
+   "horas_commits": 51.0,
+   "dias": 18,
+   "commits": 224,
+   "desde": "2025-10-23",
+   "hasta": "2026-02-01"
+  },
+  {
+   "nombre": "bookadoo",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bookadoo"
+   ],
+   "horas": 36.0,
+   "horas_sesiones": 0,
+   "horas_commits": 36.0,
+   "dias": 8,
+   "commits": 112,
+   "desde": "2026-06-17",
+   "hasta": "2026-07-13"
+  },
+  {
+   "nombre": "La Cornisa",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "podcaster",
+    "ai-podcast-studio"
+   ],
+   "horas": 34.9,
+   "horas_sesiones": 8.9,
+   "horas_commits": 26.0,
+   "dias": 11,
+   "commits": 111,
+   "desde": "2026-08-03",
+   "hasta": "2026-09-23"
+  },
+  {
+   "nombre": "CamelTube",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "CamelTube"
+   ],
+   "horas": 28.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 28.3,
+   "dias": 2,
+   "commits": 63,
+   "desde": "2026-07-27",
+   "hasta": "2026-07-28"
+  },
+  {
+   "nombre": "Reservas para peluquerías",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "saas-peluqueria"
+   ],
+   "horas": 25.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 25.0,
+   "dias": 8,
+   "commits": 79,
+   "desde": "2026-08-24",
+   "hasta": "2026-09-09"
+  },
+  {
+   "nombre": "Agente de Marketing",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "agente-marketing"
+   ],
+   "horas": 24.4,
+   "horas_sesiones": 0.0,
+   "horas_commits": 24.4,
+   "dias": 6,
+   "commits": 96,
+   "desde": "2026-07-15",
+   "hasta": "2026-09-15"
+  },
+  {
+   "nombre": "Studio",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "ultercore-studio"
+   ],
+   "horas": 23.4,
+   "horas_sesiones": 13.4,
+   "horas_commits": 10.0,
+   "dias": 6,
+   "commits": 66,
+   "desde": "2026-09-04",
+   "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "Code Hive Factory",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "codehive-factory"
+   ],
+   "horas": 19.2,
+   "horas_sesiones": 13.3,
+   "horas_commits": 5.9,
+   "dias": 5,
+   "commits": 49,
+   "desde": "2026-09-06",
+   "hasta": "2026-09-10"
+  },
+  {
+   "nombre": "Morvan",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "Morvan",
+    "Morvan-v2"
+   ],
+   "horas": 18.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 18.0,
+   "dias": 4,
+   "commits": 55,
+   "desde": "2026-08-05",
+   "hasta": "2026-08-21"
+  },
+  {
+   "nombre": "card-pop",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "card-pop"
+   ],
+   "horas": 17.1,
+   "horas_sesiones": 17.1,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 113,
+   "desde": "2026-10-02",
+   "hasta": "2026-10-07"
+  },
+  {
+   "nombre": "Tu Debate Diario",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "tdd-tu-debate-diario",
+    "tdd-tu-debate-diario-pro",
+    "tdd-app-movil"
+   ],
+   "horas": 16.8,
+   "horas_sesiones": 3.8,
+   "horas_commits": 13.0,
+   "dias": 9,
+   "commits": 68,
+   "desde": "2026-03-09",
+   "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "auth2api",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "auth2api"
+   ],
+   "horas": 16.7,
+   "horas_sesiones": 0,
+   "horas_commits": 16.7,
+   "dias": 15,
+   "commits": 43,
+   "desde": "2026-03-14",
+   "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "GreyMarket",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "GreyMarket"
+   ],
+   "horas": 15.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 15.2,
+   "dias": 6,
+   "commits": 65,
+   "desde": "2026-06-07",
+   "hasta": "2026-08-12"
+  },
+  {
+   "nombre": "Meridian",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "Meridian"
+   ],
+   "horas": 13.7,
+   "horas_sesiones": 11.9,
+   "horas_commits": 1.8,
+   "dias": 4,
+   "commits": 32,
+   "desde": "2026-09-11",
+   "hasta": "2026-09-16"
+  },
+  {
+   "nombre": "RestaurantOS",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "restaurant-saas-erp-crm-docs"
+   ],
+   "horas": 13.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 13.6,
+   "dias": 5,
+   "commits": 63,
+   "desde": "2026-07-01",
+   "hasta": "2026-07-05"
+  },
+  {
+   "nombre": "Odrys",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "odrys-cli",
+    "odrys-harness",
+    "Odrys-Desktop",
+    "odrys-desktop-workflows",
+    "odrys-claude"
+   ],
+   "horas": 13.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 13.0,
+   "dias": 8,
+   "commits": 26,
+   "desde": "2026-04-05",
+   "hasta": "2026-06-15"
+  },
+  {
+   "nombre": "Instagram Content Creator",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "ccinstagram"
+   ],
+   "horas": 11.9,
+   "horas_sesiones": 5.7,
+   "horas_commits": 6.2,
+   "dias": 7,
+   "commits": 38,
+   "desde": "2026-08-06",
+   "hasta": "2026-09-01"
+  },
+  {
+   "nombre": "Centralita IA",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "centralita-ia"
+   ],
+   "horas": 10.6,
+   "horas_sesiones": 2.6,
+   "horas_commits": 7.9,
+   "dias": 3,
+   "commits": 33,
+   "desde": "2026-09-17",
+   "hasta": "2026-09-19"
+  },
+  {
+   "nombre": "POD",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "pod"
+   ],
+   "horas": 9.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 9.9,
+   "dias": 1,
+   "commits": 18,
+   "desde": "2026-05-30",
+   "hasta": "2026-05-30"
+  },
+  {
+   "nombre": "Pocket Terminal",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "pocket-terminal"
+   ],
+   "horas": 9.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 9.2,
+   "dias": 2,
+   "commits": 31,
+   "desde": "2026-09-05",
+   "hasta": "2026-09-06"
+  },
+  {
+   "nombre": "Comentarista Fantasy",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "comentarista-fantasy"
+   ],
+   "horas": 8.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 8.2,
+   "dias": 2,
+   "commits": 26,
+   "desde": "2026-09-05",
+   "hasta": "2026-09-06"
+  },
+  {
+   "nombre": "Expedición medieval",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "expedition"
+   ],
+   "horas": 7.6,
+   "horas_sesiones": 7.6,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 1,
+   "desde": "2026-09-26",
+   "hasta": "2026-09-29"
+  },
+  {
+   "nombre": "Ministudio",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "ministudio"
+   ],
+   "horas": 7.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 7.0,
+   "dias": 3,
+   "commits": 45,
+   "desde": "2026-09-14",
+   "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "ERP construido por IA",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "erptry",
+    "handless-erp"
+   ],
+   "horas": 6.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 6.5,
+   "dias": 3,
+   "commits": 15,
+   "desde": "2026-04-02",
+   "hasta": "2026-04-04"
+  },
+  {
+   "nombre": "RESEARCHIA",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "RESEARCHIA"
+   ],
+   "horas": 6.4,
+   "horas_sesiones": 0,
+   "horas_commits": 6.4,
+   "dias": 5,
+   "commits": 13,
+   "desde": "2026-07-13",
+   "hasta": "2026-09-19"
+  },
+  {
+   "nombre": "KPIs-apunts",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 6.3,
+   "horas_sesiones": 6.3,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-09-29",
+   "hasta": "2026-10-07"
+  },
+  {
+   "nombre": "DAW2_Daniel_SG",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "DAW2_Daniel_SG"
+   ],
+   "horas": 6.2,
+   "horas_sesiones": 0,
+   "horas_commits": 6.2,
+   "dias": 8,
+   "commits": 11,
+   "desde": "2025-09-19",
+   "hasta": "2025-12-10"
+  },
+  {
+   "nombre": "Centralia",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "plataforma-core"
+   ],
+   "horas": 5.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.9,
+   "dias": 3,
+   "commits": 7,
+   "desde": "2026-08-09",
+   "hasta": "2026-08-25"
+  },
+  {
+   "nombre": "entroya",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "fichajes",
+    "fichajes-app"
+   ],
+   "horas": 5.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.9,
+   "dias": 2,
+   "commits": 11,
+   "desde": "2026-05-11",
+   "hasta": "2026-05-20"
+  },
+  {
+   "nombre": "Universo Fantasy",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "universoFantasy"
+   ],
+   "horas": 5.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.6,
+   "dias": 3,
+   "commits": 15,
+   "desde": "2026-01-24",
+   "hasta": "2026-01-26"
+  },
+  {
+   "nombre": "Los primeros",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "mercadodeproximidad",
+    "mercadoVueSimple",
+    "reservas",
+    "ritual"
+   ],
+   "horas": 5.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.6,
+   "dias": 6,
+   "commits": 19,
+   "desde": "2025-11-30",
+   "hasta": "2026-01-16"
+  },
+  {
+   "nombre": "SkillDrop",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "SkillDrop"
+   ],
+   "horas": 5.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.3,
+   "dias": 2,
+   "commits": 12,
+   "desde": "2026-06-03",
+   "hasta": "2026-06-15"
+  },
+  {
+   "nombre": "myReporter",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "myReporter"
+   ],
+   "horas": 5.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.3,
+   "dias": 4,
+   "commits": 24,
+   "desde": "2026-01-27",
+   "hasta": "2026-06-07"
+  },
+  {
+   "nombre": "AI Hub",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "aihub"
+   ],
+   "horas": 5.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 5.0,
+   "dias": 3,
+   "commits": 16,
+   "desde": "2026-07-17",
+   "hasta": "2026-08-23"
+  },
+  {
+   "nombre": "myAutonomo",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "myAutonomo"
+   ],
+   "horas": 4.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 4.9,
+   "dias": 2,
+   "commits": 16,
+   "desde": "2026-02-01",
+   "hasta": "2026-02-02"
+  },
+  {
+   "nombre": "moodle-rag",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "moodle-rag"
+   ],
+   "horas": 4.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 4.8,
+   "dias": 2,
+   "commits": 13,
+   "desde": "2026-05-22",
+   "hasta": "2026-05-23"
+  },
+  {
+   "nombre": "RESEARCHIA",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 4.7,
+   "horas_sesiones": 4.7,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-09-19",
+   "hasta": "2026-09-19"
+  },
+  {
+   "nombre": "decaok",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.4,
+   "horas_sesiones": 3.4,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-09-23",
+   "hasta": "2026-09-26"
+  },
+  {
+   "nombre": "От всичко по нещо",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "otvsichkoponeshto"
+   ],
+   "horas": 3.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 3.0,
+   "dias": 3,
+   "commits": 6,
+   "desde": "2026-05-19",
+   "hasta": "2026-07-05"
+  },
+  {
+   "nombre": "apunts-vault",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "apunts-vault"
+   ],
+   "horas": 2.9,
+   "horas_sesiones": 0,
+   "horas_commits": 2.9,
+   "dias": 1,
+   "commits": 6,
+   "desde": "2026-09-25",
+   "hasta": "2026-09-25"
+  },
+  {
+   "nombre": "Ducker",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "ducker"
+   ],
+   "horas": 2.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.8,
+   "dias": 2,
+   "commits": 7,
+   "desde": "2026-06-01",
+   "hasta": "2026-06-02"
+  },
+  {
+   "nombre": "Curso de ingeniería del software",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "CURSO-II"
+   ],
+   "horas": 2.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.8,
+   "dias": 2,
+   "commits": 6,
+   "desde": "2026-07-11",
+   "hasta": "2026-07-13"
+  },
+  {
+   "nombre": "auto-order",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "auto-order"
+   ],
+   "horas": 2.7,
+   "horas_sesiones": 0,
+   "horas_commits": 2.7,
+   "dias": 1,
+   "commits": 16,
+   "desde": "2026-09-11",
+   "hasta": "2026-09-11"
+  },
+  {
+   "nombre": "True Duel",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "true-duel"
+   ],
+   "horas": 2.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.6,
+   "dias": 3,
+   "commits": 8,
+   "desde": "2026-05-04",
+   "hasta": "2026-05-06"
+  },
+  {
+   "nombre": "mail-tester",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "mail-tester"
+   ],
+   "horas": 2.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.5,
+   "dias": 1,
+   "commits": 7,
+   "desde": "2026-09-02",
+   "hasta": "2026-09-02"
+  },
+  {
+   "nombre": "Plantillas de arranque",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "plantillaerp",
+    "apiPlantillaNodeVue",
+    "plantilla-fullstack-mysql-express-vue",
+    "plantilla-bootstrap-media"
+   ],
+   "horas": 2.4,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.4,
+   "dias": 4,
+   "commits": 11,
+   "desde": "2025-12-11",
+   "hasta": "2026-04-01"
+  },
+  {
+   "nombre": "FactorAI",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "FactorAI-HUB"
+   ],
+   "horas": 2.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.3,
+   "dias": 2,
+   "commits": 3,
+   "desde": "2026-03-10",
+   "hasta": "2026-03-11"
+  },
+  {
+   "nombre": "Dasge97",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "Dasge97"
+   ],
+   "horas": 2.3,
+   "horas_sesiones": 0,
+   "horas_commits": 2.3,
+   "dias": 1,
+   "commits": 9,
+   "desde": "2026-09-21",
+   "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "claude-monitoring-rainmeter",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "claude-monitoring-rainmeter"
+   ],
+   "horas": 2.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.1,
+   "dias": 1,
+   "commits": 9,
+   "desde": "2026-09-19",
+   "hasta": "2026-09-19"
+  },
+  {
+   "nombre": "Autocaller",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "autocaller"
+   ],
+   "horas": 2.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.0,
+   "dias": 2,
+   "commits": 5,
+   "desde": "2026-09-02",
+   "hasta": "2026-09-07"
+  },
+  {
+   "nombre": "home",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "home"
+   ],
+   "horas": 2.0,
+   "horas_sesiones": 0,
+   "horas_commits": 2.0,
+   "dias": 3,
+   "commits": 4,
+   "desde": "2026-07-14",
+   "hasta": "2026-08-25"
+  },
+  {
+   "nombre": "n8n",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "n8n"
+   ],
+   "horas": 1.8,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.8,
+   "dias": 1,
+   "commits": 4,
+   "desde": "2026-03-14",
+   "hasta": "2026-03-14"
+  },
+  {
+   "nombre": "Logística y Tarifas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "logistica-demo"
+   ],
+   "horas": 1.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.6,
+   "dias": 2,
+   "commits": 11,
+   "desde": "2026-04-07",
+   "hasta": "2026-04-08"
+  },
+  {
+   "nombre": "RAG Knowledge Pipeline",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "rag-knowledge-pipeline"
+   ],
+   "horas": 1.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.5,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-04-22",
+   "hasta": "2026-04-22"
+  },
+  {
+   "nombre": "git-achievements",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "git-achievements"
+   ],
+   "horas": 1.5,
+   "horas_sesiones": 0,
+   "horas_commits": 1.5,
+   "dias": 1,
+   "commits": 101,
+   "desde": "2026-05-29",
+   "hasta": "2026-05-29"
+  },
+  {
+   "nombre": "CLIENTES-DimitriAntonov",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 1.5,
+   "horas_sesiones": 1.5,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-09-15",
+   "hasta": "2026-09-15"
+  },
+  {
+   "nombre": "MesaParaTres",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "MesaParaTres"
+   ],
+   "horas": 1.4,
+   "horas_sesiones": 0,
+   "horas_commits": 1.4,
+   "dias": 1,
+   "commits": 4,
+   "desde": "2026-06-11",
+   "hasta": "2026-06-11"
+  },
+  {
+   "nombre": "qa",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "qa"
+   ],
+   "horas": 1.4,
+   "horas_sesiones": 0,
+   "horas_commits": 1.4,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-05-29",
+   "hasta": "2026-05-29"
+  },
+  {
+   "nombre": "extractor",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "extractor"
+   ],
+   "horas": 1.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.3,
+   "dias": 1,
+   "commits": 17,
+   "desde": "2025-11-08",
+   "hasta": "2025-11-08"
+  },
+  {
+   "nombre": "GRUPAPUNTS-oficina-virtual-app-web",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 1.2,
+   "horas_sesiones": 1.2,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-08"
+  },
+  {
+   "nombre": "Eryndale",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "Eryndale"
+   ],
+   "horas": 1.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.1,
+   "dias": 1,
+   "commits": 4,
+   "desde": "2026-08-31",
+   "hasta": "2026-08-31"
+  },
+  {
+   "nombre": "semi-auto-ctrlv",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "semi-auto-ctrlv"
+   ],
+   "horas": 1.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.1,
+   "dias": 1,
+   "commits": 9,
+   "desde": "2025-11-08",
+   "hasta": "2025-11-08"
+  },
+  {
+   "nombre": "assistyoou",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "assistyoou"
+   ],
+   "horas": 1.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.0,
+   "dias": 1,
+   "commits": 5,
+   "desde": "2026-07-09",
+   "hasta": "2026-07-09"
+  },
+  {
+   "nombre": "ADN Ideológico",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "adnideologico"
+   ],
+   "horas": 1.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.0,
+   "dias": 2,
+   "commits": 6,
+   "desde": "2026-03-05",
+   "hasta": "2026-03-06"
+  },
+  {
+   "nombre": "LOCALIA",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "LOCALIA"
+   ],
+   "horas": 1.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 1.0,
+   "dias": 1,
+   "commits": 3,
+   "desde": "2026-07-13",
+   "hasta": "2026-07-13"
+  },
+  {
+   "nombre": "horas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "horas"
+   ],
+   "horas": 0.9,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.9,
+   "dias": 1,
+   "commits": 7,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-08"
+  },
+  {
+   "nombre": "central-de-comunicaciones",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "central-de-comunicaciones"
+   ],
+   "horas": 0.8,
+   "horas_sesiones": 0,
+   "horas_commits": 0.8,
+   "dias": 1,
+   "commits": 4,
+   "desde": "2026-08-27",
+   "hasta": "2026-08-27"
+  },
+  {
+   "nombre": "os-demo",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "os-demo"
+   ],
+   "horas": 0.8,
+   "horas_sesiones": 0,
+   "horas_commits": 0.8,
+   "dias": 1,
+   "commits": 8,
+   "desde": "2026-05-29",
+   "hasta": "2026-05-29"
+  },
+  {
+   "nombre": "os-notes",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "os-notes"
+   ],
+   "horas": 0.8,
+   "horas_sesiones": 0,
+   "horas_commits": 0.8,
+   "dias": 1,
+   "commits": 8,
+   "desde": "2026-05-29",
+   "hasta": "2026-05-29"
+  },
+  {
+   "nombre": "os-utils",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "os-utils"
+   ],
+   "horas": 0.8,
+   "horas_sesiones": 0,
+   "horas_commits": 0.8,
+   "dias": 1,
+   "commits": 8,
+   "desde": "2026-05-29",
+   "hasta": "2026-05-29"
+  },
+  {
+   "nombre": "pr-reviewer",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "pr-reviewer"
+   ],
+   "horas": 0.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.7,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-04-28",
+   "hasta": "2026-04-28"
+  },
+  {
+   "nombre": "Oye Pepe",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "oye-pepe"
+   ],
+   "horas": 0.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.7,
+   "dias": 1,
+   "commits": 3,
+   "desde": "2026-04-12",
+   "hasta": "2026-04-12"
+  },
+  {
+   "nombre": "YaViene",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "yaviene"
+   ],
+   "horas": 0.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.7,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-05-25",
+   "hasta": "2026-05-25"
+  },
+  {
+   "nombre": "cloud-test",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "cloud-test"
+   ],
+   "horas": 0.6,
+   "horas_sesiones": 0,
+   "horas_commits": 0.6,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-05-22",
+   "hasta": "2026-05-22"
+  },
+  {
+   "nombre": "one-piece-matchup-lab",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "one-piece-matchup-lab"
+   ],
+   "horas": 0.6,
+   "horas_sesiones": 0,
+   "horas_commits": 0.6,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-09-03",
+   "hasta": "2026-09-03"
+  },
+  {
+   "nombre": "MenuGenerator",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "MenuGenerator"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-08-31",
+   "hasta": "2026-08-31"
+  },
+  {
+   "nombre": "CodeHive",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "code-hive-app",
+    "code-hive-api"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 2,
+   "desde": "2026-04-01",
+   "hasta": "2026-04-01"
+  },
+  {
+   "nombre": "AkahigeShop",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "akahigeshop"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-02-01",
+   "hasta": "2026-02-01"
+  },
+  {
+   "nombre": "easy-mail",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "easy-mail"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 11,
+   "desde": "2026-09-04",
+   "hasta": "2026-09-04"
+  },
+  {
+   "nombre": "ia-local",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "ia-local"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-04-29",
+   "hasta": "2026-04-29"
+  },
+  {
+   "nombre": "pdf2audio",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "pdf2audio"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-07-23",
+   "hasta": "2026-07-23"
+  },
+  {
+   "nombre": "atomic-phase-workflow",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "atomic-phase-workflow"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-06-20",
+   "hasta": "2026-06-20"
+  },
+  {
+   "nombre": "cloud-isa",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "cloud-isa"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-05-22",
+   "hasta": "2026-05-22"
+  },
+  {
+   "nombre": "ntfy",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "ntfy"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-09-19",
+   "hasta": "2026-09-19"
+  },
+  {
+   "nombre": "decaok-transporte-app-movil",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 0.3,
+   "horas_sesiones": 0.3,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-09-29",
+   "hasta": "2026-09-29"
+  }
+ ]
+}

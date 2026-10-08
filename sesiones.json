@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-08T22:53:05+00:00",
+ "actualizado": "2026-10-08T23:18:26+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -279,6 +279,48 @@
   "horas": {
    "horas": 0.0,
    "dias": []
+  }
+ },
+ "carpetas": {
+  "CLIENTES-DimitriAntonov": {
+   "horas": 1.51,
+   "dias": [
+    "2026-09-15"
+   ]
+  },
+  "GRUPAPUNTS-oficina-virtual-app-web": {
+   "horas": 1.16,
+   "dias": [
+    "2026-10-08"
+   ]
+  },
+  "KPIs-apunts": {
+   "horas": 6.32,
+   "dias": [
+    "2026-09-29",
+    "2026-10-01",
+    "2026-10-06",
+    "2026-10-07"
+   ]
+  },
+  "RESEARCHIA": {
+   "horas": 4.66,
+   "dias": [
+    "2026-09-19"
+   ]
+  },
+  "decaok": {
+   "horas": 3.37,
+   "dias": [
+    "2026-09-23",
+    "2026-09-26"
+   ]
+  },
+  "decaok-transporte-app-movil": {
+   "horas": 0.31,
+   "dias": [
+    "2026-09-29"
+   ]
   }
  }
 }

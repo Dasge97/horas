@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Horas por proyecto</title>
+  <meta name="description" content="Cuántas horas ha dedicado Daniel Svetoslavov a cada proyecto. Se recalcula cada noche a partir de las sesiones de Claude Code y los commits." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --fondo: #0b1220; --panel: #111a2e; --linea: rgba(255,255,255,0.08); --tinta: #e6eaf2; --tinta-suave: #8b95ab;
+      --acento: #7c5cff; --acento-suave: rgba(124,92,255,0.18); --verde: #34d399; --ambar: #fbbf24;
+      --mono: 'JetBrains Mono', ui-monospace, monospace; --sans: 'Inter', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--fondo); color: var(--tinta); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    .contenedor { max-width: 980px; margin: 0 auto; padding: 48px 16px 80px; }
+    header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 36px; }
+    h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+    .sub { color: var(--tinta-suave); margin: 0; font-size: 0.95rem; max-width: 560px; line-height: 1.5; }
+    .totales { display: flex; gap: 28px; }
+    .total { text-align: right; }
+    .total__valor { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; color: #fff; }
+    .total__etiqueta { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tinta-suave); margin-top: 6px; }
+    .filtros { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; align-items: center; }
+    .filtro { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; padding: 6px 12px; border-radius: 100px; border: 1px solid var(--linea); background: transparent; color: var(--tinta-suave); cursor: pointer; }
+    .filtro[aria-pressed="true"] { color: #fff; background: var(--acento-suave); border-color: rgba(124,92,255,0.5); }
+    .buscar { margin-left: auto; font: inherit; font-size: 0.9rem; padding: 7px 12px; border-radius: 10px; border: 1px solid var(--linea); background: var(--panel); color: var(--tinta); min-width: 200px; }
+    .buscar:focus { outline: 2px solid var(--acento); outline-offset: 1px; }
+    ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+    .fila { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; padding: 12px 14px; background: var(--panel); border: 1px solid var(--linea); border-radius: 12px; position: relative; overflow: hidden; }
+    .fila__barra { position: absolute; left: 0; top: 0; bottom: 0; background: var(--acento-suave); pointer-events: none; }
+    .fila > * { position: relative; }
+    .fila__pos { font-family: var(--mono); font-size: 12px; color: var(--tinta-suave); }
+    .fila__nombre { font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .fila__meta { font-family: var(--mono); font-size: 11px; color: var(--tinta-suave); margin-top: 3px; }
+    .etiqueta { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 7px; border-radius: 100px; border: 1px solid var(--linea); color: var(--tinta-suave); }
+    .etiqueta--web { color: var(--verde); border-color: rgba(52,211,153,0.4); }
+    .etiqueta--privado { color: var(--ambar); border-color: rgba(251,191,36,0.4); }
+    .fila__horas { font-family: var(--mono); font-size: 1.05rem; font-weight: 500; color: #fff; text-align: right; white-space: nowrap; }
+    .fila__horas small { display: block; font-size: 10px; color: var(--tinta-suave); font-weight: 400; margin-top: 2px; }
+    .pie { margin-top: 40px; color: var(--tinta-suave); font-size: 0.85rem; line-height: 1.6; border-top: 1px solid var(--linea); padding-top: 20px; }
+    .pie a { color: var(--tinta); }
+    @media (max-width: 600px) { .totales { width: 100%; justify-content: space-between; } .total { text-align: left; } .buscar { margin-left: 0; width: 100%; } }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <div>
+        <h1>Horas por proyecto</h1>
+        <p class="sub">Todo lo que tiene horas medidas, esté o no en <a href="https://daniunico.com" style="color:inherit">daniunico.com</a>. Se recalcula cada noche. Los números se quedan cortos: no miden el tiempo pensando sin tocar el teclado.</p>
+      </div>
+      <div class="totales">
+        <div class="total"><div class="total__valor" id="total-horas">—</div><div class="total__etiqueta">horas</div></div>
+        <div class="total"><div class="total__valor" id="total-dias">—</div><div class="total__etiqueta">días con trabajo</div></div>
+        <div class="total"><div class="total__valor" id="total-entradas">—</div><div class="total__etiqueta">proyectos</div></div>
+      </div>
+    </header>
+
+    <div class="filtros" id="filtros">
+      <button class="filtro" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button class="filtro" data-filtro="web" aria-pressed="false">En la web</button>
+      <button class="filtro" data-filtro="fuera" aria-pressed="false">Fuera de la web</button>
+      <button class="filtro" data-filtro="privado" aria-pressed="false">Privados</button>
+      <input class="buscar" id="buscar" type="search" placeholder="Buscar…" aria-label="Buscar proyecto" />
+    </div>
+
+    <ol id="lista"></ol>
+
+    <p class="pie" id="pie"></p>
+  </div>
+
+  <script>
+    const TIPO = { proyecto: 'Proyecto', repo: 'Repositorio', carpeta: 'Carpeta de sesiones' };
+    let datos = null, filtro = 'todos', texto = '';
+
+    function fmt(h) { return h >= 10 ? Math.round(h).toString() : h.toFixed(1).replace('.', ','); }
+    function fecha(s) { return s ? s.slice(8, 10) + '/' + s.slice(5, 7) + '/' + s.slice(2, 4) : ''; }
+
+    function pintar() {
+      const lista = document.getElementById('lista');
+      const max = Math.max(...datos.entradas.map(e => e.horas), 1);
+      const q = texto.trim().toLowerCase();
+      const visibles = datos.entradas.filter(e =>
+        (filtro === 'todos' || (filtro === 'web' && e.en_web) || (filtro === 'fuera' && !e.en_web) || (filtro === 'privado' && e.privado)) &&
+        (!q || e.nombre.toLowerCase().includes(q) || (e.repos || []).some(r => r.toLowerCase().includes(q))));
+      lista.innerHTML = visibles.map((e, i) => `
+        <li class="fila">
+          <span class="fila__barra" style="width:${(e.horas / max * 100).toFixed(1)}%"></span>
+          <span class="fila__pos">${String(i + 1).padStart(2, '0')}</span>
+          <span>
+            <span class="fila__nombre">${e.nombre}
+              ${e.en_web ? '<span class="etiqueta etiqueta--web">en la web</span>' : ''}
+              ${e.privado ? '<span class="etiqueta etiqueta--privado">privado</span>' : ''}
+              ${e.tipo !== 'proyecto' ? `<span class="etiqueta">${TIPO[e.tipo]}</span>` : ''}
+            </span>
+            <span class="fila__meta">${e.dias} ${e.dias === 1 ? 'día' : 'días'} · ${e.commits} commits · ${fecha(e.desde)} → ${fecha(e.hasta)}${e.horas_sesiones ? ` · ${fmt(e.horas_sesiones)} h de sesiones` : ''}${e.repos && e.repos.length > 1 ? ` · ${e.repos.join(', ')}` : ''}</span>
+          </span>
+          <span class="fila__horas">${fmt(e.horas)} h<small>${(e.horas / datos.total_horas * 100).toFixed(1)} %</small></span>
+        </li>`).join('');
+      document.getElementById('total-entradas').textContent = visibles.length;
+    }
+
+    fetch('ranking.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
+      datos = d;
+      document.getElementById('total-horas').textContent = Math.round(d.total_horas);
+      document.getElementById('total-dias').textContent = d.total_dias;
+      document.getElementById('pie').innerHTML = `Actualizado el ${new Date(d.actualizado).toLocaleString('es-ES')}. ${d.metodo} Código y datos en <a href="https://github.com/Dasge97/horas">github.com/Dasge97/horas</a>.`;
+      pintar();
+    }).catch(() => { document.getElementById('lista').innerHTML = '<li class="fila">No se ha podido cargar ranking.json.</li>'; });
+
+    document.getElementById('filtros').addEventListener('click', ev => {
+      const b = ev.target.closest('.filtro'); if (!b) return;
+      filtro = b.dataset.filtro;
+      document.querySelectorAll('.filtro').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      pintar();
+    });
+    document.getElementById('buscar').addEventListener('input', ev => { texto = ev.target.value; pintar(); });
+  </script>
+</body>
+</html>
