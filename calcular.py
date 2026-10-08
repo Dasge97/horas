@@ -38,7 +38,10 @@ HUECO_SESION = timedelta(minutes=30)
 HUECO_COMMITS = timedelta(hours=2)
 ARRANQUE_COMMITS = timedelta(minutes=30)
 HAY_GH = shutil.which('gh') is not None
-HAY_REGISTROS = os.path.isdir(REGISTROS)
+# Solo cuentan los registros si hay carpetas de AreaDeTrabajo: el servidor también
+# tiene ~/.claude/projects, pero con sus propias carpetas, y no debe pisar sesiones.json.
+HAY_REGISTROS = os.path.isdir(REGISTROS) and any(
+    os.path.basename(r).lower().startswith(PREFIJO_CARPETA.lower()) for r in glob.glob(os.path.join(REGISTROS, '*')))
 
 
 def fecha(texto):
