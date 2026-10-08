@@ -62,6 +62,14 @@ Dos máquinas, el mismo `calcular.py`:
 
 La clave de cada proyecto es el `slug` de la ficha o del juego en la web, o el nombre tal cual en las secciones de otros sistemas y herramientas.
 
+## Panel público
+
+[horas.code-hive.space](https://horas.code-hive.space) enseña `ranking.json`: todo lo que tiene horas, esté o no en la web, incluidos los repositorios privados y los del trabajo. Es un nginx (`docker-compose.yml`, `nginx.conf`) que sirve `panel/` y los JSON directamente desde la carpeta del repositorio en el servidor, montada de solo lectura. El `git pull` nocturno lo actualiza sin reconstruir nada. El router de Traefik está en `traefik/deployment-horas.yml`.
+
+## Repositorios del trabajo (Bitbucket)
+
+Los repos de la sección `bitbucket` de `proyectos.json` tienen commits de varias personas, así que solo se cuentan los de los correos de `autores`. Se leen siempre de copias desnudas por SSH, también en el PC. Para que el servidor pueda clonarlos, su clave pública (`~/.ssh/id_ed25519.pub` en codehive) tiene que estar añadida a la cuenta de Bitbucket. Salen en el ranking con la etiqueta "Trabajo · solo mis commits" y no entran en `horas.json`.
+
 ## Cuando entra un proyecto nuevo
 
 1. Se añade a la web, en `src/data/contenido.js` de daniunico-web.
