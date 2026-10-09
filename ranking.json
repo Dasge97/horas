@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-09T16:44:21+00:00",
+ "actualizado": "2026-10-09T18:44:21+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1073.0,
+ "total_horas": 1073.5,
  "total_dias": 196,
  "entradas": [
   {
@@ -445,6 +445,22 @@
    "hasta": "2026-09-06"
   },
   {
+   "nombre": "horas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "horas"
+   ],
+   "horas": 7.7,
+   "horas_sesiones": 0.0,
+   "horas_commits": 7.7,
+   "dias": 2,
+   "commits": 26,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-09"
+  },
+  {
    "nombre": "Expedición medieval",
    "tipo": "proyecto",
    "en_web": true,
@@ -459,22 +475,6 @@
    "commits": 1,
    "desde": "2026-09-26",
    "hasta": "2026-09-29"
-  },
-  {
-   "nombre": "horas",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "horas"
-   ],
-   "horas": 7.2,
-   "horas_sesiones": 0.0,
-   "horas_commits": 7.2,
-   "dias": 2,
-   "commits": 25,
-   "desde": "2026-10-08",
-   "hasta": "2026-10-09"
   },
   {
    "nombre": "Ministudio",
