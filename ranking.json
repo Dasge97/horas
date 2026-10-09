@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-09T20:44:21+00:00",
+ "actualizado": "2026-10-09T22:44:20+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1075.5,
+ "total_horas": 1076.8,
  "total_dias": 196,
  "entradas": [
   {
@@ -381,6 +381,22 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "horas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "horas"
+   ],
+   "horas": 10.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 10.2,
+   "dias": 2,
+   "commits": 28,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-09"
+  },
+  {
    "nombre": "POD",
    "tipo": "proyecto",
    "en_web": true,
@@ -395,22 +411,6 @@
    "commits": 18,
    "desde": "2026-05-30",
    "hasta": "2026-05-30"
-  },
-  {
-   "nombre": "horas",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "horas"
-   ],
-   "horas": 9.7,
-   "horas_sesiones": 0.0,
-   "horas_commits": 9.7,
-   "dias": 2,
-   "commits": 27,
-   "desde": "2026-10-08",
-   "hasta": "2026-10-09"
   },
   {
    "nombre": "Pocket Terminal",
@@ -1339,6 +1339,20 @@
    "hasta": "2026-09-03"
   },
   {
+   "nombre": "mando-basico",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 0.6,
+   "horas_sesiones": 0.6,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-09"
+  },
+  {
    "nombre": "MenuGenerator",
    "tipo": "proyecto",
    "en_web": true,
@@ -1496,6 +1510,20 @@
    "commits": 0,
    "desde": "2026-09-29",
    "hasta": "2026-09-29"
+  },
+  {
+   "nombre": "KitDani",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 0.2,
+   "horas_sesiones": 0.2,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-09"
   }
  ]
 }
