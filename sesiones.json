@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-10T17:00:22+00:00",
+ "actualizado": "2026-10-10T17:07:07+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -298,7 +298,7 @@
    ]
   },
   "KitDani": {
-   "horas": 3.13,
+   "horas": 3.24,
    "dias": [
     "2026-10-09",
     "2026-10-10"
@@ -317,7 +317,7 @@
    ]
   },
   "claude-browser-eye-extension": {
-   "horas": 1.72,
+   "horas": 1.81,
    "dias": [
     "2026-10-10"
    ]
@@ -336,7 +336,7 @@
    ]
   },
   "hangar-app": {
-   "horas": 2.47,
+   "horas": 2.72,
    "dias": [
     "2026-10-10"
    ]

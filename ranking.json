@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-10T17:04:42+00:00",
+ "actualizado": "2026-10-10T17:07:07+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1087.7,
- "total_dias": 198,
+ "total_horas": 1098.0,
+ "total_dias": 196,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -76,11 +76,11 @@
    "repos": [
     "ceomind"
    ],
-   "horas": 63.5,
+   "horas": 61.9,
    "horas_sesiones": 0,
-   "horas_commits": 63.5,
+   "horas_commits": 61.9,
    "dias": 17,
-   "commits": 126,
+   "commits": 121,
    "desde": "2026-05-25",
    "hasta": "2026-07-03"
   },
@@ -281,6 +281,22 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "horas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "horas"
+   ],
+   "horas": 16.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 16.5,
+   "dias": 3,
+   "commits": 37,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "GreyMarket",
    "tipo": "proyecto",
    "en_web": true,
@@ -477,38 +493,6 @@
    "hasta": "2026-09-21"
   },
   {
-   "nombre": "DAW2_Daniel_SG",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "DAW2_Daniel_SG"
-   ],
-   "horas": 6.6,
-   "horas_sesiones": 0,
-   "horas_commits": 6.6,
-   "dias": 8,
-   "commits": 12,
-   "desde": "2025-09-19",
-   "hasta": "2025-12-10"
-  },
-  {
-   "nombre": "True Duel",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "true-duel"
-   ],
-   "horas": 6.5,
-   "horas_sesiones": 0.0,
-   "horas_commits": 6.5,
-   "dias": 5,
-   "commits": 14,
-   "desde": "2026-05-04",
-   "hasta": "2026-05-10"
-  },
-  {
    "nombre": "ERP construido por IA",
    "tipo": "proyecto",
    "en_web": true,
@@ -554,6 +538,22 @@
    "commits": 0,
    "desde": "2026-09-29",
    "hasta": "2026-10-07"
+  },
+  {
+   "nombre": "DAW2_Daniel_SG",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "DAW2_Daniel_SG"
+   ],
+   "horas": 6.2,
+   "horas_sesiones": 0,
+   "horas_commits": 6.2,
+   "dias": 8,
+   "commits": 11,
+   "desde": "2025-09-19",
+   "hasta": "2025-12-10"
   },
   {
    "nombre": "Centralia",
@@ -753,8 +753,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 3.1,
-   "horas_sesiones": 3.1,
+   "horas": 3.2,
+   "horas_sesiones": 3.2,
    "horas_commits": 0.0,
    "dias": 2,
    "commits": 0,
@@ -842,6 +842,36 @@
    "hasta": "2026-09-11"
   },
   {
+   "nombre": "hangar-app",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 2.7,
+   "horas_sesiones": 2.7,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
+   "nombre": "True Duel",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "true-duel"
+   ],
+   "horas": 2.6,
+   "horas_sesiones": 0.0,
+   "horas_commits": 2.6,
+   "dias": 3,
+   "commits": 8,
+   "desde": "2026-05-04",
+   "hasta": "2026-05-06"
+  },
+  {
    "nombre": "mail-tester",
    "tipo": "proyecto",
    "en_web": true,
@@ -872,20 +902,6 @@
    "commits": 10,
    "desde": "2026-10-08",
    "hasta": "2026-10-08"
-  },
-  {
-   "nombre": "hangar-app",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.5,
-   "horas_sesiones": 2.5,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "Plantillas de arranque",
@@ -1024,8 +1040,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 1.7,
-   "horas_sesiones": 1.7,
+   "horas": 1.8,
+   "horas_sesiones": 1.8,
    "horas_commits": 0.0,
    "dias": 1,
    "commits": 0,
@@ -1391,22 +1407,6 @@
    "commits": 2,
    "desde": "2026-05-25",
    "hasta": "2026-05-25"
-  },
-  {
-   "nombre": "horas",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "horas"
-   ],
-   "horas": 0.7,
-   "horas_sesiones": 0.0,
-   "horas_commits": 0.7,
-   "dias": 1,
-   "commits": 3,
-   "desde": "2026-10-08",
-   "hasta": "2026-10-08"
   },
   {
    "nombre": "cloud-test",
