@@ -7,6 +7,8 @@ Dos fuentes:
   2. Los commits de cada repositorio. Se agrupan los commits con menos de 2 horas
      entre ellos y se suma media hora por bloque. Es una estimación, y se queda
      corta en repos con pocos commits grandes.
+     Solo cuenta la rama principal de cada repo, y no cuenta los commits automáticos
+     "Horas al ..." que crea la propia publicación.
 
 Para no contar dos veces lo mismo, los bloques de commits que caen en un día con
 sesiones de Claude Code para ese proyecto se descartan: ese día ya está medido
@@ -103,12 +105,28 @@ def resumen_sesiones(instantes):
 
 # --- Fuente 2: commits ---
 
+# Commits que no son trabajo: los que crea la propia publicación de horas cada pocas horas.
+COMMITS_AUTOMATICOS = re.compile(r'^Horas al \d{4}-\d{2}-\d{2}')
+
+
 def instantes_commits_gh(repo):
+    """Fechas de los commits de la rama principal, sin los automáticos. Igual que instantes_commits_espejo."""
     salida = subprocess.run(
-        ['gh', 'api', f'repos/{USUARIO}/{repo}/commits?per_page=100', '--paginate', '--jq', '.[].commit.author.date'],
+        ['gh', 'api', f'repos/{USUARIO}/{repo}/commits?per_page=100', '--paginate',
+         '--jq', '.[] | .commit.author.date + "\\t" + (.commit.message | split("\\n")[0])'],
         capture_output=True, text=True, timeout=300,
     ).stdout
-    return [t for t in (fecha(l.strip()) for l in salida.splitlines() if l.strip() and not l.startswith('{')) if t]
+    instantes = []
+    for linea in salida.splitlines():
+        if '\t' not in linea or linea.startswith('{'):
+            continue
+        cuando, mensaje = linea.split('\t', 1)
+        if COMMITS_AUTOMATICOS.match(mensaje):
+            continue
+        t = fecha(cuando.strip())
+        if t:
+            instantes.append(t)
+    return instantes
 
 
 def instantes_commits_espejo(repo, url=None, autores=None):
@@ -123,16 +141,27 @@ def instantes_commits_espejo(repo, url=None, autores=None):
             print(f'  aviso: no se pudo clonar {repo}: {r.stderr.strip()[:120]}', file=sys.stderr)
             return []
     else:
-        subprocess.run(['git', '--git-dir', ruta, 'fetch', '--quiet', '--all', '--prune'],
-                       capture_output=True, text=True, timeout=600)
-    salida = subprocess.run(['git', '--git-dir', ruta, 'log', '--all', '--format=%aI%x09%ae'],
+        # Una copia --bare no trae configurado qué ramas actualizar: sin la regla explícita,
+        # "git fetch" no cambia nada y la copia se queda como el día que se clonó.
+        r = subprocess.run(['git', '--git-dir', ruta, 'fetch', '--quiet', '--prune', 'origin',
+                            '+refs/heads/*:refs/heads/*'],
+                           capture_output=True, text=True, timeout=600)
+        if r.returncode != 0:
+            print(f'  aviso: no se pudo actualizar {repo}: {r.stderr.strip()[:120]}', file=sys.stderr)
+    # Solo la rama principal (HEAD), igual que la API de GitHub en instantes_commits_gh, para que el
+    # PC y el servidor cuenten lo mismo.
+    salida = subprocess.run(['git', '--git-dir', ruta, 'log', 'HEAD', '--format=%aI%x09%ae%x09%s'],
                             capture_output=True, text=True, timeout=120).stdout
     instantes = []
     for linea in salida.splitlines():
-        if '\t' not in linea:
+        partes = linea.split('\t', 2)
+        if len(partes) < 2:
             continue
-        cuando, correo = linea.split('\t', 1)
+        cuando, correo = partes[0], partes[1]
+        mensaje = partes[2] if len(partes) > 2 else ''
         if autores and correo.strip().lower() not in autores:
+            continue
+        if COMMITS_AUTOMATICOS.match(mensaje):
             continue
         t = fecha(cuando.strip())
         if t:
