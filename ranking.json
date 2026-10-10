@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-10T20:18:13+00:00",
+ "actualizado": "2026-10-10T22:18:13+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1097.3,
+ "total_horas": 1099.8,
  "total_dias": 196,
  "entradas": [
   {
@@ -608,6 +608,20 @@
    "hasta": "2026-01-16"
   },
   {
+   "nombre": "hangar-app",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 5.4,
+   "horas_sesiones": 5.4,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "SkillDrop",
    "tipo": "proyecto",
    "en_web": true,
@@ -702,16 +716,18 @@
    "hasta": "2026-09-19"
   },
   {
-   "nombre": "hangar-app",
-   "tipo": "carpeta",
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "repo",
    "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 4.5,
-   "horas_sesiones": 4.5,
-   "horas_commits": 0.0,
+   "privado": false,
+   "repos": [
+    "claude-browser-eye-extension"
+   ],
+   "horas": 4.3,
+   "horas_sesiones": 0,
+   "horas_commits": 4.3,
    "dias": 1,
-   "commits": 0,
+   "commits": 18,
    "desde": "2026-10-10",
    "hasta": "2026-10-10"
   },
@@ -732,33 +748,31 @@
    "hasta": "2026-10-10"
   },
   {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "claude-browser-eye-extension"
-   ],
-   "horas": 3.8,
-   "horas_sesiones": 0,
-   "horas_commits": 3.8,
-   "dias": 1,
-   "commits": 17,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
-  },
-  {
    "nombre": "KitDani",
    "tipo": "carpeta",
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 3.8,
-   "horas_sesiones": 3.8,
+   "horas": 4.0,
+   "horas_sesiones": 4.0,
    "horas_commits": 0.0,
    "dias": 2,
    "commits": 0,
    "desde": "2026-10-09",
+   "hasta": "2026-10-10"
+  },
+  {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.7,
+   "horas_sesiones": 3.7,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
    "hasta": "2026-10-10"
   },
   {
@@ -808,16 +822,18 @@
    "hasta": "2026-10-10"
   },
   {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "carpeta",
+   "nombre": "KitDani",
+   "tipo": "repo",
    "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 3.3,
-   "horas_sesiones": 3.3,
-   "horas_commits": 0.0,
+   "privado": false,
+   "repos": [
+    "KitDani"
+   ],
+   "horas": 3.1,
+   "horas_sesiones": 0,
+   "horas_commits": 3.1,
    "dias": 1,
-   "commits": 0,
+   "commits": 9,
    "desde": "2026-10-10",
    "hasta": "2026-10-10"
   },
@@ -916,22 +932,6 @@
    "commits": 8,
    "desde": "2026-05-04",
    "hasta": "2026-05-06"
-  },
-  {
-   "nombre": "KitDani",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "KitDani"
-   ],
-   "horas": 2.6,
-   "horas_sesiones": 0,
-   "horas_commits": 2.6,
-   "dias": 1,
-   "commits": 8,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "mail-tester",
