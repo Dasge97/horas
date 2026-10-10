@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-10T18:04:12+00:00",
+ "actualizado": "2026-10-10T18:06:57+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1091.2,
- "total_dias": 196,
+ "total_horas": 1066.9,
+ "total_dias": 194,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -35,22 +35,6 @@
    "commits": 344,
    "desde": "2026-07-28",
    "hasta": "2026-10-07"
-  },
-  {
-   "nombre": "oficina-virtual-app-web",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:oficina-virtual-app-web"
-   ],
-   "horas": 67.1,
-   "horas_sesiones": 0,
-   "horas_commits": 67.1,
-   "dias": 43,
-   "commits": 129,
-   "desde": "2026-03-24",
-   "hasta": "2026-10-05"
   },
   {
    "nombre": "prindio",
@@ -99,6 +83,22 @@
    "commits": 224,
    "desde": "2025-10-23",
    "hasta": "2026-02-01"
+  },
+  {
+   "nombre": "oficina-virtual-app-web",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:oficina-virtual-app-web"
+   ],
+   "horas": 41.1,
+   "horas_sesiones": 0,
+   "horas_commits": 41.1,
+   "dias": 32,
+   "commits": 81,
+   "desde": "2026-03-24",
+   "hasta": "2026-08-19"
   },
   {
    "nombre": "bookadoo",
@@ -413,22 +413,6 @@
    "hasta": "2026-10-10"
   },
   {
-   "nombre": "new-studio",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:new-studio"
-   ],
-   "horas": 8.5,
-   "horas_sesiones": 0,
-   "horas_commits": 8.5,
-   "dias": 2,
-   "commits": 32,
-   "desde": "2026-09-22",
-   "hasta": "2026-10-06"
-  },
-  {
    "nombre": "Comentarista Fantasy",
    "tipo": "proyecto",
    "en_web": true,
@@ -459,6 +443,22 @@
    "commits": 1,
    "desde": "2026-09-26",
    "hasta": "2026-09-29"
+  },
+  {
+   "nombre": "new-studio",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:new-studio"
+   ],
+   "horas": 7.1,
+   "horas_sesiones": 0,
+   "horas_commits": 7.1,
+   "dias": 2,
+   "commits": 30,
+   "desde": "2026-09-22",
+   "hasta": "2026-10-06"
   },
   {
    "nombre": "Ministudio",
@@ -718,6 +718,34 @@
    "hasta": "2026-10-10"
   },
   {
+   "nombre": "KitDani",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.7,
+   "horas_sesiones": 3.7,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-10"
+  },
+  {
+   "nombre": "hangar-app",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.7,
+   "horas_sesiones": 3.7,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "decaok",
    "tipo": "carpeta",
    "en_web": false,
@@ -732,22 +760,6 @@
    "hasta": "2026-09-26"
   },
   {
-   "nombre": "partes-app-web",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:partes-app-web"
-   ],
-   "horas": 3.4,
-   "horas_sesiones": 0,
-   "horas_commits": 3.4,
-   "dias": 4,
-   "commits": 13,
-   "desde": "2026-03-25",
-   "hasta": "2026-09-29"
-  },
-  {
    "nombre": "horas",
    "tipo": "proyecto",
    "en_web": true,
@@ -755,11 +767,11 @@
    "repos": [
     "horas"
    ],
-   "horas": 3.2,
+   "horas": 3.3,
    "horas_sesiones": 0.0,
-   "horas_commits": 3.2,
+   "horas_commits": 3.3,
    "dias": 2,
-   "commits": 16,
+   "commits": 17,
    "desde": "2026-10-08",
    "hasta": "2026-10-10"
   },
@@ -777,20 +789,6 @@
    "dias": 1,
    "commits": 13,
    "desde": "2026-10-10",
-   "hasta": "2026-10-10"
-  },
-  {
-   "nombre": "KitDani",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 3.2,
-   "horas_sesiones": 3.2,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-09",
    "hasta": "2026-10-10"
   },
   {
@@ -826,6 +824,22 @@
    "hasta": "2026-09-25"
   },
   {
+   "nombre": "partes-app-web",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:partes-app-web"
+   ],
+   "horas": 2.9,
+   "horas_sesiones": 0,
+   "horas_commits": 2.9,
+   "dias": 3,
+   "commits": 12,
+   "desde": "2026-03-25",
+   "hasta": "2026-07-21"
+  },
+  {
    "nombre": "Ducker",
    "tipo": "proyecto",
    "en_web": true,
@@ -858,6 +872,20 @@
    "hasta": "2026-07-13"
   },
   {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 2.8,
+   "horas_sesiones": 2.8,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "auto-order",
    "tipo": "repo",
    "en_web": false,
@@ -872,20 +900,6 @@
    "commits": 16,
    "desde": "2026-09-11",
    "hasta": "2026-09-11"
-  },
-  {
-   "nombre": "hangar-app",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.7,
-   "horas_sesiones": 2.7,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "True Duel",
@@ -1049,20 +1063,6 @@
    "commits": 4,
    "desde": "2026-03-14",
    "hasta": "2026-03-14"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 1.8,
-   "horas_sesiones": 1.8,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "Logística y Tarifas",
@@ -1379,6 +1379,20 @@
    "hasta": "2026-05-29"
   },
   {
+   "nombre": "RANDOM-pruebas-hangar",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 0.8,
+   "horas_sesiones": 0.8,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "mando-basico",
    "tipo": "carpeta",
    "en_web": false,
@@ -1618,16 +1632,18 @@
    "hasta": "2026-09-19"
   },
   {
-   "nombre": "RANDOM-pruebas-hangar",
-   "tipo": "carpeta",
+   "nombre": "puente-kit",
+   "tipo": "repo",
    "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 0.3,
-   "horas_sesiones": 0.3,
-   "horas_commits": 0.0,
+   "privado": false,
+   "repos": [
+    "puente-kit"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0,
+   "horas_commits": 0.5,
    "dias": 1,
-   "commits": 0,
+   "commits": 1,
    "desde": "2026-10-10",
    "hasta": "2026-10-10"
   },
