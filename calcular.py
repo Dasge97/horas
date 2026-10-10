@@ -7,7 +7,7 @@ Dos fuentes:
   2. Los commits de cada repositorio. Se agrupan los commits con menos de 2 horas
      entre ellos y se suma media hora por bloque. Es una estimación, y se queda
      corta en repos con pocos commits grandes.
-     Solo cuenta la rama principal de cada repo, y no cuenta los commits automáticos
+     En los repos propios solo cuenta la rama principal (en los de Bitbucket, todas), y no cuenta los commits automáticos
      "Horas al ..." que crea la propia publicación.
 
 Para no contar dos veces lo mismo, los bloques de commits que caen en un día con
@@ -129,8 +129,9 @@ def instantes_commits_gh(repo):
     return instantes
 
 
-def instantes_commits_espejo(repo, url=None, autores=None):
-    """Fechas de los commits de una copia desnuda. Con `autores`, solo los de esos correos."""
+def instantes_commits_espejo(repo, url=None, autores=None, todas_las_ramas=False):
+    """Fechas de los commits de una copia desnuda. Con `autores`, solo los de esos correos.
+    Por defecto solo la rama principal; con todas_las_ramas, todas (para los repos de trabajo)."""
     ruta = os.path.join(ESPEJOS, repo.replace('/', '__') + '.git')
     url = url or f'git@github.com:{USUARIO}/{repo}.git'
     if not os.path.isdir(ruta):
@@ -148,9 +149,10 @@ def instantes_commits_espejo(repo, url=None, autores=None):
                            capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=600)
         if r.returncode != 0:
             print(f'  aviso: no se pudo actualizar {repo}: {r.stderr.strip()[:120]}', file=sys.stderr)
-    # Solo la rama principal (HEAD), igual que la API de GitHub en instantes_commits_gh, para que el
-    # PC y el servidor cuenten lo mismo.
-    salida = subprocess.run(['git', '--git-dir', ruta, 'log', 'HEAD', '--format=%aI%x09%ae%x09%s'],
+    # Repos propios: solo la rama principal (HEAD), igual que la API de GitHub en instantes_commits_gh,
+    # para que el PC y el servidor cuenten lo mismo. Repos de trabajo (Bitbucket): todas las ramas, porque
+    # allí se trabaja en ramas aparte; solo los calcula el PC y se filtran por autor.
+    salida = subprocess.run(['git', '--git-dir', ruta, 'log', '--all' if todas_las_ramas else 'HEAD', '--format=%aI%x09%ae%x09%s'],
                             capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120).stdout
     instantes = []
     for linea in salida.splitlines():
@@ -172,7 +174,7 @@ def instantes_commits_espejo(repo, url=None, autores=None):
 def instantes_commits_bitbucket(config, repo):
     bb = config['bitbucket']
     autores = {a.lower() for a in bb['autores']}
-    return instantes_commits_espejo(f"bitbucket/{repo}", url=f"git@bitbucket.org:{bb['espacio']}/{repo}.git", autores=autores)
+    return instantes_commits_espejo(f"bitbucket/{repo}", url=f"git@bitbucket.org:{bb['espacio']}/{repo}.git", autores=autores, todas_las_ramas=True)
 
 
 _cache_commits = {}
