@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-09T22:44:20+00:00",
+ "actualizado": "2026-10-10T00:44:20+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1076.8,
- "total_dias": 196,
+ "total_horas": 1082.1,
+ "total_dias": 197,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -349,6 +349,22 @@
    "hasta": "2026-06-15"
   },
   {
+   "nombre": "horas",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "horas"
+   ],
+   "horas": 12.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 12.2,
+   "dias": 2,
+   "commits": 29,
+   "desde": "2026-10-08",
+   "hasta": "2026-10-09"
+  },
+  {
    "nombre": "Instagram Content Creator",
    "tipo": "proyecto",
    "en_web": true,
@@ -379,22 +395,6 @@
    "commits": 33,
    "desde": "2026-09-17",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "horas",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "horas"
-   ],
-   "horas": 10.2,
-   "horas_sesiones": 0.0,
-   "horas_commits": 10.2,
-   "dias": 2,
-   "commits": 28,
-   "desde": "2026-10-08",
-   "hasta": "2026-10-09"
   },
   {
    "nombre": "POD",
@@ -991,6 +991,20 @@
    "hasta": "2026-03-14"
   },
   {
+   "nombre": "KitDani",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 1.8,
+   "horas_sesiones": 1.8,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "Logística y Tarifas",
    "tipo": "proyecto",
    "en_web": true,
@@ -1259,6 +1273,34 @@
    "hasta": "2026-05-29"
   },
   {
+   "nombre": "mando-basico",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 0.8,
+   "horas_sesiones": 0.8,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-09"
+  },
+  {
+   "nombre": "raton-perdido",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 0.8,
+   "horas_sesiones": 0.8,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "pr-reviewer",
    "tipo": "proyecto",
    "en_web": true,
@@ -1337,20 +1379,6 @@
    "commits": 2,
    "desde": "2026-09-03",
    "hasta": "2026-09-03"
-  },
-  {
-   "nombre": "mando-basico",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 0.6,
-   "horas_sesiones": 0.6,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-09",
-   "hasta": "2026-10-09"
   },
   {
    "nombre": "MenuGenerator",
@@ -1498,6 +1526,22 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "raton-perdido",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "raton-perdido"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "decaok-transporte-app-movil",
    "tipo": "carpeta",
    "en_web": false,
@@ -1512,7 +1556,7 @@
    "hasta": "2026-09-29"
   },
   {
-   "nombre": "KitDani",
+   "nombre": "hangar-app",
    "tipo": "carpeta",
    "en_web": false,
    "privado": true,
@@ -1522,8 +1566,8 @@
    "horas_commits": 0.0,
    "dias": 1,
    "commits": 0,
-   "desde": "2026-10-09",
-   "hasta": "2026-10-09"
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
   }
  ]
 }
