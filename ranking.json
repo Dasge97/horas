@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-10T18:10:18+00:00",
+ "actualizado": "2026-10-10T18:18:13+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1095.2,
+ "total_horas": 1095.6,
  "total_dias": 196,
  "entradas": [
   {
@@ -718,6 +718,20 @@
    "hasta": "2026-10-10"
   },
   {
+   "nombre": "hangar-app",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.9,
+   "horas_sesiones": 3.9,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "KitDani",
    "tipo": "carpeta",
    "en_web": false,
@@ -732,20 +746,6 @@
    "hasta": "2026-10-10"
   },
   {
-   "nombre": "hangar-app",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 3.7,
-   "horas_sesiones": 3.7,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
-  },
-  {
    "nombre": "claude-browser-eye-extension",
    "tipo": "repo",
    "en_web": false,
@@ -753,11 +753,11 @@
    "repos": [
     "claude-browser-eye-extension"
    ],
-   "horas": 3.4,
+   "horas": 3.5,
    "horas_sesiones": 0,
-   "horas_commits": 3.4,
+   "horas_commits": 3.5,
    "dias": 1,
-   "commits": 14,
+   "commits": 15,
    "desde": "2026-10-10",
    "hasta": "2026-10-10"
   },
@@ -824,6 +824,20 @@
    "hasta": "2026-07-05"
   },
   {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.0,
+   "horas_sesiones": 3.0,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-10"
+  },
+  {
    "nombre": "apunts-vault",
    "tipo": "trabajo",
    "en_web": false,
@@ -838,20 +852,6 @@
    "commits": 6,
    "desde": "2026-09-25",
    "hasta": "2026-09-25"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.9,
-   "horas_sesiones": 2.9,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "Ducker",
