@@ -114,7 +114,7 @@ def instantes_commits_gh(repo):
     salida = subprocess.run(
         ['gh', 'api', f'repos/{USUARIO}/{repo}/commits?per_page=100', '--paginate',
          '--jq', '.[] | .commit.author.date + "\\t" + (.commit.message | split("\\n")[0])'],
-        capture_output=True, text=True, timeout=300,
+        capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=300,
     ).stdout
     instantes = []
     for linea in salida.splitlines():
@@ -136,7 +136,7 @@ def instantes_commits_espejo(repo, url=None, autores=None):
     if not os.path.isdir(ruta):
         os.makedirs(ESPEJOS, exist_ok=True)
         r = subprocess.run(['git', 'clone', '--quiet', '--bare', '--filter=blob:none', url, ruta],
-                           capture_output=True, text=True, timeout=600)
+                           capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=600)
         if r.returncode != 0:
             print(f'  aviso: no se pudo clonar {repo}: {r.stderr.strip()[:120]}', file=sys.stderr)
             return []
@@ -145,13 +145,13 @@ def instantes_commits_espejo(repo, url=None, autores=None):
         # "git fetch" no cambia nada y la copia se queda como el día que se clonó.
         r = subprocess.run(['git', '--git-dir', ruta, 'fetch', '--quiet', '--prune', 'origin',
                             '+refs/heads/*:refs/heads/*'],
-                           capture_output=True, text=True, timeout=600)
+                           capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=600)
         if r.returncode != 0:
             print(f'  aviso: no se pudo actualizar {repo}: {r.stderr.strip()[:120]}', file=sys.stderr)
     # Solo la rama principal (HEAD), igual que la API de GitHub en instantes_commits_gh, para que el
     # PC y el servidor cuenten lo mismo.
     salida = subprocess.run(['git', '--git-dir', ruta, 'log', 'HEAD', '--format=%aI%x09%ae%x09%s'],
-                            capture_output=True, text=True, timeout=120).stdout
+                            capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120).stdout
     instantes = []
     for linea in salida.splitlines():
         partes = linea.split('\t', 2)
@@ -188,7 +188,7 @@ def lista_repos():
     ruta = os.path.join(AQUI, 'repos.json')
     if HAY_GH:
         datos = json.loads(subprocess.run(['gh', 'repo', 'list', USUARIO, '--limit', '300', '--json', 'name,isPrivate,isFork'],
-                                          capture_output=True, text=True, timeout=120).stdout)
+                                          capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120).stdout)
         repos = {r['name']: r['isPrivate'] for r in sorted(datos, key=lambda r: r['name']) if not r['isFork']}
         with open(ruta, 'w', encoding='utf-8') as fh:
             json.dump(repos, fh, ensure_ascii=False, indent=1)
