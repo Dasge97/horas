@@ -1,7 +1,7 @@
 # Versión para el PC. Calcula las horas con los registros de Claude Code y sube
 # sesiones.json y horas.json a GitHub. Se ejecuta cuando el PC está encendido; la
-# publicación nocturna fiable la hace publicar.sh en codehive. Si algo falla, lo
-# apunta en registro.log y, si la bóveda de codehive está desbloqueada, avisa por ntfy.
+# publicación nocturna fiable la hace publicar.sh en codehive. Todo queda en registro.log.
+# El resultado se informa al Kit en su estado.json: el panel lo enseña y, si falla, el Kit avisa al móvil.
 
 $ErrorActionPreference = 'Stop'
 # Python escribe en UTF-8; sin esto PowerShell lo lee en la página de códigos de Windows y rompe los acentos.
@@ -16,11 +16,24 @@ function Anotar($texto) {
     Write-Output $linea
 }
 
-function Avisar($titulo, $texto) {
-    # Mejor esfuerzo: necesita la bóveda desbloqueada en codehive. Si no, se calla.
+# Escribe el estado.json que lee KitDani, en la ruta que el Kit dejó en estado-ruta.txt al importar
+# la herramienta. Sin ese fichero no hace nada. Nunca hace fallar la publicación.
+function Informar($estado, $mensaje, $indicadores = @()) {
     try {
-        $orden = "/home/codehive/bin/vault-usar `"ntfy - token scripts`" NTFY_TOKEN -- sh -c 'curl -s -H `"Authorization: Bearer `$NTFY_TOKEN`" -H `"Title: $titulo`" -H `"Tags: hourglass`" -d `"$texto`" https://ntfy.code-hive.space/claude'"
-        ssh -o ConnectTimeout=10 -o BatchMode=yes codehive $orden | Out-Null
+        $rutaFichero = Join-Path $aqui 'estado-ruta.txt'
+        if (-not (Test-Path $rutaFichero)) { return }
+        $destino = (Get-Content $rutaFichero -TotalCount 1).Trim()
+        if (-not $destino) { return }
+        $datos = [ordered]@{
+            estado      = $estado
+            actualizado = (Get-Date).ToString('yyyy-MM-ddTHH:mm:sszzz')
+            mensaje     = $mensaje
+            indicadores = @($indicadores)
+        }
+        $temporal = "$destino.tmp"
+        New-Item -ItemType Directory -Force -Path (Split-Path $destino) | Out-Null
+        [IO.File]::WriteAllText($temporal, ($datos | ConvertTo-Json -Depth 4), (New-Object Text.UTF8Encoding $false))
+        Move-Item -Force $temporal $destino
     } catch {}
 }
 
@@ -32,17 +45,27 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "calcular.py terminó con código $LASTEXITCODE`n$salida" }
     $ultima = (($salida | Select-String '^(Web|Ranking):') | ForEach-Object { $_.Line }) -join ' '
     Anotar $ultima
+    $horasWeb = if ($ultima -match 'Web: ([\d.]+) h') { $Matches[1] } else { '?' }
+    $indicadores = @(
+        [ordered]@{ etiqueta = 'Horas totales'; valor = $horasWeb },
+        [ordered]@{ etiqueta = 'Última publicación'; valor = (Get-Date -Format 'HH:mm') }
+    )
 
     & git add horas.json ranking.json sesiones.json repos.json bitbucket.json
     $cambios = & git status --porcelain horas.json ranking.json sesiones.json repos.json bitbucket.json
-    if (-not $cambios) { Anotar 'Sin cambios, no se publica'; exit 0 }
+    if (-not $cambios) {
+        Anotar 'Sin cambios, no se publica'
+        Informar 'ok' 'Sin cambios que publicar' $indicadores
+        exit 0
+    }
 
     & git commit -q -m "Horas al $(Get-Date -Format 'yyyy-MM-dd')" | Out-Null
     & git push -q origin main
     if ($LASTEXITCODE -ne 0) { throw 'git push falló' }
     Anotar 'Publicado'
+    Informar 'ok' 'Publicado' $indicadores
 } catch {
     Anotar "ERROR: $($_.Exception.Message)"
-    Avisar 'horas: fallo al publicar' "$($_.Exception.Message)"
+    Informar 'error' "Fallo al publicar: $($_.Exception.Message)"
     exit 1
 }

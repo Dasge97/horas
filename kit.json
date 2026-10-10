@@ -1,0 +1,25 @@
+{
+  "kit": 1,
+  "paquete": "horas",
+  "requisitos": [
+    { "comando": "python", "texto": "Python 3 en el PATH" },
+    { "comando": "git", "texto": "Git en el PATH" }
+  ],
+
+  "id": "horas-proyectos",
+  "nombre": "Recuento de horas",
+  "descripcion": "Calcula las horas trabajadas con los registros de Claude Code y las publica en GitHub cada 2 horas.",
+  "tipo": "tarea",
+  "proyecto": "{dir}",
+  "estado_ruta": "{dir}/estado-ruta.txt",
+  "comprobar": {
+    "tarea_windows": "Horas de proyectos (daniunico.com)"
+  },
+  "acciones": {
+    "arrancar": "schtasks /Run /TN \"Horas de proyectos (daniunico.com)\"",
+    "parar": null,
+    "abrir": "https://horas.code-hive.space"
+  },
+  "registro": "{dir}/registro.log",
+  "caducidad_minutos": 150
+}
