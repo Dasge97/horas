@@ -1,4 +1,4 @@
-# Versión para el PC. Calcula las horas con los registros de Claude Code y sube
+﻿# Versión para el PC. Calcula las horas con los registros de Claude Code y sube
 # sesiones.json y horas.json a GitHub. Se ejecuta cuando el PC está encendido; la
 # publicación nocturna fiable la hace publicar.sh en codehive. Todo queda en registro.log.
 # El resultado se informa al Kit en su estado.json: el panel lo enseña y, si falla, el Kit avisa al móvil.
@@ -60,8 +60,25 @@ try {
     }
 
     & git commit -q -m "Horas al $(Get-Date -Format 'yyyy-MM-dd')" | Out-Null
-    & git push -q origin main
-    if ($LASTEXITCODE -ne 0) { throw 'git push falló' }
+    # Si codehive publica a la vez, el push se rechaza. Entonces se parte de lo último de GitHub
+    # conservando los ficheros de este PC (reset --mixed no toca la carpeta), se recalcula y se reintenta.
+    # Así nunca se queda en un conflicto: horas.json y ranking.json son generados y sesiones.json solo lo cambia el PC.
+    $intento = 1
+    while ($true) {
+        & git push -q origin main
+        if ($LASTEXITCODE -eq 0) { break }
+        if ($intento -ge 3) { throw 'git push rechazado 3 veces seguidas' }
+        Anotar "git push rechazado (codehive habrá publicado a la vez). Reintento $($intento + 1) de 3"
+        $intento++
+        Start-Sleep -Seconds 20
+        & git fetch -q origin
+        if ($LASTEXITCODE -ne 0) { throw 'git fetch falló' }
+        & git reset -q --mixed origin/main
+        $salida = & python -I (Join-Path $aqui 'calcular.py') 2>&1
+        if ($LASTEXITCODE -ne 0) { throw "calcular.py terminó con código $LASTEXITCODE`n$salida" }
+        & git add horas.json ranking.json sesiones.json repos.json bitbucket.json
+        & git commit -q -m "Horas al $(Get-Date -Format 'yyyy-MM-dd')" | Out-Null
+    }
     Anotar 'Publicado'
     Informar 'ok' 'Publicado' $indicadores
 } catch {
