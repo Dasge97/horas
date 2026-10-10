@@ -34,6 +34,7 @@
  "central-de-comunicaciones": true,
  "centralita-ia": true,
  "ceomind": true,
+ "claude-browser-eye-extension": false,
  "claude-monitoring-rainmeter": false,
  "cloud-isa": false,
  "cloud-test": true,
