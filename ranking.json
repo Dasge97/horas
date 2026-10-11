@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-11T02:18:13+00:00",
+ "actualizado": "2026-10-11T03:30:02+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1107.7,
+ "total_horas": 1109.1,
  "total_dias": 197,
  "entradas": [
   {
@@ -491,6 +491,22 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "claude-browser-eye-extension"
+   ],
+   "horas": 6.8,
+   "horas_sesiones": 0,
+   "horas_commits": 6.8,
+   "dias": 2,
+   "commits": 25,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "ERP construido por IA",
    "tipo": "proyecto",
    "en_web": true,
@@ -522,22 +538,6 @@
    "commits": 13,
    "desde": "2026-07-13",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "claude-browser-eye-extension"
-   ],
-   "horas": 6.4,
-   "horas_sesiones": 0,
-   "horas_commits": 6.4,
-   "dias": 2,
-   "commits": 23,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-11"
   },
   {
    "nombre": "KPIs-apunts",
@@ -783,11 +783,11 @@
    "repos": [
     "KitDani"
    ],
-   "horas": 3.6,
+   "horas": 4.1,
    "horas_sesiones": 0,
-   "horas_commits": 3.6,
+   "horas_commits": 4.1,
    "dias": 2,
-   "commits": 10,
+   "commits": 11,
    "desde": "2026-10-10",
    "hasta": "2026-10-11"
   },
@@ -1113,6 +1113,22 @@
    "hasta": "2026-05-29"
   },
   {
+   "nombre": "kit-codehive",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "kit-codehive"
+   ],
+   "horas": 1.5,
+   "horas_sesiones": 0,
+   "horas_commits": 1.5,
+   "dias": 2,
+   "commits": 3,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "CLIENTES-DimitriAntonov",
    "tipo": "carpeta",
    "en_web": false,
@@ -1297,22 +1313,6 @@
    "commits": 3,
    "desde": "2026-07-13",
    "hasta": "2026-07-13"
-  },
-  {
-   "nombre": "kit-codehive",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "kit-codehive"
-   ],
-   "horas": 1.0,
-   "horas_sesiones": 0,
-   "horas_commits": 1.0,
-   "dias": 1,
-   "commits": 2,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "puente-kit",
