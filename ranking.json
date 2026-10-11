@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-11T00:18:13+00:00",
+ "actualizado": "2026-10-11T02:18:13+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1101.9,
+ "total_horas": 1107.7,
  "total_dias": 197,
  "entradas": [
   {
@@ -445,6 +445,20 @@
    "hasta": "2026-09-06"
   },
   {
+   "nombre": "hangar-app",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 8.2,
+   "horas_sesiones": 8.2,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "Expedición medieval",
    "tipo": "proyecto",
    "en_web": true,
@@ -459,20 +473,6 @@
    "commits": 1,
    "desde": "2026-09-26",
    "hasta": "2026-09-29"
-  },
-  {
-   "nombre": "hangar-app",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 7.5,
-   "horas_sesiones": 7.5,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-11"
   },
   {
    "nombre": "Ministudio",
@@ -522,6 +522,22 @@
    "commits": 13,
    "desde": "2026-07-13",
    "hasta": "2026-09-19"
+  },
+  {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "claude-browser-eye-extension"
+   ],
+   "horas": 6.4,
+   "horas_sesiones": 0,
+   "horas_commits": 6.4,
+   "dias": 2,
+   "commits": 23,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
   },
   {
    "nombre": "KPIs-apunts",
@@ -622,6 +638,20 @@
    "hasta": "2026-01-16"
   },
   {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 5.5,
+   "horas_sesiones": 5.5,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "SkillDrop",
    "tipo": "proyecto",
    "en_web": true,
@@ -702,6 +732,20 @@
    "hasta": "2026-05-23"
   },
   {
+   "nombre": "KitDani",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 4.7,
+   "horas_sesiones": 4.7,
+   "horas_commits": 0.0,
+   "dias": 3,
+   "commits": 0,
+   "desde": "2026-10-09",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "RESEARCHIA",
    "tipo": "carpeta",
    "en_web": false,
@@ -714,22 +758,6 @@
    "commits": 0,
    "desde": "2026-09-19",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "claude-browser-eye-extension"
-   ],
-   "horas": 4.3,
-   "horas_sesiones": 0,
-   "horas_commits": 4.3,
-   "dias": 1,
-   "commits": 18,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "claude-monitoring-rainmeter",
@@ -749,31 +777,19 @@
   },
   {
    "nombre": "KitDani",
-   "tipo": "carpeta",
+   "tipo": "repo",
    "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 4.0,
-   "horas_sesiones": 4.0,
-   "horas_commits": 0.0,
+   "privado": false,
+   "repos": [
+    "KitDani"
+   ],
+   "horas": 3.6,
+   "horas_sesiones": 0,
+   "horas_commits": 3.6,
    "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-09",
-   "hasta": "2026-10-10"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 3.7,
-   "horas_sesiones": 3.7,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
+   "commits": 10,
    "desde": "2026-10-10",
-   "hasta": "2026-10-10"
+   "hasta": "2026-10-11"
   },
   {
    "nombre": "decaok",
@@ -819,22 +835,6 @@
    "dias": 2,
    "commits": 18,
    "desde": "2026-10-08",
-   "hasta": "2026-10-10"
-  },
-  {
-   "nombre": "KitDani",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "KitDani"
-   ],
-   "horas": 3.1,
-   "horas_sesiones": 0,
-   "horas_commits": 3.1,
-   "dias": 1,
-   "commits": 9,
-   "desde": "2026-10-10",
    "hasta": "2026-10-10"
   },
   {

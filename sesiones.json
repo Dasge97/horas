@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-11T00:18:13+00:00",
+ "actualizado": "2026-10-11T02:18:13+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -298,10 +298,11 @@
    ]
   },
   "KitDani": {
-   "horas": 3.96,
+   "horas": 4.69,
    "dias": [
     "2026-10-09",
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
    ]
   },
   "RANDOM-pruebas-hangar": {
@@ -317,9 +318,10 @@
    ]
   },
   "claude-browser-eye-extension": {
-   "horas": 3.74,
+   "horas": 5.48,
    "dias": [
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
    ]
   },
   "decaok": {
@@ -336,7 +338,7 @@
    ]
   },
   "hangar-app": {
-   "horas": 7.45,
+   "horas": 8.21,
    "dias": [
     "2026-10-10",
     "2026-10-11"
