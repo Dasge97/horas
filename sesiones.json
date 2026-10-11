@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-10T22:18:13+00:00",
+ "actualizado": "2026-10-11T00:18:13+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -336,9 +336,10 @@
    ]
   },
   "hangar-app": {
-   "horas": 5.43,
+   "horas": 7.45,
    "dias": [
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
    ]
   },
   "mando-basico": {

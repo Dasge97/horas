@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-10T22:18:13+00:00",
+ "actualizado": "2026-10-11T00:18:13+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
  "total_horas": 431.1,
  "total_dias": 124,

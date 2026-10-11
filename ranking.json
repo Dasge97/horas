@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-10T22:18:13+00:00",
+ "actualizado": "2026-10-11T00:18:13+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1099.8,
- "total_dias": 196,
+ "total_horas": 1101.9,
+ "total_dias": 197,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -461,6 +461,20 @@
    "hasta": "2026-09-29"
   },
   {
+   "nombre": "hangar-app",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 7.5,
+   "horas_sesiones": 7.5,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "Ministudio",
    "tipo": "proyecto",
    "en_web": true,
@@ -606,20 +620,6 @@
    "commits": 19,
    "desde": "2025-11-30",
    "hasta": "2026-01-16"
-  },
-  {
-   "nombre": "hangar-app",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 5.4,
-   "horas_sesiones": 5.4,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "SkillDrop",
