@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-12T13:59:53+00:00",
+ "actualizado": "2026-10-12T15:59:42+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -348,6 +348,12 @@
    "horas": 0.8,
    "dias": [
     "2026-10-09"
+   ]
+  },
+  "new-studio": {
+   "horas": 1.19,
+   "dias": [
+    "2026-10-12"
    ]
   },
   "raton-perdido": {
