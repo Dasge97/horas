@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-11T22:38:36+00:00",
+ "actualizado": "2026-10-12T03:30:02+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1111.2,
+ "total_horas": 1112.4,
  "total_dias": 197,
  "entradas": [
   {
@@ -459,6 +459,22 @@
    "hasta": "2026-09-06"
   },
   {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "claude-browser-eye-extension"
+   ],
+   "horas": 8.0,
+   "horas_sesiones": 0,
+   "horas_commits": 8.0,
+   "dias": 2,
+   "commits": 27,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-11"
+  },
+  {
    "nombre": "Expedición medieval",
    "tipo": "proyecto",
    "en_web": true,
@@ -489,22 +505,6 @@
    "commits": 45,
    "desde": "2026-09-14",
    "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "claude-browser-eye-extension"
-   ],
-   "horas": 6.8,
-   "horas_sesiones": 0,
-   "horas_commits": 6.8,
-   "dias": 2,
-   "commits": 25,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-11"
   },
   {
    "nombre": "ERP construido por IA",
