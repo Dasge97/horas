@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-12T17:59:41+00:00",
+ "actualizado": "2026-10-12T19:59:42+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1115.4,
+ "total_horas": 1116.6,
  "total_dias": 198,
  "entradas": [
   {
@@ -792,6 +792,20 @@
    "hasta": "2026-10-11"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 3.6,
+   "horas_sesiones": 3.6,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-12",
+   "hasta": "2026-10-12"
+  },
+  {
    "nombre": "decaok",
    "tipo": "carpeta",
    "en_web": false,
@@ -983,20 +997,6 @@
    "commits": 11,
    "desde": "2025-12-11",
    "hasta": "2026-04-01"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.4,
-   "horas_sesiones": 2.4,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-12",
-   "hasta": "2026-10-12"
   },
   {
    "nombre": "FactorAI",
