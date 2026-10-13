@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-13T11:17:41+00:00",
+ "actualizado": "2026-10-13T13:17:41+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 429.8,
- "total_dias": 124,
+ "total_horas": 430.8,
+ "total_dias": 125,
  "proyectos": {
   "pocket-terminal": {
    "nombre": "Pocket Terminal",
@@ -376,13 +376,13 @@
   },
   "SkillDrop": {
    "nombre": "SkillDrop",
-   "horas": 5.3,
+   "horas": 6.3,
    "horas_sesiones": 0.0,
-   "horas_commits": 5.3,
-   "dias": 2,
-   "commits": 12,
+   "horas_commits": 6.3,
+   "dias": 3,
+   "commits": 15,
    "desde": "2026-06-03",
-   "hasta": "2026-06-15"
+   "hasta": "2026-10-13"
   },
   "CodeHive": {
    "nombre": "CodeHive",

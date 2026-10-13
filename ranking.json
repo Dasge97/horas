@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-13T11:17:41+00:00",
+ "actualizado": "2026-10-13T13:17:41+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1131.1,
+ "total_horas": 1132.6,
  "total_dias": 199,
  "entradas": [
   {
@@ -381,6 +381,20 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 10.4,
+   "horas_sesiones": 10.4,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-12",
+   "hasta": "2026-10-13"
+  },
+  {
    "nombre": "POD",
    "tipo": "proyecto",
    "en_web": true,
@@ -395,20 +409,6 @@
    "commits": 18,
    "desde": "2026-05-30",
    "hasta": "2026-05-30"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 9.9,
-   "horas_sesiones": 9.9,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-12",
-   "hasta": "2026-10-13"
   },
   {
    "nombre": "Pocket Terminal",
@@ -584,6 +584,22 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "SkillDrop",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
+   "repos": [
+    "SkillDrop"
+   ],
+   "horas": 6.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 6.3,
+   "dias": 3,
+   "commits": 15,
+   "desde": "2026-06-03",
+   "hasta": "2026-10-13"
+  },
+  {
    "nombre": "KPIs-apunts",
    "tipo": "carpeta",
    "en_web": false,
@@ -680,22 +696,6 @@
    "commits": 19,
    "desde": "2025-11-30",
    "hasta": "2026-01-16"
-  },
-  {
-   "nombre": "SkillDrop",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "SkillDrop"
-   ],
-   "horas": 5.3,
-   "horas_sesiones": 0.0,
-   "horas_commits": 5.3,
-   "dias": 2,
-   "commits": 12,
-   "desde": "2026-06-03",
-   "hasta": "2026-06-15"
   },
   {
    "nombre": "myReporter",
