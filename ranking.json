@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-13T07:17:51+00:00",
+ "actualizado": "2026-10-13T09:17:41+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1125.7,
- "total_dias": 198,
+ "total_horas": 1129.2,
+ "total_dias": 199,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -44,13 +44,13 @@
    "repos": [
     "bitbucket:oficina-virtual-app-web"
    ],
-   "horas": 67.1,
+   "horas": 68.7,
    "horas_sesiones": 0,
-   "horas_commits": 67.1,
-   "dias": 43,
-   "commits": 129,
+   "horas_commits": 68.7,
+   "dias": 44,
+   "commits": 134,
    "desde": "2026-03-24",
-   "hasta": "2026-10-05"
+   "hasta": "2026-10-08"
   },
   {
    "nombre": "prindio",
@@ -475,6 +475,20 @@
    "hasta": "2026-10-11"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 8.0,
+   "horas_sesiones": 8.0,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-12",
+   "hasta": "2026-10-13"
+  },
+  {
    "nombre": "Expedición medieval",
    "tipo": "proyecto",
    "en_web": true,
@@ -521,18 +535,20 @@
    "hasta": "2026-09-21"
   },
   {
-   "nombre": "new-studio",
-   "tipo": "carpeta",
+   "nombre": "onada",
+   "tipo": "repo",
    "en_web": false,
    "privado": true,
-   "repos": [],
-   "horas": 6.7,
-   "horas_sesiones": 6.7,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
+   "repos": [
+    "onada"
+   ],
+   "horas": 6.6,
+   "horas_sesiones": 0,
+   "horas_commits": 6.6,
+   "dias": 2,
+   "commits": 21,
    "desde": "2026-10-12",
-   "hasta": "2026-10-12"
+   "hasta": "2026-10-13"
   },
   {
    "nombre": "ERP construido por IA",
@@ -596,22 +612,6 @@
    "commits": 11,
    "desde": "2025-09-19",
    "hasta": "2025-12-10"
-  },
-  {
-   "nombre": "onada",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "onada"
-   ],
-   "horas": 6.0,
-   "horas_sesiones": 0,
-   "horas_commits": 6.0,
-   "dias": 1,
-   "commits": 19,
-   "desde": "2026-10-12",
-   "hasta": "2026-10-12"
   },
   {
    "nombre": "Centralia",
