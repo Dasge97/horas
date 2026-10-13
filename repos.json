@@ -72,6 +72,7 @@
  "odrys-cli": false,
  "odrys-desktop-workflows": true,
  "odrys-harness": false,
+ "onada": true,
  "one-piece-matchup-lab": false,
  "os-demo": false,
  "os-notes": false,
