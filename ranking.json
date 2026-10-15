@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-15T03:30:03+00:00",
+ "actualizado": "2026-10-15T05:03:01+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1134.8,
+ "total_horas": 1134.1,
  "total_dias": 200,
  "entradas": [
   {
@@ -1483,22 +1483,6 @@
    "commits": 3,
    "desde": "2026-04-12",
    "hasta": "2026-04-12"
-  },
-  {
-   "nombre": "YaViene",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "yaviene"
-   ],
-   "horas": 0.7,
-   "horas_sesiones": 0.0,
-   "horas_commits": 0.7,
-   "dias": 1,
-   "commits": 2,
-   "desde": "2026-05-25",
-   "hasta": "2026-05-25"
   },
   {
    "nombre": "margen",
