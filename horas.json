@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-15T19:02:45+00:00",
+ "actualizado": "2026-10-15T21:02:46+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 430.8,
+ "total_horas": 434.9,
  "total_dias": 125,
  "proyectos": {
   "pocket-terminal": {
@@ -116,9 +116,9 @@
   },
   "meridian": {
    "nombre": "Meridian",
-   "horas": 13.7,
-   "horas_sesiones": 11.9,
-   "horas_commits": 1.8,
+   "horas": 14.5,
+   "horas_sesiones": 6.9,
+   "horas_commits": 7.6,
    "dias": 4,
    "commits": 32,
    "desde": "2026-09-11",
@@ -306,10 +306,10 @@
   },
   "Instagram Content Creator": {
    "nombre": "Instagram Content Creator",
-   "horas": 11.9,
-   "horas_sesiones": 5.7,
-   "horas_commits": 6.2,
-   "dias": 7,
+   "horas": 15.2,
+   "horas_sesiones": 0.0,
+   "horas_commits": 15.2,
+   "dias": 6,
    "commits": 38,
    "desde": "2026-08-06",
    "hasta": "2026-09-01"
