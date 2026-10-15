@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-15T13:02:44+00:00",
+ "actualizado": "2026-10-15T15:02:44+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1134.8,
- "total_dias": 200,
+ "total_horas": 1141.6,
+ "total_dias": 201,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -44,13 +44,13 @@
    "repos": [
     "bitbucket:oficina-virtual-app-web"
    ],
-   "horas": 68.7,
+   "horas": 75.5,
    "horas_sesiones": 0,
-   "horas_commits": 68.7,
-   "dias": 44,
-   "commits": 134,
+   "horas_commits": 75.5,
+   "dias": 46,
+   "commits": 142,
    "desde": "2026-03-24",
-   "hasta": "2026-10-08"
+   "hasta": "2026-10-15"
   },
   {
    "nombre": "prindio",
