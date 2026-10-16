@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-16T15:58:59+00:00",
+ "actualizado": "2026-10-16T17:58:59+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1157.3,
+ "total_horas": 1165.0,
  "total_dias": 202,
  "entradas": [
   {
@@ -247,6 +247,20 @@
    "hasta": "2026-10-10"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 17.0,
+   "horas_sesiones": 17.0,
+   "horas_commits": 0.0,
+   "dias": 3,
+   "commits": 0,
+   "desde": "2026-10-12",
+   "hasta": "2026-10-16"
+  },
+  {
    "nombre": "Tu Debate Diario",
    "tipo": "proyecto",
    "en_web": true,
@@ -279,20 +293,6 @@
    "commits": 43,
    "desde": "2026-03-14",
    "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 15.5,
-   "horas_sesiones": 15.5,
-   "horas_commits": 0.0,
-   "dias": 3,
-   "commits": 0,
-   "desde": "2026-10-12",
-   "hasta": "2026-10-16"
   },
   {
    "nombre": "Instagram Content Creator",
@@ -776,6 +776,36 @@
    "hasta": "2026-05-23"
   },
   {
+   "nombre": "sancho",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "sancho"
+   ],
+   "horas": 4.8,
+   "horas_sesiones": 0,
+   "horas_commits": 4.8,
+   "dias": 2,
+   "commits": 33,
+   "desde": "2026-10-15",
+   "hasta": "2026-10-16"
+  },
+  {
+   "nombre": "sancho",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 4.8,
+   "horas_sesiones": 4.8,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-16",
+   "hasta": "2026-10-16"
+  },
+  {
    "nombre": "RESEARCHIA",
    "tipo": "carpeta",
    "en_web": false,
@@ -898,20 +928,6 @@
    "commits": 6,
    "desde": "2026-09-25",
    "hasta": "2026-09-25"
-  },
-  {
-   "nombre": "sancho",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.9,
-   "horas_sesiones": 2.9,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-16",
-   "hasta": "2026-10-16"
   },
   {
    "nombre": "Ducker",
@@ -1708,22 +1724,6 @@
    "commits": 1,
    "desde": "2026-09-19",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "sancho",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "sancho"
-   ],
-   "horas": 0.5,
-   "horas_sesiones": 0,
-   "horas_commits": 0.5,
-   "dias": 1,
-   "commits": 14,
-   "desde": "2026-10-15",
-   "hasta": "2026-10-15"
   },
   {
    "nombre": "decaok-transporte-app-movil",
