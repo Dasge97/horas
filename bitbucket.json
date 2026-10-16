@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-16T09:58:59+00:00",
+ "actualizado": "2026-10-16T11:58:59+00:00",
  "repos": {
   "new-studio": {
    "horas": 9.0,
@@ -31,11 +31,11 @@
    ]
   },
   "oficina-virtual-app-web": {
-   "horas": 77.8,
+   "horas": 78.5,
    "horas_sesiones": 0,
-   "horas_commits": 77.8,
+   "horas_commits": 78.5,
    "dias": 47,
-   "commits": 155,
+   "commits": 156,
    "desde": "2026-03-24",
    "hasta": "2026-10-16",
    "dias_lista": [

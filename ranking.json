@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-16T09:58:59+00:00",
+ "actualizado": "2026-10-16T11:58:59+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1150.0,
+ "total_horas": 1152.8,
  "total_dias": 202,
  "entradas": [
   {
@@ -44,11 +44,11 @@
    "repos": [
     "bitbucket:oficina-virtual-app-web"
    ],
-   "horas": 77.8,
+   "horas": 78.5,
    "horas_sesiones": 0,
-   "horas_commits": 77.8,
+   "horas_commits": 78.5,
    "dias": 47,
-   "commits": 155,
+   "commits": 156,
    "desde": "2026-03-24",
    "hasta": "2026-10-16"
   },
@@ -370,8 +370,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 11.8,
-   "horas_sesiones": 11.8,
+   "horas": 12.9,
+   "horas_sesiones": 12.9,
    "horas_commits": 0.0,
    "dias": 3,
    "commits": 0,
@@ -1345,6 +1345,20 @@
    "commits": 2,
    "desde": "2026-10-10",
    "hasta": "2026-10-10"
+  },
+  {
+   "nombre": "sancho",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 1.0,
+   "horas_sesiones": 1.0,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-16",
+   "hasta": "2026-10-16"
   },
   {
    "nombre": "central-de-comunicaciones",
