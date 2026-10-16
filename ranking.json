@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-16T17:58:59+00:00",
+ "actualizado": "2026-10-16T19:58:59+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1165.0,
+ "total_horas": 1168.5,
  "total_dias": 202,
  "entradas": [
   {
@@ -252,8 +252,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 17.0,
-   "horas_sesiones": 17.0,
+   "horas": 17.5,
+   "horas_sesiones": 17.5,
    "horas_commits": 0.0,
    "dias": 3,
    "commits": 0,
@@ -584,6 +584,22 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "sancho",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "sancho"
+   ],
+   "horas": 6.4,
+   "horas_sesiones": 0,
+   "horas_commits": 6.4,
+   "dias": 2,
+   "commits": 45,
+   "desde": "2026-10-15",
+   "hasta": "2026-10-16"
+  },
+  {
    "nombre": "SkillDrop",
    "tipo": "proyecto",
    "en_web": true,
@@ -628,6 +644,20 @@
    "commits": 11,
    "desde": "2025-09-19",
    "hasta": "2025-12-10"
+  },
+  {
+   "nombre": "sancho",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 6.2,
+   "horas_sesiones": 6.2,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-16",
+   "hasta": "2026-10-16"
   },
   {
    "nombre": "Centralia",
@@ -774,36 +804,6 @@
    "commits": 13,
    "desde": "2026-05-22",
    "hasta": "2026-05-23"
-  },
-  {
-   "nombre": "sancho",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "sancho"
-   ],
-   "horas": 4.8,
-   "horas_sesiones": 0,
-   "horas_commits": 4.8,
-   "dias": 2,
-   "commits": 33,
-   "desde": "2026-10-15",
-   "hasta": "2026-10-16"
-  },
-  {
-   "nombre": "sancho",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 4.8,
-   "horas_sesiones": 4.8,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-16",
-   "hasta": "2026-10-16"
   },
   {
    "nombre": "RESEARCHIA",
