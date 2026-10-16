@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-16T07:58:59+00:00",
+ "actualizado": "2026-10-16T09:58:59+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1148.0,
+ "total_horas": 1150.0,
  "total_dias": 202,
  "entradas": [
   {
@@ -44,11 +44,11 @@
    "repos": [
     "bitbucket:oficina-virtual-app-web"
    ],
-   "horas": 76.4,
+   "horas": 77.8,
    "horas_sesiones": 0,
-   "horas_commits": 76.4,
+   "horas_commits": 77.8,
    "dias": 47,
-   "commits": 151,
+   "commits": 155,
    "desde": "2026-03-24",
    "hasta": "2026-10-16"
   },
@@ -370,8 +370,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 11.2,
-   "horas_sesiones": 11.2,
+   "horas": 11.8,
+   "horas_sesiones": 11.8,
    "horas_commits": 0.0,
    "dias": 3,
    "commits": 0,
