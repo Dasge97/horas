@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-17T15:04:28+00:00",
+ "actualizado": "2026-10-17T17:04:15+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1169.5,
+ "total_horas": 1171.4,
  "total_dias": 203,
  "entradas": [
   {
@@ -219,8 +219,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 18.5,
-   "horas_sesiones": 18.5,
+   "horas": 19.4,
+   "horas_sesiones": 19.4,
    "horas_commits": 0.0,
    "dias": 4,
    "commits": 0,
@@ -395,6 +395,22 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:new-studio"
+   ],
+   "horas": 10.0,
+   "horas_sesiones": 0,
+   "horas_commits": 10.0,
+   "dias": 4,
+   "commits": 37,
+   "desde": "2026-09-22",
+   "hasta": "2026-10-17"
+  },
+  {
    "nombre": "POD",
    "tipo": "proyecto",
    "en_web": true,
@@ -439,22 +455,6 @@
    "commits": 0,
    "desde": "2026-10-10",
    "hasta": "2026-10-12"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:new-studio"
-   ],
-   "horas": 9.0,
-   "horas_sesiones": 0,
-   "horas_commits": 9.0,
-   "dias": 3,
-   "commits": 33,
-   "desde": "2026-09-22",
-   "hasta": "2026-10-16"
   },
   {
    "nombre": "Comentarista Fantasy",
