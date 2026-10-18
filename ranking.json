@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-18T19:27:57+00:00",
+ "actualizado": "2026-10-18T21:27:58+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1189.8,
+ "total_horas": 1193.4,
  "total_dias": 204,
  "entradas": [
   {
@@ -379,6 +379,22 @@
    "hasta": "2026-06-15"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 11.8,
+   "horas_sesiones": 0,
+   "horas_commits": 11.8,
+   "dias": 2,
+   "commits": 26,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
+  },
+  {
    "nombre": "Centralita IA",
    "tipo": "proyecto",
    "en_web": true,
@@ -395,18 +411,16 @@
    "hasta": "2026-09-19"
   },
   {
-   "nombre": "universocraft",
-   "tipo": "repo",
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
    "en_web": false,
    "privado": true,
-   "repos": [
-    "universocraft"
-   ],
+   "repos": [],
    "horas": 10.2,
-   "horas_sesiones": 0,
-   "horas_commits": 10.2,
+   "horas_sesiones": 10.2,
+   "horas_commits": 0.0,
    "dias": 2,
-   "commits": 22,
+   "commits": 0,
    "desde": "2026-10-17",
    "hasta": "2026-10-18"
   },
@@ -487,20 +501,6 @@
    "commits": 26,
    "desde": "2026-09-05",
    "hasta": "2026-09-06"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 8.2,
-   "horas_sesiones": 8.2,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-18"
   },
   {
    "nombre": "claude-browser-eye-extension",
