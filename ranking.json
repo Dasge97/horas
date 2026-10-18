@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-18T03:30:02+00:00",
+ "actualizado": "2026-10-18T13:28:06+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1178.1,
+ "total_horas": 1180.3,
  "total_dias": 204,
  "entradas": [
   {
@@ -222,10 +222,10 @@
    "horas": 19.4,
    "horas_sesiones": 19.4,
    "horas_commits": 0.0,
-   "dias": 4,
+   "dias": 5,
    "commits": 0,
    "desde": "2026-10-12",
-   "hasta": "2026-10-17"
+   "hasta": "2026-10-18"
   },
   {
    "nombre": "Morvan",
@@ -806,6 +806,22 @@
    "hasta": "2026-05-23"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 4.8,
+   "horas_sesiones": 0,
+   "horas_commits": 4.8,
+   "dias": 2,
+   "commits": 12,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
+  },
+  {
    "nombre": "RESEARCHIA",
    "tipo": "carpeta",
    "en_web": false,
@@ -852,18 +868,16 @@
    "hasta": "2026-10-11"
   },
   {
-   "nombre": "universocraft",
-   "tipo": "repo",
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
    "en_web": false,
    "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 3.9,
-   "horas_sesiones": 0,
-   "horas_commits": 3.9,
+   "repos": [],
+   "horas": 4.1,
+   "horas_sesiones": 4.1,
+   "horas_commits": 0.0,
    "dias": 2,
-   "commits": 10,
+   "commits": 0,
    "desde": "2026-10-17",
    "hasta": "2026-10-18"
   },
@@ -976,20 +990,6 @@
    "commits": 6,
    "desde": "2026-07-11",
    "hasta": "2026-07-13"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.8,
-   "horas_sesiones": 2.8,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-18"
   },
   {
    "nombre": "auto-order",
