@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-18T01:04:15+00:00",
+ "actualizado": "2026-10-18T03:04:16+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1174.3,
- "total_dias": 203,
+ "total_horas": 1177.1,
+ "total_dias": 204,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -930,6 +930,22 @@
    "hasta": "2026-09-25"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 2.9,
+   "horas_sesiones": 0,
+   "horas_commits": 2.9,
+   "dias": 2,
+   "commits": 9,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
+  },
+  {
    "nombre": "Ducker",
    "tipo": "proyecto",
    "en_web": true,
@@ -960,6 +976,20 @@
    "commits": 6,
    "desde": "2026-07-11",
    "hasta": "2026-07-13"
+  },
+  {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 2.8,
+   "horas_sesiones": 2.8,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
   },
   {
    "nombre": "auto-order",
@@ -1203,20 +1233,6 @@
    "hasta": "2026-10-08"
   },
   {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 1.5,
-   "horas_sesiones": 1.5,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-17"
-  },
-  {
    "nombre": "MesaParaTres",
    "tipo": "repo",
    "en_web": false,
@@ -1247,22 +1263,6 @@
    "commits": 2,
    "desde": "2026-05-29",
    "hasta": "2026-05-29"
-  },
-  {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 1.4,
-   "horas_sesiones": 0,
-   "horas_commits": 1.4,
-   "dias": 1,
-   "commits": 2,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-17"
   },
   {
    "nombre": "extractor",
