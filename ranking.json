@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-18T03:04:16+00:00",
+ "actualizado": "2026-10-18T03:30:02+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1177.1,
+ "total_horas": 1178.1,
  "total_dias": 204,
  "entradas": [
   {
@@ -852,6 +852,22 @@
    "hasta": "2026-10-11"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 3.9,
+   "horas_sesiones": 0,
+   "horas_commits": 3.9,
+   "dias": 2,
+   "commits": 10,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
+  },
+  {
    "nombre": "decaok",
    "tipo": "carpeta",
    "en_web": false,
@@ -928,22 +944,6 @@
    "commits": 6,
    "desde": "2026-09-25",
    "hasta": "2026-09-25"
-  },
-  {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 2.9,
-   "horas_sesiones": 0,
-   "horas_commits": 2.9,
-   "dias": 2,
-   "commits": 9,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-18"
   },
   {
    "nombre": "Ducker",
