@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-18T15:27:57+00:00",
+ "actualizado": "2026-10-18T17:27:57+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1182.5,
+ "total_horas": 1186.2,
  "total_dias": 204,
  "entradas": [
   {
@@ -489,6 +489,22 @@
    "hasta": "2026-10-11"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 8.0,
+   "horas_sesiones": 0,
+   "horas_commits": 8.0,
+   "dias": 2,
+   "commits": 19,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
+  },
+  {
    "nombre": "Expedición medieval",
    "tipo": "proyecto",
    "en_web": true,
@@ -533,6 +549,20 @@
    "commits": 45,
    "desde": "2026-09-14",
    "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 6.8,
+   "horas_sesiones": 6.8,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-18"
   },
   {
    "nombre": "onada",
@@ -693,22 +723,6 @@
    "hasta": "2026-05-20"
   },
   {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 5.7,
-   "horas_sesiones": 0,
-   "horas_commits": 5.7,
-   "dias": 2,
-   "commits": 14,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-18"
-  },
-  {
    "nombre": "Universo Fantasy",
    "tipo": "proyecto",
    "en_web": true,
@@ -742,20 +756,6 @@
    "commits": 19,
    "desde": "2025-11-30",
    "hasta": "2026-01-16"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 5.4,
-   "horas_sesiones": 5.4,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-18"
   },
   {
    "nombre": "myReporter",
