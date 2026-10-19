@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-19T14:24:14+00:00",
+ "actualizado": "2026-10-19T16:24:25+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -53,11 +53,8 @@
    "dias": []
   },
   "meridian": {
-   "horas": 6.88,
-   "dias": [
-    "2026-09-15",
-    "2026-09-16"
-   ]
+   "horas": 0.0,
+   "dias": []
   },
   "card-pop": {
    "horas": 17.14,
@@ -303,13 +300,13 @@
    ]
   },
   "URbot": {
-   "horas": 0.43,
+   "horas": 2.45,
    "dias": [
     "2026-10-19"
    ]
   },
   "UniversoCraft": {
-   "horas": 12.05,
+   "horas": 12.97,
    "dias": [
     "2026-10-17",
     "2026-10-18",
@@ -317,11 +314,12 @@
    ]
   },
   "claude-browser-eye-extension": {
-   "horas": 7.29,
+   "horas": 7.6,
    "dias": [
     "2026-10-10",
     "2026-10-11",
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-19"
    ]
   },
   "decaok": {

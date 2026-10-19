@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-19T14:24:14+00:00",
+ "actualizado": "2026-10-19T16:24:25+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1197.3,
+ "total_horas": 1201.1,
  "total_dias": 205,
  "entradas": [
   {
@@ -327,20 +327,20 @@
    "hasta": "2026-08-12"
   },
   {
-   "nombre": "Meridian",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
    "repos": [
-    "Meridian"
+    "universocraft"
    ],
-   "horas": 14.5,
-   "horas_sesiones": 6.9,
-   "horas_commits": 7.6,
-   "dias": 4,
-   "commits": 32,
-   "desde": "2026-09-11",
-   "hasta": "2026-09-16"
+   "horas": 13.9,
+   "horas_sesiones": 0,
+   "horas_commits": 13.9,
+   "dias": 3,
+   "commits": 30,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-19"
   },
   {
    "nombre": "RestaurantOS",
@@ -359,20 +359,20 @@
    "hasta": "2026-07-05"
   },
   {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
+   "nombre": "Meridian",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": false,
    "repos": [
-    "universocraft"
+    "Meridian"
    ],
-   "horas": 13.4,
-   "horas_sesiones": 0,
-   "horas_commits": 13.4,
-   "dias": 3,
-   "commits": 29,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-19"
+   "horas": 13.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 13.5,
+   "dias": 4,
+   "commits": 32,
+   "desde": "2026-09-11",
+   "hasta": "2026-09-16"
   },
   {
    "nombre": "Odrys",
@@ -400,8 +400,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 12.1,
-   "horas_sesiones": 12.1,
+   "horas": 13.0,
+   "horas_sesiones": 13.0,
    "horas_commits": 0.0,
    "dias": 3,
    "commits": 0,
@@ -487,6 +487,22 @@
    "hasta": "2026-10-12"
   },
   {
+   "nombre": "claude-browser-eye-extension",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "claude-browser-eye-extension"
+   ],
+   "horas": 8.5,
+   "horas_sesiones": 0,
+   "horas_commits": 8.5,
+   "dias": 3,
+   "commits": 28,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-19"
+  },
+  {
    "nombre": "Comentarista Fantasy",
    "tipo": "proyecto",
    "en_web": true,
@@ -501,22 +517,6 @@
    "commits": 26,
    "desde": "2026-09-05",
    "hasta": "2026-09-06"
-  },
-  {
-   "nombre": "claude-browser-eye-extension",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "claude-browser-eye-extension"
-   ],
-   "horas": 8.0,
-   "horas_sesiones": 0,
-   "horas_commits": 8.0,
-   "dias": 2,
-   "commits": 27,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-11"
   },
   {
    "nombre": "Expedición medieval",
@@ -540,13 +540,13 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 7.3,
-   "horas_sesiones": 7.3,
+   "horas": 7.6,
+   "horas_sesiones": 7.6,
    "horas_commits": 0.0,
-   "dias": 3,
+   "dias": 4,
    "commits": 0,
    "desde": "2026-10-10",
-   "hasta": "2026-10-12"
+   "hasta": "2026-10-19"
   },
   {
    "nombre": "Ministudio",
@@ -1056,6 +1056,20 @@
    "hasta": "2026-10-08"
   },
   {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 2.5,
+   "horas_sesiones": 2.5,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-19",
+   "hasta": "2026-10-19"
+  },
+  {
    "nombre": "Plantillas de arranque",
    "tipo": "proyecto",
    "en_web": true,
@@ -1217,6 +1231,22 @@
    "commits": 3,
    "desde": "2026-10-10",
    "hasta": "2026-10-11"
+  },
+  {
+   "nombre": "puente-kit",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "puente-kit"
+   ],
+   "horas": 1.5,
+   "horas_sesiones": 0,
+   "horas_commits": 1.5,
+   "dias": 2,
+   "commits": 3,
+   "desde": "2026-10-10",
+   "hasta": "2026-10-19"
   },
   {
    "nombre": "GRUPAPUNTS-oficina-virtual-app-web",
@@ -1389,22 +1419,6 @@
    "commits": 3,
    "desde": "2026-07-13",
    "hasta": "2026-07-13"
-  },
-  {
-   "nombre": "puente-kit",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": false,
-   "repos": [
-    "puente-kit"
-   ],
-   "horas": 1.0,
-   "horas_sesiones": 0,
-   "horas_commits": 1.0,
-   "dias": 1,
-   "commits": 2,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-10"
   },
   {
    "nombre": "central-de-comunicaciones",
@@ -1754,20 +1768,6 @@
    "commits": 1,
    "desde": "2026-09-19",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 0.4,
-   "horas_sesiones": 0.4,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-19",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "decaok-transporte-app-movil",

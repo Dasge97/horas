@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-19T14:24:14+00:00",
+ "actualizado": "2026-10-19T16:24:25+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 436.0,
+ "total_horas": 435.0,
  "total_dias": 125,
  "proyectos": {
   "pocket-terminal": {
@@ -116,9 +116,9 @@
   },
   "meridian": {
    "nombre": "Meridian",
-   "horas": 14.5,
-   "horas_sesiones": 6.9,
-   "horas_commits": 7.6,
+   "horas": 13.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 13.5,
    "dias": 4,
    "commits": 32,
    "desde": "2026-09-11",
