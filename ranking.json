@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-19T16:24:25+00:00",
+ "actualizado": "2026-10-19T18:24:34+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1201.1,
+ "total_horas": 1203.1,
  "total_dias": 205,
  "entradas": [
   {
@@ -850,6 +850,20 @@
    "hasta": "2026-09-19"
   },
   {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 4.5,
+   "horas_sesiones": 4.5,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-19",
+   "hasta": "2026-10-19"
+  },
+  {
    "nombre": "claude-monitoring-rainmeter",
    "tipo": "proyecto",
    "en_web": true,
@@ -1054,20 +1068,6 @@
    "commits": 10,
    "desde": "2026-10-08",
    "hasta": "2026-10-08"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.5,
-   "horas_sesiones": 2.5,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-19",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "Plantillas de arranque",
