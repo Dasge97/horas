@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-19T20:24:25+00:00",
+ "actualizado": "2026-10-19T21:20:29+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1203.7,
+ "total_horas": 1205.2,
  "total_dias": 205,
  "entradas": [
   {
@@ -334,11 +334,11 @@
    "repos": [
     "universocraft"
    ],
-   "horas": 13.9,
+   "horas": 14.4,
    "horas_sesiones": 0,
-   "horas_commits": 13.9,
+   "horas_commits": 14.4,
    "dias": 3,
-   "commits": 30,
+   "commits": 31,
    "desde": "2026-10-17",
    "hasta": "2026-10-19"
   },
@@ -375,6 +375,20 @@
    "hasta": "2026-09-16"
   },
   {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 13.5,
+   "horas_sesiones": 13.5,
+   "horas_commits": 0.0,
+   "dias": 3,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-19"
+  },
+  {
    "nombre": "Odrys",
    "tipo": "proyecto",
    "en_web": true,
@@ -393,20 +407,6 @@
    "commits": 26,
    "desde": "2026-04-05",
    "hasta": "2026-06-15"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 13.0,
-   "horas_sesiones": 13.0,
-   "horas_commits": 0.0,
-   "dias": 3,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "Centralita IA",
@@ -758,6 +758,20 @@
    "hasta": "2026-01-16"
   },
   {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 5.6,
+   "horas_sesiones": 5.6,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-19",
+   "hasta": "2026-10-19"
+  },
+  {
    "nombre": "myReporter",
    "tipo": "proyecto",
    "en_web": true,
@@ -786,20 +800,6 @@
    "commits": 0,
    "desde": "2026-10-09",
    "hasta": "2026-10-11"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 5.1,
-   "horas_sesiones": 5.1,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-19",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "AI Hub",
