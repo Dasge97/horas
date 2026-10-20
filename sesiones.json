@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T06:54:15+00:00",
+ "actualizado": "2026-10-20T08:54:08+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -14,10 +14,8 @@
    "dias": []
   },
   "centralita-ia": {
-   "horas": 2.63,
-   "dias": [
-    "2026-09-19"
-   ]
+   "horas": 0.0,
+   "dias": []
   },
   "centralia": {
    "horas": 0.0,
@@ -294,23 +292,25 @@
    ]
   },
   "RESEARCHIA": {
-   "horas": 4.66,
+   "horas": 2.23,
    "dias": [
     "2026-09-19"
    ]
   },
   "URbot": {
-   "horas": 7.53,
+   "horas": 7.73,
    "dias": [
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ]
   },
   "UniversoCraft": {
-   "horas": 14.94,
+   "horas": 15.77,
    "dias": [
     "2026-10-17",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ]
   },
   "claude-browser-eye-extension": {

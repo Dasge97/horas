@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-20T06:54:15+00:00",
+ "actualizado": "2026-10-20T08:54:08+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1209.9,
- "total_dias": 205,
+ "total_horas": 1208.4,
+ "total_dias": 206,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -302,13 +302,27 @@
    "repos": [
     "universocraft"
    ],
-   "horas": 15.8,
+   "horas": 16.3,
    "horas_sesiones": 0,
-   "horas_commits": 15.8,
-   "dias": 3,
-   "commits": 33,
+   "horas_commits": 16.3,
+   "dias": 4,
+   "commits": 34,
    "desde": "2026-10-17",
-   "hasta": "2026-10-19"
+   "hasta": "2026-10-20"
+  },
+  {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 15.8,
+   "horas_sesiones": 15.8,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-20"
   },
   {
    "nombre": "Instagram Content Creator",
@@ -341,20 +355,6 @@
    "commits": 65,
    "desde": "2026-06-07",
    "hasta": "2026-08-12"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 14.9,
-   "horas_sesiones": 14.9,
-   "horas_commits": 0.0,
-   "dias": 3,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "RestaurantOS",
@@ -416,9 +416,9 @@
    "repos": [
     "centralita-ia"
    ],
-   "horas": 10.6,
-   "horas_sesiones": 2.6,
-   "horas_commits": 7.9,
+   "horas": 10.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 10.0,
    "dias": 3,
    "commits": 33,
    "desde": "2026-09-17",
@@ -519,6 +519,20 @@
    "hasta": "2026-09-06"
   },
   {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 7.7,
+   "horas_sesiones": 7.7,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-19",
+   "hasta": "2026-10-20"
+  },
+  {
    "nombre": "Expedición medieval",
    "tipo": "proyecto",
    "en_web": true,
@@ -546,20 +560,6 @@
    "dias": 4,
    "commits": 0,
    "desde": "2026-10-10",
-   "hasta": "2026-10-19"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 7.5,
-   "horas_sesiones": 7.5,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-19",
    "hasta": "2026-10-19"
   },
   {
@@ -850,20 +850,6 @@
    "hasta": "2026-05-23"
   },
   {
-   "nombre": "RESEARCHIA",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 4.7,
-   "horas_sesiones": 4.7,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-09-19",
-   "hasta": "2026-09-19"
-  },
-  {
    "nombre": "claude-monitoring-rainmeter",
    "tipo": "proyecto",
    "en_web": true,
@@ -1119,6 +1105,20 @@
    "commits": 9,
    "desde": "2026-09-21",
    "hasta": "2026-09-21"
+  },
+  {
+   "nombre": "RESEARCHIA",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 2.2,
+   "horas_sesiones": 2.2,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-09-19",
+   "hasta": "2026-09-19"
   },
   {
    "nombre": "Autocaller",

@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-20T06:54:15+00:00",
+ "actualizado": "2026-10-20T08:54:08+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 435.0,
+ "total_horas": 434.4,
  "total_dias": 125,
  "proyectos": {
   "pocket-terminal": {
@@ -36,9 +36,9 @@
   },
   "centralita-ia": {
    "nombre": "Centralita IA",
-   "horas": 10.6,
-   "horas_sesiones": 2.6,
-   "horas_commits": 7.9,
+   "horas": 10.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 10.0,
    "dias": 3,
    "commits": 33,
    "desde": "2026-09-17",
