@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-20T10:54:07+00:00",
+ "actualizado": "2026-10-20T12:54:07+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1208.4,
+ "total_horas": 1211.4,
  "total_dias": 206,
  "entradas": [
   {
@@ -245,6 +245,22 @@
    "hasta": "2026-08-21"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 17.7,
+   "horas_sesiones": 0,
+   "horas_commits": 17.7,
+   "dias": 4,
+   "commits": 39,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-20"
+  },
+  {
    "nombre": "card-pop",
    "tipo": "proyecto",
    "en_web": true,
@@ -295,29 +311,13 @@
    "hasta": "2026-09-21"
   },
   {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 16.3,
-   "horas_sesiones": 0,
-   "horas_commits": 16.3,
-   "dias": 4,
-   "commits": 34,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-20"
-  },
-  {
    "nombre": "UniversoCraft",
    "tipo": "carpeta",
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 15.8,
-   "horas_sesiones": 15.8,
+   "horas": 16.1,
+   "horas_sesiones": 16.1,
    "horas_commits": 0.0,
    "dias": 4,
    "commits": 0,
@@ -487,6 +487,20 @@
    "hasta": "2026-10-12"
   },
   {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 9.0,
+   "horas_sesiones": 9.0,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-19",
+   "hasta": "2026-10-20"
+  },
+  {
    "nombre": "claude-browser-eye-extension",
    "tipo": "repo",
    "en_web": false,
@@ -517,20 +531,6 @@
    "commits": 26,
    "desde": "2026-09-05",
    "hasta": "2026-09-06"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 7.7,
-   "horas_sesiones": 7.7,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-19",
-   "hasta": "2026-10-20"
   },
   {
    "nombre": "Expedición medieval",
