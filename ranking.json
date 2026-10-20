@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-20T03:30:02+00:00",
+ "actualizado": "2026-10-20T06:54:15+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1206.6,
+ "total_horas": 1209.9,
  "total_dias": 205,
  "entradas": [
   {
@@ -343,6 +343,20 @@
    "hasta": "2026-08-12"
   },
   {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 14.9,
+   "horas_sesiones": 14.9,
+   "horas_commits": 0.0,
+   "dias": 3,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-19"
+  },
+  {
    "nombre": "RestaurantOS",
    "tipo": "proyecto",
    "en_web": true,
@@ -373,20 +387,6 @@
    "commits": 32,
    "desde": "2026-09-11",
    "hasta": "2026-09-16"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 13.5,
-   "horas_sesiones": 13.5,
-   "horas_commits": 0.0,
-   "dias": 3,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "Odrys",
@@ -546,6 +546,20 @@
    "dias": 4,
    "commits": 0,
    "desde": "2026-10-10",
+   "hasta": "2026-10-19"
+  },
+  {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 7.5,
+   "horas_sesiones": 7.5,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-19",
    "hasta": "2026-10-19"
   },
   {
@@ -756,20 +770,6 @@
    "commits": 19,
    "desde": "2025-11-30",
    "hasta": "2026-01-16"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 5.6,
-   "horas_sesiones": 5.6,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-10-19",
-   "hasta": "2026-10-19"
   },
   {
    "nombre": "myReporter",
