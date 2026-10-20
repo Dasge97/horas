@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-20T18:54:07+00:00",
+ "actualizado": "2026-10-20T20:54:08+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1220.4,
+ "total_horas": 1221.3,
  "total_dias": 206,
  "entradas": [
   {
@@ -205,11 +205,11 @@
    "repos": [
     "universocraft"
    ],
-   "horas": 21.5,
+   "horas": 22.0,
    "horas_sesiones": 0,
-   "horas_commits": 21.5,
+   "horas_commits": 22.0,
    "dias": 4,
-   "commits": 45,
+   "commits": 47,
    "desde": "2026-10-17",
    "hasta": "2026-10-20"
   },
@@ -249,8 +249,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 18.5,
-   "horas_sesiones": 18.5,
+   "horas": 18.9,
+   "horas_sesiones": 18.9,
    "horas_commits": 0.0,
    "dias": 4,
    "commits": 0,
