@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-20T14:54:07+00:00",
+ "actualizado": "2026-10-20T16:54:07+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1216.6,
+ "total_horas": 1219.6,
  "total_dias": 206,
  "entradas": [
   {
@@ -205,11 +205,11 @@
    "repos": [
     "universocraft"
    ],
-   "horas": 19.7,
+   "horas": 21.5,
    "horas_sesiones": 0,
-   "horas_commits": 19.7,
+   "horas_commits": 21.5,
    "dias": 4,
-   "commits": 43,
+   "commits": 45,
    "desde": "2026-10-17",
    "hasta": "2026-10-20"
   },
@@ -244,6 +244,20 @@
    "hasta": "2026-10-18"
   },
   {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 18.4,
+   "horas_sesiones": 18.4,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-20"
+  },
+  {
    "nombre": "Morvan",
    "tipo": "proyecto",
    "en_web": true,
@@ -275,20 +289,6 @@
    "commits": 114,
    "desde": "2026-10-02",
    "hasta": "2026-10-10"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 17.4,
-   "horas_sesiones": 17.4,
-   "horas_commits": 0.0,
-   "dias": 4,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-20"
   },
   {
    "nombre": "Tu Debate Diario",
@@ -414,8 +414,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 10.9,
-   "horas_sesiones": 10.9,
+   "horas": 11.1,
+   "horas_sesiones": 11.1,
    "horas_commits": 0.0,
    "dias": 2,
    "commits": 0,
