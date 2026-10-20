@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-20T12:54:07+00:00",
+ "actualizado": "2026-10-20T14:54:07+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1211.4,
+ "total_horas": 1216.6,
  "total_dias": 206,
  "entradas": [
   {
@@ -198,6 +198,22 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 19.7,
+   "horas_sesiones": 0,
+   "horas_commits": 19.7,
+   "dias": 4,
+   "commits": 43,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-20"
+  },
+  {
    "nombre": "Code Hive Factory",
    "tipo": "proyecto",
    "en_web": true,
@@ -245,22 +261,6 @@
    "hasta": "2026-08-21"
   },
   {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 17.7,
-   "horas_sesiones": 0,
-   "horas_commits": 17.7,
-   "dias": 4,
-   "commits": 39,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-20"
-  },
-  {
    "nombre": "card-pop",
    "tipo": "proyecto",
    "en_web": true,
@@ -275,6 +275,20 @@
    "commits": 114,
    "desde": "2026-10-02",
    "hasta": "2026-10-10"
+  },
+  {
+   "nombre": "UniversoCraft",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 17.4,
+   "horas_sesiones": 17.4,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-20"
   },
   {
    "nombre": "Tu Debate Diario",
@@ -309,20 +323,6 @@
    "commits": 43,
    "desde": "2026-03-14",
    "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "UniversoCraft",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 16.1,
-   "horas_sesiones": 16.1,
-   "horas_commits": 0.0,
-   "dias": 4,
-   "commits": 0,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-20"
   },
   {
    "nombre": "Instagram Content Creator",
@@ -409,6 +409,20 @@
    "hasta": "2026-06-15"
   },
   {
+   "nombre": "URbot",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 10.9,
+   "horas_sesiones": 10.9,
+   "horas_commits": 0.0,
+   "dias": 2,
+   "commits": 0,
+   "desde": "2026-10-19",
+   "hasta": "2026-10-20"
+  },
+  {
    "nombre": "Centralita IA",
    "tipo": "proyecto",
    "en_web": true,
@@ -485,20 +499,6 @@
    "commits": 0,
    "desde": "2026-10-10",
    "hasta": "2026-10-12"
-  },
-  {
-   "nombre": "URbot",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 9.0,
-   "horas_sesiones": 9.0,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-10-19",
-   "hasta": "2026-10-20"
   },
   {
    "nombre": "claude-browser-eye-extension",
