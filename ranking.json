@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-21T16:54:08+00:00",
+ "actualizado": "2026-10-21T18:54:08+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1229.4,
+ "total_horas": 1232.5,
  "total_dias": 207,
  "entradas": [
   {
@@ -134,6 +134,22 @@
    "hasta": "2026-07-13"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 29.2,
+   "horas_sesiones": 0,
+   "horas_commits": 29.2,
+   "dias": 5,
+   "commits": 65,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-21"
+  },
+  {
    "nombre": "CamelTube",
    "tipo": "proyecto",
    "en_web": true,
@@ -148,22 +164,6 @@
    "commits": 63,
    "desde": "2026-07-27",
    "hasta": "2026-07-28"
-  },
-  {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 27.7,
-   "horas_sesiones": 0,
-   "horas_commits": 27.7,
-   "dias": 5,
-   "commits": 59,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-21"
   },
   {
    "nombre": "Reservas para peluquerías",
@@ -219,8 +219,8 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 21.3,
-   "horas_sesiones": 21.3,
+   "horas": 22.9,
+   "horas_sesiones": 22.9,
    "horas_commits": 0.0,
    "dias": 5,
    "commits": 0,
