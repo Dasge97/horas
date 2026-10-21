@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-21T10:54:08+00:00",
+ "actualizado": "2026-10-21T12:54:08+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1226.0,
+ "total_horas": 1226.5,
  "total_dias": 207,
  "entradas": [
   {
@@ -150,6 +150,22 @@
    "hasta": "2026-07-28"
   },
   {
+   "nombre": "universocraft",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "universocraft"
+   ],
+   "horas": 25.3,
+   "horas_sesiones": 0,
+   "horas_commits": 25.3,
+   "dias": 5,
+   "commits": 53,
+   "desde": "2026-10-17",
+   "hasta": "2026-10-21"
+  },
+  {
    "nombre": "Reservas para peluquerías",
    "tipo": "proyecto",
    "en_web": true,
@@ -164,22 +180,6 @@
    "commits": 79,
    "desde": "2026-08-24",
    "hasta": "2026-09-09"
-  },
-  {
-   "nombre": "universocraft",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "universocraft"
-   ],
-   "horas": 24.8,
-   "horas_sesiones": 0,
-   "horas_commits": 24.8,
-   "dias": 5,
-   "commits": 52,
-   "desde": "2026-10-17",
-   "hasta": "2026-10-21"
   },
   {
    "nombre": "Agente de Marketing",
