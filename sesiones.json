@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T06:54:07+00:00",
+ "actualizado": "2026-10-21T08:54:08+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -305,12 +305,13 @@
    ]
   },
   "UniversoCraft": {
-   "horas": 19.6,
+   "horas": 19.95,
    "dias": [
     "2026-10-17",
     "2026-10-18",
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
    ]
   },
   "claude-browser-eye-extension": {
