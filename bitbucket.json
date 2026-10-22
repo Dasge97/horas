@@ -1,19 +1,20 @@
 {
- "actualizado": "2026-10-22T00:54:08+00:00",
+ "actualizado": "2026-10-22T17:41:18+00:00",
  "repos": {
   "new-studio": {
-   "horas": 10.0,
+   "horas": 13.6,
    "horas_sesiones": 0,
-   "horas_commits": 10.0,
-   "dias": 4,
-   "commits": 37,
+   "horas_commits": 13.6,
+   "dias": 5,
+   "commits": 45,
    "desde": "2026-09-22",
-   "hasta": "2026-10-17",
+   "hasta": "2026-10-22",
    "dias_lista": [
     "2026-09-22",
     "2026-10-06",
     "2026-10-16",
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-22"
    ]
   },
   "partes-app-web": {

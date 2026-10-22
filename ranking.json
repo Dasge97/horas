@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-22T03:30:03+00:00",
+ "actualizado": "2026-10-22T17:41:18+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1239.3,
- "total_dias": 207,
+ "total_horas": 1244.9,
+ "total_dias": 208,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -109,13 +109,13 @@
     "podcaster",
     "ai-podcast-studio"
    ],
-   "horas": 36.0,
+   "horas": 38.0,
    "horas_sesiones": 1.7,
-   "horas_commits": 34.3,
-   "dias": 11,
-   "commits": 111,
+   "horas_commits": 36.3,
+   "dias": 12,
+   "commits": 116,
    "desde": "2026-08-03",
-   "hasta": "2026-09-23"
+   "hasta": "2026-10-22"
   },
   {
    "nombre": "bookadoo",
@@ -174,10 +174,10 @@
    "horas": 25.9,
    "horas_sesiones": 25.9,
    "horas_commits": 0.0,
-   "dias": 5,
+   "dias": 6,
    "commits": 0,
    "desde": "2026-10-17",
-   "hasta": "2026-10-21"
+   "hasta": "2026-10-22"
   },
   {
    "nombre": "Reservas para peluquerías",
@@ -373,6 +373,22 @@
    "hasta": "2026-07-05"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:new-studio"
+   ],
+   "horas": 13.6,
+   "horas_sesiones": 0,
+   "horas_commits": 13.6,
+   "dias": 5,
+   "commits": 45,
+   "desde": "2026-09-22",
+   "hasta": "2026-10-22"
+  },
+  {
    "nombre": "Meridian",
    "tipo": "proyecto",
    "en_web": true,
@@ -437,22 +453,6 @@
    "commits": 33,
    "desde": "2026-09-17",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:new-studio"
-   ],
-   "horas": 10.0,
-   "horas_sesiones": 0,
-   "horas_commits": 10.0,
-   "dias": 4,
-   "commits": 37,
-   "desde": "2026-09-22",
-   "hasta": "2026-10-17"
   },
   {
    "nombre": "POD",
