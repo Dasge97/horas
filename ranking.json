@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-10-22T17:41:18+00:00",
+ "actualizado": "2026-10-22T19:41:09+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1244.9,
+ "total_horas": 1247.8,
  "total_dias": 208,
  "entradas": [
   {
@@ -325,6 +325,22 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:new-studio"
+   ],
+   "horas": 16.5,
+   "horas_sesiones": 0,
+   "horas_commits": 16.5,
+   "dias": 5,
+   "commits": 48,
+   "desde": "2026-09-22",
+   "hasta": "2026-10-22"
+  },
+  {
    "nombre": "Instagram Content Creator",
    "tipo": "proyecto",
    "en_web": true,
@@ -371,22 +387,6 @@
    "commits": 63,
    "desde": "2026-07-01",
    "hasta": "2026-07-05"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:new-studio"
-   ],
-   "horas": 13.6,
-   "horas_sesiones": 0,
-   "horas_commits": 13.6,
-   "dias": 5,
-   "commits": 45,
-   "desde": "2026-09-22",
-   "hasta": "2026-10-22"
   },
   {
    "nombre": "Meridian",
