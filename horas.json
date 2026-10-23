@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-23T03:30:03+00:00",
+ "actualizado": "2026-10-23T18:13:48+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 436.4,
- "total_dias": 126,
+ "total_horas": 413.0,
+ "total_dias": 119,
  "proyectos": {
   "pocket-terminal": {
    "nombre": "Pocket Terminal",
@@ -96,12 +96,12 @@
   },
   "tu-debate-diario": {
    "nombre": "Tu Debate Diario",
-   "horas": 16.8,
-   "horas_sesiones": 3.8,
-   "horas_commits": 13.0,
-   "dias": 9,
-   "commits": 68,
-   "desde": "2026-03-09",
+   "horas": 16.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 16.0,
+   "dias": 7,
+   "commits": 63,
+   "desde": "2026-03-19",
    "hasta": "2026-09-21"
   },
   "code-hive-factory": {
@@ -126,13 +126,13 @@
   },
   "card-pop": {
    "nombre": "card-pop",
-   "horas": 17.6,
+   "horas": 17.1,
    "horas_sesiones": 17.1,
-   "horas_commits": 0.5,
-   "dias": 5,
-   "commits": 114,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
    "desde": "2026-10-02",
-   "hasta": "2026-10-10"
+   "hasta": "2026-10-07"
   },
   "eryndale": {
    "nombre": "Eryndale",
@@ -166,22 +166,22 @@
   },
   "true-duel": {
    "nombre": "True Duel",
-   "horas": 2.6,
+   "horas": 0.0,
    "horas_sesiones": 0.0,
-   "horas_commits": 2.6,
-   "dias": 3,
-   "commits": 8,
-   "desde": "2026-05-04",
-   "hasta": "2026-05-06"
+   "horas_commits": 0.0,
+   "dias": 0,
+   "commits": 0,
+   "desde": null,
+   "hasta": null
   },
   "morvan": {
    "nombre": "Morvan",
-   "horas": 18.0,
+   "horas": 0.5,
    "horas_sesiones": 0.0,
-   "horas_commits": 18.0,
-   "dias": 4,
-   "commits": 55,
-   "desde": "2026-08-05",
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-08-21",
    "hasta": "2026-08-21"
   },
   "expedicion": {
@@ -266,13 +266,13 @@
   },
   "RAG Knowledge Pipeline": {
    "nombre": "RAG Knowledge Pipeline",
-   "horas": 1.5,
+   "horas": 0.0,
    "horas_sesiones": 0.0,
-   "horas_commits": 1.5,
-   "dias": 1,
-   "commits": 2,
-   "desde": "2026-04-22",
-   "hasta": "2026-04-22"
+   "horas_commits": 0.0,
+   "dias": 0,
+   "commits": 0,
+   "desde": null,
+   "hasta": null
   },
   "FactorAI": {
    "nombre": "FactorAI",
@@ -390,7 +390,7 @@
    "horas_sesiones": 0.0,
    "horas_commits": 0.5,
    "dias": 1,
-   "commits": 2,
+   "commits": 1,
    "desde": "2026-04-01",
    "hasta": "2026-04-01"
   },
@@ -546,13 +546,13 @@
   },
   "pdf2audio": {
    "nombre": "pdf2audio",
-   "horas": 0.5,
+   "horas": 0.0,
    "horas_sesiones": 0.0,
-   "horas_commits": 0.5,
-   "dias": 1,
-   "commits": 1,
-   "desde": "2026-07-23",
-   "hasta": "2026-07-23"
+   "horas_commits": 0.0,
+   "dias": 0,
+   "commits": 0,
+   "desde": null,
+   "hasta": null
   },
   "LOCALIA": {
    "nombre": "LOCALIA",

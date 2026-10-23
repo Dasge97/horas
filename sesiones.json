@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22T19:41:09+00:00",
+ "actualizado": "2026-10-23T18:13:48+00:00",
  "proyectos": {
   "pocket-terminal": {
    "horas": 0.0,
@@ -41,10 +41,8 @@
    "dias": []
   },
   "tu-debate-diario": {
-   "horas": 3.8,
-   "dias": [
-    "2026-09-21"
-   ]
+   "horas": 0.0,
+   "dias": []
   },
   "code-hive-factory": {
    "horas": 0.0,
@@ -312,7 +310,8 @@
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
    ]
   },
   "claude-browser-eye-extension": {

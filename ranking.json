@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-23T03:30:03+00:00",
+ "actualizado": "2026-10-23T18:13:48+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1247.8,
- "total_dias": 208,
+ "total_horas": 1213.9,
+ "total_dias": 198,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -174,10 +174,10 @@
    "horas": 25.9,
    "horas_sesiones": 25.9,
    "horas_commits": 0.0,
-   "dias": 6,
+   "dias": 7,
    "commits": 0,
    "desde": "2026-10-17",
-   "hasta": "2026-10-22"
+   "hasta": "2026-10-23"
   },
   {
    "nombre": "Reservas para peluquerías",
@@ -210,6 +210,22 @@
    "commits": 96,
    "desde": "2026-07-15",
    "hasta": "2026-09-15"
+  },
+  {
+   "nombre": "new-studio",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:new-studio"
+   ],
+   "horas": 24.2,
+   "horas_sesiones": 0,
+   "horas_commits": 24.2,
+   "dias": 6,
+   "commits": 55,
+   "desde": "2026-09-22",
+   "hasta": "2026-10-23"
   },
   {
    "nombre": "Studio",
@@ -258,23 +274,6 @@
    "hasta": "2026-10-18"
   },
   {
-   "nombre": "Morvan",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": true,
-   "repos": [
-    "Morvan",
-    "Morvan-v2"
-   ],
-   "horas": 18.0,
-   "horas_sesiones": 0.0,
-   "horas_commits": 18.0,
-   "dias": 4,
-   "commits": 55,
-   "desde": "2026-08-05",
-   "hasta": "2026-08-21"
-  },
-  {
    "nombre": "card-pop",
    "tipo": "proyecto",
    "en_web": true,
@@ -282,13 +281,13 @@
    "repos": [
     "card-pop"
    ],
-   "horas": 17.6,
+   "horas": 17.1,
    "horas_sesiones": 17.1,
-   "horas_commits": 0.5,
-   "dias": 5,
-   "commits": 114,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
    "desde": "2026-10-02",
-   "hasta": "2026-10-10"
+   "hasta": "2026-10-07"
   },
   {
    "nombre": "Tu Debate Diario",
@@ -300,45 +299,13 @@
     "tdd-tu-debate-diario-pro",
     "tdd-app-movil"
    ],
-   "horas": 16.8,
-   "horas_sesiones": 3.8,
-   "horas_commits": 13.0,
-   "dias": 9,
-   "commits": 68,
-   "desde": "2026-03-09",
+   "horas": 16.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 16.0,
+   "dias": 7,
+   "commits": 63,
+   "desde": "2026-03-19",
    "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "auth2api",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "auth2api"
-   ],
-   "horas": 16.7,
-   "horas_sesiones": 0,
-   "horas_commits": 16.7,
-   "dias": 15,
-   "commits": 43,
-   "desde": "2026-03-14",
-   "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:new-studio"
-   ],
-   "horas": 16.5,
-   "horas_sesiones": 0,
-   "horas_commits": 16.5,
-   "dias": 5,
-   "commits": 48,
-   "desde": "2026-09-22",
-   "hasta": "2026-10-22"
   },
   {
    "nombre": "Instagram Content Creator",
@@ -1008,22 +975,6 @@
    "hasta": "2026-09-11"
   },
   {
-   "nombre": "True Duel",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "true-duel"
-   ],
-   "horas": 2.6,
-   "horas_sesiones": 0.0,
-   "horas_commits": 2.6,
-   "dias": 3,
-   "commits": 8,
-   "desde": "2026-05-04",
-   "hasta": "2026-05-06"
-  },
-  {
    "nombre": "mail-tester",
    "tipo": "proyecto",
    "en_web": true,
@@ -1185,22 +1136,6 @@
    "hasta": "2026-04-08"
   },
   {
-   "nombre": "RAG Knowledge Pipeline",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "rag-knowledge-pipeline"
-   ],
-   "horas": 1.5,
-   "horas_sesiones": 0.0,
-   "horas_commits": 1.5,
-   "dias": 1,
-   "commits": 2,
-   "desde": "2026-04-22",
-   "hasta": "2026-04-22"
-  },
-  {
    "nombre": "git-achievements",
    "tipo": "repo",
    "en_web": false,
@@ -1215,22 +1150,6 @@
    "commits": 101,
    "desde": "2026-05-29",
    "hasta": "2026-05-29"
-  },
-  {
-   "nombre": "kit-codehive",
-   "tipo": "repo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "kit-codehive"
-   ],
-   "horas": 1.5,
-   "horas_sesiones": 0,
-   "horas_commits": 1.5,
-   "dias": 2,
-   "commits": 3,
-   "desde": "2026-10-10",
-   "hasta": "2026-10-11"
   },
   {
    "nombre": "puente-kit",
@@ -1609,6 +1528,23 @@
    "hasta": "2026-09-03"
   },
   {
+   "nombre": "Morvan",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "Morvan",
+    "Morvan-v2"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-08-21",
+   "hasta": "2026-08-21"
+  },
+  {
    "nombre": "MenuGenerator",
    "tipo": "proyecto",
    "en_web": true,
@@ -1637,7 +1573,7 @@
    "horas_sesiones": 0.0,
    "horas_commits": 0.5,
    "dias": 1,
-   "commits": 2,
+   "commits": 1,
    "desde": "2026-04-01",
    "hasta": "2026-04-01"
   },
@@ -1688,22 +1624,6 @@
    "commits": 1,
    "desde": "2026-04-29",
    "hasta": "2026-04-29"
-  },
-  {
-   "nombre": "pdf2audio",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": false,
-   "repos": [
-    "pdf2audio"
-   ],
-   "horas": 0.5,
-   "horas_sesiones": 0.0,
-   "horas_commits": 0.5,
-   "dias": 1,
-   "commits": 1,
-   "desde": "2026-07-23",
-   "hasta": "2026-07-23"
   },
   {
    "nombre": "atomic-phase-workflow",
