@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-24T03:30:02+00:00",
+ "actualizado": "2026-10-25T03:30:03+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 436.8,
- "total_dias": 126,
+ "total_horas": 438.2,
+ "total_dias": 127,
  "proyectos": {
   "pocket-terminal": {
    "nombre": "Pocket Terminal",
@@ -356,13 +356,13 @@
   },
   "GreyMarket": {
    "nombre": "GreyMarket",
-   "horas": 15.2,
+   "horas": 16.6,
    "horas_sesiones": 0.0,
-   "horas_commits": 15.2,
-   "dias": 6,
-   "commits": 65,
+   "horas_commits": 16.6,
+   "dias": 7,
+   "commits": 74,
    "desde": "2026-06-07",
-   "hasta": "2026-08-12"
+   "hasta": "2026-10-24"
   },
   "От всичко по нещо": {
    "nombre": "От всичко по нещо",
