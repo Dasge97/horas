@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-27T03:30:03+00:00",
+ "actualizado": "2026-10-28T03:30:03+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 438.2,
- "total_dias": 127,
+ "total_horas": 442.5,
+ "total_dias": 128,
  "proyectos": {
   "pocket-terminal": {
    "nombre": "Pocket Terminal",
@@ -126,13 +126,13 @@
   },
   "card-pop": {
    "nombre": "card-pop",
-   "horas": 17.6,
+   "horas": 21.4,
    "horas_sesiones": 17.1,
-   "horas_commits": 0.5,
-   "dias": 5,
-   "commits": 114,
+   "horas_commits": 4.2,
+   "dias": 6,
+   "commits": 126,
    "desde": "2026-10-02",
-   "hasta": "2026-10-10"
+   "hasta": "2026-10-27"
   },
   "eryndale": {
    "nombre": "Eryndale",
@@ -356,13 +356,13 @@
   },
   "GreyMarket": {
    "nombre": "GreyMarket",
-   "horas": 16.6,
+   "horas": 17.1,
    "horas_sesiones": 0.0,
-   "horas_commits": 16.6,
-   "dias": 7,
-   "commits": 74,
+   "horas_commits": 17.1,
+   "dias": 8,
+   "commits": 75,
    "desde": "2026-06-07",
-   "hasta": "2026-10-24"
+   "hasta": "2026-10-27"
   },
   "От всичко по нещо": {
    "nombre": "От всичко по нещо",

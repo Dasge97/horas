@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-27T03:30:03+00:00",
+ "actualizado": "2026-10-28T03:30:03+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1257.3,
- "total_dias": 210,
+ "total_horas": 1261.6,
+ "total_dias": 211,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -244,6 +244,22 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "card-pop",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "card-pop"
+   ],
+   "horas": 21.4,
+   "horas_sesiones": 17.1,
+   "horas_commits": 4.2,
+   "dias": 6,
+   "commits": 126,
+   "desde": "2026-10-02",
+   "hasta": "2026-10-27"
+  },
+  {
    "nombre": "Code Hive Factory",
    "tipo": "proyecto",
    "en_web": true,
@@ -291,22 +307,6 @@
    "hasta": "2026-08-21"
   },
   {
-   "nombre": "card-pop",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": true,
-   "repos": [
-    "card-pop"
-   ],
-   "horas": 17.6,
-   "horas_sesiones": 17.1,
-   "horas_commits": 0.5,
-   "dias": 5,
-   "commits": 114,
-   "desde": "2026-10-02",
-   "hasta": "2026-10-10"
-  },
-  {
    "nombre": "Tu Debate Diario",
    "tipo": "proyecto",
    "en_web": true,
@@ -325,6 +325,22 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "GreyMarket",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "GreyMarket"
+   ],
+   "horas": 17.1,
+   "horas_sesiones": 0.0,
+   "horas_commits": 17.1,
+   "dias": 8,
+   "commits": 75,
+   "desde": "2026-06-07",
+   "hasta": "2026-10-27"
+  },
+  {
    "nombre": "auth2api",
    "tipo": "repo",
    "en_web": false,
@@ -339,22 +355,6 @@
    "commits": 43,
    "desde": "2026-03-14",
    "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "GreyMarket",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": true,
-   "repos": [
-    "GreyMarket"
-   ],
-   "horas": 16.6,
-   "horas_sesiones": 0.0,
-   "horas_commits": 16.6,
-   "dias": 7,
-   "commits": 74,
-   "desde": "2026-06-07",
-   "hasta": "2026-10-24"
   },
   {
    "nombre": "Instagram Content Creator",
