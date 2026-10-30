@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-10-29T03:30:02+00:00",
+ "actualizado": "2026-10-30T03:30:02+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 443.5,
- "total_dias": 129,
+ "total_horas": 444.3,
+ "total_dias": 130,
  "proyectos": {
   "pocket-terminal": {
    "nombre": "Pocket Terminal",
@@ -66,13 +66,13 @@
   },
   "la-cornisa": {
    "nombre": "La Cornisa",
-   "horas": 38.0,
+   "horas": 38.8,
    "horas_sesiones": 1.7,
-   "horas_commits": 36.3,
-   "dias": 12,
-   "commits": 116,
+   "horas_commits": 37.1,
+   "dias": 13,
+   "commits": 118,
    "desde": "2026-08-03",
-   "hasta": "2026-10-22"
+   "hasta": "2026-10-29"
   },
   "assistyoou": {
    "nombre": "assistyoou",
