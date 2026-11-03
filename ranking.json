@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-03T14:06:36+00:00",
+ "actualizado": "2026-11-03T14:12:40+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1312.0,
- "total_dias": 220,
+ "total_horas": 1391.6,
+ "total_dias": 217,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -44,11 +44,11 @@
    "repos": [
     "bitbucket:oficina-virtual-app-web"
    ],
-   "horas": 78.5,
+   "horas": 73.8,
    "horas_sesiones": 0,
-   "horas_commits": 78.5,
-   "dias": 47,
-   "commits": 156,
+   "horas_commits": 73.8,
+   "dias": 44,
+   "commits": 149,
    "desde": "2026-03-24",
    "hasta": "2026-10-16"
   },
@@ -109,9 +109,9 @@
     "podcaster",
     "ai-podcast-studio"
    ],
-   "horas": 49.0,
-   "horas_sesiones": 1.7,
-   "horas_commits": 47.3,
+   "horas": 49.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 49.3,
    "dias": 15,
    "commits": 149,
    "desde": "2026-08-03",
@@ -148,6 +148,22 @@
    "commits": 80,
    "desde": "2026-10-17",
    "hasta": "2026-10-21"
+  },
+  {
+   "nombre": "new-studio",
+   "tipo": "trabajo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "bitbucket:new-studio"
+   ],
+   "horas": 30.5,
+   "horas_sesiones": 0,
+   "horas_commits": 30.5,
+   "dias": 7,
+   "commits": 66,
+   "desde": "2026-09-22",
+   "hasta": "2026-10-24"
   },
   {
    "nombre": "CamelTube",
@@ -212,22 +228,6 @@
    "hasta": "2026-09-15"
   },
   {
-   "nombre": "new-studio",
-   "tipo": "trabajo",
-   "en_web": false,
-   "privado": true,
-   "repos": [
-    "bitbucket:new-studio"
-   ],
-   "horas": 24.2,
-   "horas_sesiones": 0,
-   "horas_commits": 24.2,
-   "dias": 6,
-   "commits": 55,
-   "desde": "2026-09-22",
-   "hasta": "2026-10-23"
-  },
-  {
    "nombre": "Studio",
    "tipo": "proyecto",
    "en_web": true,
@@ -244,6 +244,20 @@
    "hasta": "2026-09-21"
   },
   {
+   "nombre": "new-studio",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 20.3,
+   "horas_sesiones": 20.3,
+   "horas_commits": 0.0,
+   "dias": 7,
+   "commits": 0,
+   "desde": "2026-10-12",
+   "hasta": "2026-10-25"
+  },
+  {
    "nombre": "card-pop",
    "tipo": "proyecto",
    "en_web": true,
@@ -251,13 +265,13 @@
    "repos": [
     "card-pop"
    ],
-   "horas": 21.4,
-   "horas_sesiones": 17.1,
-   "horas_commits": 4.2,
-   "dias": 6,
+   "horas": 19.8,
+   "horas_sesiones": 19.3,
+   "horas_commits": 0.5,
+   "dias": 7,
    "commits": 126,
    "desde": "2026-10-02",
-   "hasta": "2026-10-27"
+   "hasta": "2026-10-28"
   },
   {
    "nombre": "Code Hive Factory",
@@ -274,20 +288,6 @@
    "commits": 49,
    "desde": "2026-09-06",
    "hasta": "2026-09-09"
-  },
-  {
-   "nombre": "new-studio",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 19.4,
-   "horas_sesiones": 19.4,
-   "horas_commits": 0.0,
-   "dias": 5,
-   "commits": 0,
-   "desde": "2026-10-12",
-   "hasta": "2026-10-18"
   },
   {
    "nombre": "GreyMarket",
@@ -357,6 +357,34 @@
    "hasta": "2026-10-29"
   },
   {
+   "nombre": "RESEARCHIA",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 16.7,
+   "horas_sesiones": 16.7,
+   "horas_commits": 0.0,
+   "dias": 5,
+   "commits": 0,
+   "desde": "2026-09-19",
+   "hasta": "2026-11-03"
+  },
+  {
+   "nombre": "JUEGOS-orkhold",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 15.8,
+   "horas_sesiones": 15.8,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-29",
+   "hasta": "2026-11-01"
+  },
+  {
    "nombre": "orkhold",
    "tipo": "repo",
    "en_web": false,
@@ -387,6 +415,20 @@
    "commits": 38,
    "desde": "2026-08-06",
    "hasta": "2026-09-01"
+  },
+  {
+   "nombre": "agentes",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 15.0,
+   "horas_sesiones": 15.0,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-31",
+   "hasta": "2026-11-03"
   },
   {
    "nombre": "agentes",
@@ -457,6 +499,20 @@
    "hasta": "2026-06-15"
   },
   {
+   "nombre": "simulador",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 12.2,
+   "horas_sesiones": 12.2,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-24",
+   "hasta": "2026-10-27"
+  },
+  {
    "nombre": "URbot",
    "tipo": "carpeta",
    "en_web": false,
@@ -503,6 +559,20 @@
    "hasta": "2026-05-30"
   },
   {
+   "nombre": "JEV",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 9.9,
+   "horas_sesiones": 9.9,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-10-24",
+   "hasta": "2026-10-24"
+  },
+  {
    "nombre": "Pocket Terminal",
    "tipo": "proyecto",
    "en_web": true,
@@ -533,6 +603,20 @@
    "hasta": "2026-10-12"
   },
   {
+   "nombre": "panel-interinos",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 9.0,
+   "horas_sesiones": 9.0,
+   "horas_commits": 0.0,
+   "dias": 3,
+   "commits": 0,
+   "desde": "2026-10-25",
+   "hasta": "2026-10-27"
+  },
+  {
    "nombre": "claude-browser-eye-extension",
    "tipo": "repo",
    "en_web": false,
@@ -549,6 +633,20 @@
    "hasta": "2026-10-19"
   },
   {
+   "nombre": "video-maker",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 8.5,
+   "horas_sesiones": 8.5,
+   "horas_commits": 0.0,
+   "dias": 7,
+   "commits": 0,
+   "desde": "2026-10-25",
+   "hasta": "2026-11-01"
+  },
+  {
    "nombre": "Comentarista Fantasy",
    "tipo": "proyecto",
    "en_web": true,
@@ -563,22 +661,6 @@
    "commits": 26,
    "desde": "2026-09-05",
    "hasta": "2026-09-06"
-  },
-  {
-   "nombre": "Expedición medieval",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": true,
-   "repos": [
-    "expedition"
-   ],
-   "horas": 7.6,
-   "horas_sesiones": 7.6,
-   "horas_commits": 0.0,
-   "dias": 4,
-   "commits": 1,
-   "desde": "2026-09-26",
-   "hasta": "2026-09-29"
   },
   {
    "nombre": "claude-browser-eye-extension",
@@ -825,13 +907,13 @@
    "en_web": false,
    "privado": true,
    "repos": [],
-   "horas": 5.2,
-   "horas_sesiones": 5.2,
+   "horas": 5.3,
+   "horas_sesiones": 5.3,
    "horas_commits": 0.0,
-   "dias": 3,
+   "dias": 5,
    "commits": 0,
    "desde": "2026-10-09",
-   "hasta": "2026-10-11"
+   "hasta": "2026-10-27"
   },
   {
    "nombre": "AI Hub",
@@ -946,20 +1028,6 @@
    "hasta": "2026-11-03"
   },
   {
-   "nombre": "decaok",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 3.4,
-   "horas_sesiones": 3.4,
-   "horas_commits": 0.0,
-   "dias": 2,
-   "commits": 0,
-   "desde": "2026-09-23",
-   "hasta": "2026-09-26"
-  },
-  {
    "nombre": "partes-app-web",
    "tipo": "trabajo",
    "en_web": false,
@@ -967,13 +1035,13 @@
    "repos": [
     "bitbucket:partes-app-web"
    ],
-   "horas": 3.4,
+   "horas": 3.9,
    "horas_sesiones": 0,
-   "horas_commits": 3.4,
-   "dias": 4,
-   "commits": 13,
+   "horas_commits": 3.9,
+   "dias": 5,
+   "commits": 14,
    "desde": "2026-03-25",
-   "hasta": "2026-09-29"
+   "hasta": "2026-10-28"
   },
   {
    "nombre": "От всичко по нещо",
@@ -1104,6 +1172,20 @@
    "hasta": "2026-10-08"
   },
   {
+   "nombre": "GreyMarket",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 2.5,
+   "horas_sesiones": 2.5,
+   "horas_commits": 0.0,
+   "dias": 4,
+   "commits": 0,
+   "desde": "2026-10-24",
+   "hasta": "2026-10-28"
+  },
+  {
    "nombre": "Plantillas de arranque",
    "tipo": "proyecto",
    "en_web": true,
@@ -1153,20 +1235,6 @@
    "commits": 9,
    "desde": "2026-09-21",
    "hasta": "2026-09-21"
-  },
-  {
-   "nombre": "RESEARCHIA",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 2.2,
-   "horas_sesiones": 2.2,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-09-19",
-   "hasta": "2026-09-19"
   },
   {
    "nombre": "Autocaller",
@@ -1403,6 +1471,20 @@
    "commits": 3,
    "desde": "2026-10-24",
    "hasta": "2026-10-24"
+  },
+  {
+   "nombre": "glovalgo-app-movil",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 1.2,
+   "horas_sesiones": 1.2,
+   "horas_commits": 0.0,
+   "dias": 1,
+   "commits": 0,
+   "desde": "2026-11-02",
+   "hasta": "2026-11-02"
   },
   {
    "nombre": "Eryndale",
@@ -1689,6 +1771,22 @@
    "hasta": "2026-09-03"
   },
   {
+   "nombre": "Expedición medieval",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "expedition"
+   ],
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
+   "commits": 1,
+   "desde": "2026-09-27",
+   "hasta": "2026-09-27"
+  },
+  {
    "nombre": "MenuGenerator",
    "tipo": "proyecto",
    "en_web": true,
@@ -1848,20 +1946,6 @@
    "commits": 1,
    "desde": "2026-09-19",
    "hasta": "2026-09-19"
-  },
-  {
-   "nombre": "decaok-transporte-app-movil",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 0.3,
-   "horas_sesiones": 0.3,
-   "horas_commits": 0.0,
-   "dias": 1,
-   "commits": 0,
-   "desde": "2026-09-29",
-   "hasta": "2026-09-29"
   }
  ]
 }

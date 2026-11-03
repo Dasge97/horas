@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-03T14:06:36+00:00",
+ "actualizado": "2026-11-03T14:12:40+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 455.7,
- "total_dias": 132,
+ "total_horas": 447.3,
+ "total_dias": 129,
  "proyectos": {
   "pocket-terminal": {
    "nombre": "Pocket Terminal",
@@ -66,9 +66,9 @@
   },
   "la-cornisa": {
    "nombre": "La Cornisa",
-   "horas": 49.0,
-   "horas_sesiones": 1.7,
-   "horas_commits": 47.3,
+   "horas": 49.3,
+   "horas_sesiones": 0.0,
+   "horas_commits": 49.3,
    "dias": 15,
    "commits": 149,
    "desde": "2026-08-03",
@@ -126,13 +126,13 @@
   },
   "card-pop": {
    "nombre": "card-pop",
-   "horas": 21.4,
-   "horas_sesiones": 17.1,
-   "horas_commits": 4.2,
-   "dias": 6,
+   "horas": 19.8,
+   "horas_sesiones": 19.3,
+   "horas_commits": 0.5,
+   "dias": 7,
    "commits": 126,
    "desde": "2026-10-02",
-   "hasta": "2026-10-27"
+   "hasta": "2026-10-28"
   },
   "eryndale": {
    "nombre": "Eryndale",
@@ -186,13 +186,13 @@
   },
   "expedicion": {
    "nombre": "Expedición medieval",
-   "horas": 7.6,
-   "horas_sesiones": 7.6,
-   "horas_commits": 0.0,
-   "dias": 4,
+   "horas": 0.5,
+   "horas_sesiones": 0.0,
+   "horas_commits": 0.5,
+   "dias": 1,
    "commits": 1,
-   "desde": "2026-09-26",
-   "hasta": "2026-09-29"
+   "desde": "2026-09-27",
+   "hasta": "2026-09-27"
   },
   "Comentarista Fantasy": {
    "nombre": "Comentarista Fantasy",
