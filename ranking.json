@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-03T14:12:40+00:00",
+ "actualizado": "2026-11-03T16:03:25+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1391.6,
+ "total_horas": 1444.6,
  "total_dias": 217,
  "entradas": [
   {
@@ -99,6 +99,22 @@
    "commits": 224,
    "desde": "2025-10-23",
    "hasta": "2026-02-01"
+  },
+  {
+   "nombre": "agent-studio",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "agent-studio"
+   ],
+   "horas": 49.5,
+   "horas_sesiones": 0,
+   "horas_commits": 49.5,
+   "dias": 14,
+   "commits": 155,
+   "desde": "2026-08-04",
+   "hasta": "2026-11-03"
   },
   {
    "nombre": "La Cornisa",
@@ -323,6 +339,20 @@
    "hasta": "2026-08-21"
   },
   {
+   "nombre": "RESEARCHIA",
+   "tipo": "carpeta",
+   "en_web": false,
+   "privado": true,
+   "repos": [],
+   "horas": 18.0,
+   "horas_sesiones": 18.0,
+   "horas_commits": 0.0,
+   "dias": 5,
+   "commits": 0,
+   "desde": "2026-09-19",
+   "hasta": "2026-11-03"
+  },
+  {
    "nombre": "Tu Debate Diario",
    "tipo": "proyecto",
    "en_web": true,
@@ -355,20 +385,6 @@
    "commits": 44,
    "desde": "2026-03-14",
    "hasta": "2026-10-29"
-  },
-  {
-   "nombre": "RESEARCHIA",
-   "tipo": "carpeta",
-   "en_web": false,
-   "privado": true,
-   "repos": [],
-   "horas": 16.7,
-   "horas_sesiones": 16.7,
-   "horas_commits": 0.0,
-   "dias": 5,
-   "commits": 0,
-   "desde": "2026-09-19",
-   "hasta": "2026-11-03"
   },
   {
    "nombre": "JUEGOS-orkhold",
@@ -1060,6 +1076,22 @@
    "hasta": "2026-07-05"
   },
   {
+   "nombre": "daniunico.com",
+   "tipo": "proyecto",
+   "en_web": true,
+   "privado": true,
+   "repos": [
+    "daniunico-web"
+   ],
+   "horas": 3.0,
+   "horas_sesiones": 0.0,
+   "horas_commits": 3.0,
+   "dias": 2,
+   "commits": 11,
+   "desde": "2026-10-08",
+   "hasta": "2026-11-03"
+  },
+  {
    "nombre": "apunts-vault",
    "tipo": "trabajo",
    "en_web": false,
@@ -1154,22 +1186,6 @@
    "commits": 7,
    "desde": "2026-09-02",
    "hasta": "2026-09-02"
-  },
-  {
-   "nombre": "daniunico.com",
-   "tipo": "proyecto",
-   "en_web": true,
-   "privado": true,
-   "repos": [
-    "daniunico-web"
-   ],
-   "horas": 2.5,
-   "horas_sesiones": 0.0,
-   "horas_commits": 2.5,
-   "dias": 1,
-   "commits": 10,
-   "desde": "2026-10-08",
-   "hasta": "2026-10-08"
   },
   {
    "nombre": "GreyMarket",
@@ -1283,6 +1299,22 @@
    "commits": 4,
    "desde": "2026-03-14",
    "hasta": "2026-03-14"
+  },
+  {
+   "nombre": "horas-proyecto",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "horas-proyecto"
+   ],
+   "horas": 1.7,
+   "horas_sesiones": 0,
+   "horas_commits": 1.7,
+   "dias": 1,
+   "commits": 10,
+   "desde": "2026-11-03",
+   "hasta": "2026-11-03"
   },
   {
    "nombre": "Logística y Tarifas",
