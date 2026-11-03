@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-03T14:00:26+00:00",
+ "actualizado": "2026-11-03T14:06:36+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1296.0,
- "total_dias": 219,
+ "total_horas": 1312.0,
+ "total_dias": 220,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -109,11 +109,11 @@
     "podcaster",
     "ai-podcast-studio"
    ],
-   "horas": 48.3,
+   "horas": 49.0,
    "horas_sesiones": 1.7,
-   "horas_commits": 46.6,
+   "horas_commits": 47.3,
    "dias": 15,
-   "commits": 148,
+   "commits": 149,
    "desde": "2026-08-03",
    "hasta": "2026-11-03"
   },
@@ -387,6 +387,22 @@
    "commits": 38,
    "desde": "2026-08-06",
    "hasta": "2026-09-01"
+  },
+  {
+   "nombre": "agentes",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "agentes"
+   ],
+   "horas": 14.1,
+   "horas_sesiones": 0,
+   "horas_commits": 14.1,
+   "dias": 2,
+   "commits": 147,
+   "desde": "2026-10-31",
+   "hasta": "2026-11-01"
   },
   {
    "nombre": "RestaurantOS",
@@ -1371,6 +1387,22 @@
    "commits": 0,
    "desde": "2026-10-09",
    "hasta": "2026-10-10"
+  },
+  {
+   "nombre": "futbol-simulator-casino",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": true,
+   "repos": [
+    "futbol-simulator-casino"
+   ],
+   "horas": 1.2,
+   "horas_sesiones": 0,
+   "horas_commits": 1.2,
+   "dias": 1,
+   "commits": 3,
+   "desde": "2026-10-24",
+   "hasta": "2026-10-24"
   },
   {
    "nombre": "Eryndale",
