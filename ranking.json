@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-02T03:30:02+00:00",
+ "actualizado": "2026-11-03T03:30:02+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1263.9,
- "total_dias": 213,
+ "total_horas": 1268.5,
+ "total_dias": 214,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -109,13 +109,13 @@
     "podcaster",
     "ai-podcast-studio"
    ],
-   "horas": 38.8,
+   "horas": 43.4,
    "horas_sesiones": 1.7,
-   "horas_commits": 37.1,
-   "dias": 13,
-   "commits": 118,
+   "horas_commits": 41.8,
+   "dias": 14,
+   "commits": 137,
    "desde": "2026-08-03",
-   "hasta": "2026-10-29"
+   "hasta": "2026-11-02"
   },
   {
    "nombre": "bookadoo",
