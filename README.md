@@ -21,7 +21,7 @@ Ninguna de las dos fuentes mide el tiempo pensando, dibujando o probando sin toc
 Dos máquinas, el mismo `calcular.py`:
 
 - **El PC** tiene los registros de Claude Code, pero por la noche está apagado. Cuando está encendido, `publicar.ps1` calcula la fuente 1, la resume en `sesiones.json` y lo sube junto con `horas.json`.
-- **El servidor codehive** está siempre encendido. Cada noche `publicar.sh` trae el repositorio, lee `sesiones.json`, actualiza las copias desnudas de cada repo en `espejos/` con su clave SSH, calcula y publica `horas.json`. No necesita ningún token: usa la misma clave con la que despliega el resto de proyectos.
+- **El servidor codehive** está siempre encendido. Cada noche `publicar.sh` trae el repositorio, lee `sesiones.json`, actualiza las copias desnudas de cada repo en `espejos/` con su clave SSH, calcula y publica `horas.json`. Para los commits usa la misma clave SSH con la que despliega el resto de proyectos. La lista de repositorios la pide cada noche a la API de GitHub con un token de solo lectura guardado en `~/.config/horas/github-token`, así que los repos nuevos entran solos aunque el PC no publique. Si no hay token o la API falla, usa el último `repos.json`.
 
 `calcular.py` decide solo qué hacer: si existe `~/.claude/projects`, calcula las sesiones; si no, las lee de `sesiones.json`. Si existe `gh`, lee los commits por la API; si no, de `espejos/`.
 

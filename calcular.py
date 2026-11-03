@@ -195,10 +195,46 @@ def lista_repos():
         with open(ruta, 'w', encoding='utf-8') as fh:
             json.dump(repos, fh, ensure_ascii=False, indent=1)
         return repos
+    repos = repos_por_api()
+    if repos is not None:
+        with open(ruta, 'w', encoding='utf-8') as fh:
+            json.dump(repos, fh, ensure_ascii=False, indent=1)
+        return repos
     if os.path.exists(ruta):
         return json.load(open(ruta, encoding='utf-8'))
     print('aviso: no hay gh ni repos.json; solo se miden los repos de proyectos.json', file=sys.stderr)
     return None
+
+
+def repos_por_api():
+    """En el servidor no hay gh: si hay token, la lista de repos se pide a la API de GitHub.
+    Así los repos nuevos entran solos aunque el PC no publique. El token solo necesita leer
+    metadatos y se guarda en ~/.config/horas/github-token (permisos 600). Si falla, devuelve
+    None y se usa el repos.json que haya."""
+    ruta_token = os.path.expanduser('~/.config/horas/github-token')
+    if not os.path.exists(ruta_token):
+        return None
+    token = open(ruta_token, encoding='utf-8').read().strip()
+    import urllib.request
+    repos, pagina = {}, 1
+    try:
+        while True:
+            peticion = urllib.request.Request(
+                f'https://api.github.com/user/repos?affiliation=owner&per_page=100&page={pagina}',
+                headers={'Authorization': f'Bearer {token}', 'Accept': 'application/vnd.github+json',
+                         'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'horas'})
+            with urllib.request.urlopen(peticion, timeout=60) as respuesta:
+                datos = json.load(respuesta)
+            for r in datos:
+                if not r['fork'] and r['owner']['login'] == USUARIO:
+                    repos[r['name']] = r['private']
+            if len(datos) < 100:
+                break
+            pagina += 1
+    except Exception as error:
+        print(f'aviso: la API de GitHub falló ({error}); se usa repos.json', file=sys.stderr)
+        return None
+    return dict(sorted(repos.items()))
 
 
 # --- Combinación ---
