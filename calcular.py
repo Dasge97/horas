@@ -195,13 +195,19 @@ def lista_repos():
         with open(ruta, 'w', encoding='utf-8') as fh:
             json.dump(repos, fh, ensure_ascii=False, indent=1)
         return repos
-    repos = repos_por_api()
-    if repos is not None:
+    anteriores = json.load(open(ruta, encoding='utf-8')) if os.path.exists(ruta) else None
+    nuevos = repos_por_api()
+    if nuevos is not None:
+        # Se suman a los que ya había: un repo nunca desaparece de la lista. Si el token
+        # pierde permisos y deja de ver los privados, no se pierden sus horas.
+        if not any(nuevos.values()):
+            print('aviso: el token de GitHub no ve ningún repo privado; revisa sus permisos', file=sys.stderr)
+        repos = dict(sorted({**(anteriores or {}), **nuevos}.items()))
         with open(ruta, 'w', encoding='utf-8') as fh:
             json.dump(repos, fh, ensure_ascii=False, indent=1)
         return repos
-    if os.path.exists(ruta):
-        return json.load(open(ruta, encoding='utf-8'))
+    if anteriores is not None:
+        return anteriores
     print('aviso: no hay gh ni repos.json; solo se miden los repos de proyectos.json', file=sys.stderr)
     return None
 
