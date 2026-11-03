@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-03T13:53:18+00:00",
+ "actualizado": "2026-11-03T14:00:26+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 1274.4,
- "total_dias": 215,
+ "total_horas": 1296.0,
+ "total_dias": 219,
  "entradas": [
   {
    "nombre": "prindia-cloud",
@@ -355,6 +355,22 @@
    "commits": 44,
    "desde": "2026-03-14",
    "hasta": "2026-10-29"
+  },
+  {
+   "nombre": "orkhold",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "orkhold"
+   ],
+   "horas": 15.4,
+   "horas_sesiones": 0,
+   "horas_commits": 15.4,
+   "dias": 3,
+   "commits": 41,
+   "desde": "2026-10-29",
+   "hasta": "2026-11-01"
   },
   {
    "nombre": "Instagram Content Creator",
@@ -818,6 +834,22 @@
    "hasta": "2026-08-23"
   },
   {
+   "nombre": "the-village",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "the-village"
+   ],
+   "horas": 5.0,
+   "horas_sesiones": 0,
+   "horas_commits": 5.0,
+   "dias": 3,
+   "commits": 10,
+   "desde": "2026-10-24",
+   "hasta": "2026-10-27"
+  },
+  {
    "nombre": "myAutonomo",
    "tipo": "proyecto",
    "en_web": true,
@@ -889,11 +921,11 @@
    "repos": [
     "horas"
    ],
-   "horas": 3.8,
+   "horas": 4.0,
    "horas_sesiones": 0.0,
-   "horas_commits": 3.8,
+   "horas_commits": 4.0,
    "dias": 3,
-   "commits": 19,
+   "commits": 20,
    "desde": "2026-10-08",
    "hasta": "2026-11-03"
   },
@@ -1419,6 +1451,22 @@
    "commits": 3,
    "desde": "2026-07-13",
    "hasta": "2026-07-13"
+  },
+  {
+   "nombre": "video-maker",
+   "tipo": "repo",
+   "en_web": false,
+   "privado": false,
+   "repos": [
+    "video-maker"
+   ],
+   "horas": 1.0,
+   "horas_sesiones": 0,
+   "horas_commits": 1.0,
+   "dias": 2,
+   "commits": 2,
+   "desde": "2026-10-25",
+   "hasta": "2026-10-26"
   },
   {
    "nombre": "central-de-comunicaciones",

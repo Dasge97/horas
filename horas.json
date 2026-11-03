@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-03T13:53:18+00:00",
+ "actualizado": "2026-11-03T14:00:26+00:00",
  "metodo": "Sesiones de Claude Code (huecos de más de 30 min no cuentan) más bloques de commits (huecos de menos de 2 h, más 30 min por bloque) en los días sin sesiones registradas.",
- "total_horas": 454.8,
+ "total_horas": 455.0,
  "total_dias": 132,
  "proyectos": {
   "pocket-terminal": {
@@ -606,11 +606,11 @@
   },
   "horas": {
    "nombre": "horas",
-   "horas": 3.8,
+   "horas": 4.0,
    "horas_sesiones": 0.0,
-   "horas_commits": 3.8,
+   "horas_commits": 4.0,
    "dias": 3,
-   "commits": 19,
+   "commits": 20,
    "desde": "2026-10-08",
    "hasta": "2026-11-03"
   }
